@@ -1,0 +1,45 @@
+{
+  "deliveryProviders": [
+    {
+	  "id": "busWork",
+	  "name": "Aloha Transit",
+	  "description": "Follow the bus route and drive careful",
+	  "associatedOrganization": "busWork",
+	  "preview": "alohaTransit.png",
+
+	  "manualAccessPoints": [
+		{
+		  "psName": "busWorkParking",
+		  "isInspectSpot": true,
+		  "logisticTypesProvided": [],
+		  "logisticTypesReceived": []
+		},
+		{
+		  "psName": "busWorkLoaner",
+		  "isInspectSpot": false,
+		  "logisticTypesProvided": ["vehLargeTruckNeedsRepair"],
+		  "logisticTypesReceived": ["vehLargeTruck"],
+		  "loanerTrailerPriority": 1,
+		  "loanerNonTrailerPriority": 1
+		}
+	  ],
+
+	  "sitesFile": "roleplay.sites.json",
+	  "logisticTypesProvided": ["vehLargeTruckNeedsRepair"],
+	  "logisticTypesReceived": ["vehLargeTruck"],
+
+	  "logisticGenerators": [
+		{
+		  "type": "vehOfferProvider",
+		  "interval": 300,
+		  "min": 3,
+		  "max": 8,
+		  "offerDuration": {"min": 300, "max": 900},
+		  "filter": "busVehFilter",
+		  "logisticTypes": ["vehLargeTruck", "vehLargeTruckNeedsRepair"]
+		}
+	  ]
+	}
+
+  ]
+}

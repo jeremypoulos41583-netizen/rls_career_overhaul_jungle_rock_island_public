@@ -1,0 +1,16 @@
+{
+  "speedshop_sign": {
+    "name": "speedshop_sign",
+    "mapTo": "speedshop_sign",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "speedshop_sign"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

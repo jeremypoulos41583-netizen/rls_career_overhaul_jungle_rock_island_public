@@ -1,0 +1,504 @@
+{
+  "m_concrete_cinderblock_01": {
+    "name": "m_concrete_cinderblock_01",
+    "mapTo": "m_concrete_cinderblock_01",
+    "class": "Material",
+    "persistentId": "326f2115-9cbd-40c3-9d54-b34d9cd3967b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/garage/t_concrete_cinderblock_01_ao.data.png",
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_concrete_cinderblock_01_b.color.png",
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_concrete_cinderblock_01_nm.normal.png",
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_concrete_cinderblock_01_r.data.png",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  },
+  "m_concrete_floor_polish": {
+    "name": "m_concrete_floor_polish",
+    "mapTo": "m_concrete_floor_polish",
+    "class": "Material",
+    "persistentId": "410cad8d-7ef9-49e7-a51e-311c2d07fe59",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/garage/t_concrete_smooth_large_ao.data.png",
+        "baseColorFactor": [
+          0.848100007,
+          0.848097026,
+          0.84809202,
+          1
+        ],
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_concrete_smooth_large_b.color.png",
+        "detailMap": "/art/shapes/garage_and_dealership/garage/t_concrete_smooth_large_detail_b.data.png",
+        "detailNormalMap": "/art/shapes/garage_and_dealership/garage/t_concrete_smooth_large_detail_nm.normal.png",
+        "detailNormalMapStrength": 0.150000006,
+        "detailScale": [
+          8,
+          8
+        ],
+        "diffuseMapUseUV": null,
+        "emissive": true,
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_concrete_smooth_large_nm.normal.png",
+        "opacityMapUseUV": null,
+        "pixelSpecular": true,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_concrete_smooth_large_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_b.color.png",
+        "detailNormalMapStrength": 20,
+        "detailScale": [
+          5,
+          5
+        ],
+        "diffuseMapUseUV": 1,
+        "emissive": null,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "pixelSpecular": null,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_r.data.png",
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "emissive": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "emissive": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "alphaRef": 239,
+    "annotation": "BUILDINGS",
+    "cubemap": "cubemap_garage_reflection",
+    "groundType": "CONCRETE",
+    "materialTag0": "beamng",
+    "materialTag1": "industrial",
+    "translucentBlendOp": "None",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "m_garage_screens": {
+    "name": "m_garage_screens",
+    "mapTo": "m_garage_screens",
+    "class": "Material",
+    "persistentId": "597524ac-4052-4934-80fe-1aa59d53d3ee",
+    "Stages": [
+      {
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_garage_screens_b.color.png",
+        "emissiveFactor": [
+          0.0352940001,
+          0.0470589995,
+          0.0470589995
+        ]
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "annotation": "DRIVING_INSTRUCTIONS",
+    "version": 1.5
+  },
+  "m_glass_grid_dirty": {
+    "name": "m_glass_grid_dirty",
+    "mapTo": "m_glass_grid_dirty",
+    "class": "Material",
+    "persistentId": "f2021304-ce2b-41ea-a1bf-efff238509ae",
+    "Stages": [
+      {
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_glass_grid_dirty_b.color.png",
+        "detailScale": [
+          6,
+          6
+        ],
+        "metallicFactor": 1,
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_glass_grid_dirty_nm.normal.png",
+        "normalMapStrength": 2,
+        "opacityFactor": 0.400000006,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_glass_grid_dirty_o.data.png",
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_glass_grid_dirty_r.data.png"
+      },
+      {
+        "detailScale": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "opacityFactor": null
+      },
+      {
+        "detailScale": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "opacityFactor": null
+      },
+      {
+        "detailScale": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "opacityFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "translucent": true,
+    "version": 1.5
+  },
+  "m_metal_trim_01": {
+    "name": "m_metal_trim_01",
+    "mapTo": "m_metal_trim_01",
+    "class": "Material",
+    "persistentId": "838cee7f-7695-4a92-a040-9969977c40cd",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/garage/t_garage_metal_trim_ao.data.png",
+        "ambientOcclusionMapUseUV": null,
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_garage_metal_trim_b.color.png",
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": true,
+        "metallicFactor": 0.349999994,
+        "metallicMap": "/art/shapes/garage_and_dealership/garage/t_garage_metal_trim_m.data.png",
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_garage_metal_trim_nm.normal.png",
+        "opacityMapUseUV": null,
+        "roughnessFactor": 0.800000012,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_garage_metal_trim_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "ambientOcclusionMapUseUV": 1,
+        "baseColorFactor": null,
+        "diffuseMapUseUV": 1,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": 1,
+        "roughnessFactor": null,
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "ambientOcclusionMapUseUV": null,
+        "baseColorFactor": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessFactor": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "ambientOcclusionMapUseUV": null,
+        "baseColorFactor": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessFactor": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "version": 1.5
+  },
+  "m_metal_wall_corrugate": {
+    "name": "m_metal_wall_corrugate",
+    "mapTo": "m_metal_wall_corrugate",
+    "class": "Material",
+    "persistentId": "11313705-08ad-4755-9b0e-5746aa5b5913",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/garage/t_metal_wall_corrugated_ao.data.png",
+        "ambientOcclusionMapUseUV": null,
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_metal_wall_corrugated_b.color.png",
+        "diffuseMapUseUV": null,
+        "metallicFactor": 1,
+        "metallicMap": "/art/shapes/garage_and_dealership/garage/t_metal_wall_corrugated_m.data.png",
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_metal_wall_corrugated_nm.normal.png",
+        "opacityMapUseUV": null,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_metal_wall_corrugated_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "ambientOcclusionMapUseUV": 1,
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_b.color.png",
+        "diffuseMapUseUV": 1,
+        "metallicFactor": null,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_r.data.png",
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "ambientOcclusionMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "ambientOcclusionMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "version": 1.5
+  },
+  "m_plaster_float": {
+    "name": "m_plaster_float",
+    "mapTo": "m_plaster_float",
+    "class": "Material",
+    "persistentId": "68a8c188-68b5-4a66-81ab-85b3ae7b66e3",
+    "Stages": [
+      {
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_plaster_float_b.color.png",
+        "detailNormalMap": "/levels/west_coast_usa/art/shapes/objects/t_gm_concrete_plain_nm.normal.png",
+        "detailNormalMapStrength": 2.20000005,
+        "diffuseMapUseUV": null,
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_plaster_float_nm.normal.png",
+        "normalMapStrength": 5,
+        "opacityFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_plaster_float_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_b.color.png",
+        "detailNormalMapStrength": null,
+        "diffuseMapUseUV": 1,
+        "normalMapStrength": null,
+        "opacityFactor": 0.800000012,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_r.data.png",
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "BUILDINGS",
+    "groundType": "CONCRETE",
+    "version": 1.5
+  },
+  "m_stucco_white": {
+    "name": "m_stucco_white",
+    "mapTo": "m_stucco_white",
+    "class": "Material",
+    "persistentId": "da820fb4-a9ac-4a47-b220-a4c289682884",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/garage/t_stucco_white_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999996006,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_stucco_white_b.color.png",
+        "detailNormalMap": "/levels/west_coast_usa/art/shapes/objects/t_gm_concrete_plain_nm.normal.png",
+        "detailNormalMapStrength": 0.600000024,
+        "detailScale": [
+          0.400000006,
+          0.400000006
+        ],
+        "diffuseMapUseUV": null,
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_stucco_white_nm.normal.png",
+        "normalMapStrength": 5,
+        "opacityFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_stucco_white_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_b.color.png",
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": 1,
+        "normalMapStrength": null,
+        "opacityFactor": 0.800000012,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_r.data.png",
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityFactor": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "BUILDINGS",
+    "groundType": "CONCRETE",
+    "version": 1.5
+  },
+  "m_worn_brushed_plaster": {
+    "name": "m_worn_brushed_plaster",
+    "mapTo": "m_worn_brushed_plaster",
+    "class": "Material",
+    "persistentId": "06971da7-d13a-482a-b4d3-ca19657e5474",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/garage/t_worn_brushed_plaster_ao.data.png",
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_worn_brushed_plaster_b.color.png",
+        "diffuseMapUseUV": null,
+        "normalMap": "/art/shapes/garage_and_dealership/garage/t_worn_brushed_plaster_nm.normal.png",
+        "opacityMapUseUV": null,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_worn_brushed_plaster_r.data.png",
+        "vertColor": true
+      },
+      {
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_b.color.png",
+        "diffuseMapUseUV": 1,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "opacityMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "opacityMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "BUILDINGS",
+    "groundType": "CONCRETE",
+    "version": 1.5
+  },
+  "vertCol_light": {
+    "name": "vertCol_light",
+    "mapTo": "vertCol_light",
+    "class": "Material",
+    "persistentId": "e8925ebd-ee7b-4414-982b-d5867c5559f1",
+    "Stages": [
+      {
+        "emissive": true,
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          3.92156911
+        ],
+        "pixelSpecular": true,
+        "vertColor": true,
+        "vertColorEmissive": true
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

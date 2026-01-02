@@ -1,0 +1,27 @@
+{
+  "binaryFormat": "version(char), size(unsigned int), heightMap(heightMapSize * heightMapItemSize), layerMap(layerMapSize * layerMapItemSize), layerTextureMap(layerMapSize * layerMapItemSize), materialNames",
+  "datafile": "/levels/jungle_rock_island/jungle_rock_island.ter",
+  "heightMapItemSize": 2,
+  "heightMapSize": 4194304,
+  "heightmapImage": "/levels/jungle_rock_island/jungle_rock_island.terrainheightmap.png",
+  "layerMapItemSize": 1,
+  "layerMapSize": 4194304,
+  "materials": [
+    "groundmodel_asphalt1",
+    "Forest",
+    "Dirt",
+    "Grass",
+    "Rock_cliff",
+    "Rock",
+    "Concrete",
+    "Mud",
+    "gravel_wet",
+    "forest_floor",
+    "Grass2",
+    "dirt_loose",
+    "PreppedAsphalt",
+    "DeepSand"
+  ],
+  "size": 2048,
+  "version": 9
+}

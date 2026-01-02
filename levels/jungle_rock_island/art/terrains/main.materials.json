@@ -1,0 +1,1018 @@
+{
+  "Concrete-5c54444b-ca03-4c79-aa02-eceb8568cd75": {
+    "name": "Concrete-5c54444b-ca03-4c79-aa02-eceb8568cd75",
+    "internalName": "Concrete",
+    "class": "TerrainMaterial",
+    "persistentId": "5c54444b-ca03-4c79-aa02-eceb8568cd75",
+    "annotation": "ASPHALT",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_concrete_damaged_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_ao.png",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.349999994,
+      0.349999994
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_concrete_damaged_b.png",
+    "baseColorMacroStrength": [
+      0.200000003,
+      0.300000012
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_b.png",
+    "groundmodelName": "ASPHALT_OLD",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_concrete_damaged_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_h.png",
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.150000006
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_concrete_damaged_nm.png",
+    "normalMacroStrength": [
+      0.5,
+      0.300000012
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_nm.png",
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.300000012,
+      0.300000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_concrete_damaged_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_r.png"
+  },
+  "DeepSand": {
+    "internalName": "DeepSand",
+    "class": "TerrainMaterial",
+    "persistentId": "44e812d6-a27a-480c-a5c8-fefe3282c91b",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_beachsand_nm.png",
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_b.png",
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_beachsand_ao.png",
+    "groundmodelName": "SANDTRAP",
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_beachsand_nm.png",
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_nm.png",
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_b.png"
+  },
+  "Dirt-a44148b9-7fb6-45cc-8eb6-6761e7846b6c": {
+    "name": "Dirt-a44148b9-7fb6-45cc-8eb6-6761e7846b6c",
+    "internalName": "Dirt",
+    "class": "TerrainMaterial",
+    "persistentId": "a44148b9-7fb6-45cc-8eb6-6761e7846b6c",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailStrength": [
+      1,
+      1
+    ],
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_jri_ao.png",
+    "aoDetailTexSize": 2,
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_ao.png",
+    "aoMacroTexSize": 60,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.35,
+      0.35
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_jri_b.png",
+    "baseColorDetailTexSize": 2,
+    "baseColorMacroStrength": [
+      0.15,
+      0.3
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_b.png",
+    "baseColorMacroTexSize": 60,
+    "detailDistAtten": [
+      1,
+      1
+    ],
+    "detailDistances": [
+      0,
+      0,
+      50,
+      100
+    ],
+    "groundmodelName": "DIRT",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_jri_h.png",
+    "heightDetailTexSize": 2,
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_h.png",
+    "heightMacroTexSize": 60,
+    "macroDistAtten": [
+      0,
+      1
+    ],
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.7,
+      0.15
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_jri_nm.png",
+    "normalDetailTexSize": 2,
+    "normalMacroStrength": [
+      0.5,
+      0.6
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_nm.png",
+    "normalMacroTexSize": 60,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.3,
+      0.3
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_jri_r.png",
+    "roughnessDetailTexSize": 2,
+    "roughnessMacroStrength": [
+      0.15,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_r.png",
+    "roughnessMacroTexSize": 60
+  },
+  "Forest-05ac89eb-832f-4140-9d7f-870a059a2691": {
+    "name": "Forest-05ac89eb-832f-4140-9d7f-870a059a2691",
+    "internalName": "Forest",
+    "class": "TerrainMaterial",
+    "persistentId": "05ac89eb-832f-4140-9d7f-870a059a2691",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_ao.png",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_b.png",
+    "baseColorMacroStrength": [
+      0.100000001,
+      0
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_forest_overcorrect_b.png",
+    "groundmodelName": "GRASS",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_h.png",
+    "macroDistances": [
+      0,
+      50,
+      100,
+      1000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.150000006
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_nm.png",
+    "normalMacroStrength": [
+      0.5,
+      0.600000024
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_nm.png",
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.300000012,
+      0.300000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_r.png"
+  },
+  "Grass-92298009-e453-4b68-b3f3-99f018066d47": {
+    "name": "Grass-92298009-e453-4b68-b3f3-99f018066d47",
+    "internalName": "Grass",
+    "class": "TerrainMaterial",
+    "persistentId": "92298009-e453-4b68-b3f3-99f018066d47",
+    "annotation": "GRASS",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_ao.png",
+    "aoMacroTexSize": 50,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.300000012,
+      0.150000006
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_b.png",
+    "baseColorMacroStrength": [
+      0.200000003,
+      0.300000012
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_b.png",
+    "baseColorMacroTexSize": 50,
+    "detailDistances": [
+      0,
+      0,
+      40,
+      70
+    ],
+    "groundmodelName": "GRASS",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_h.png",
+    "heightMacroTexSize": 50,
+    "macroDistances": [
+      0,
+      10,
+      100,
+      8000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.800000012,
+      0
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_nm.png",
+    "normalMacroStrength": [
+      0.400000006,
+      0.699999988
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_nm.png",
+    "normalMacroTexSize": 50,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.800000012,
+      0.800000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.800000012
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_r.png",
+    "roughnessMacroTexSize": 50
+  },
+  "Grass2-1cbd397c-0225-443c-a644-2ad86cbb6ee9": {
+    "name": "Grass2-1cbd397c-0225-443c-a644-2ad86cbb6ee9",
+    "internalName": "Grass2",
+    "class": "TerrainMaterial",
+    "persistentId": "1cbd397c-0225-443c-a644-2ad86cbb6ee9",
+    "annotation": "GRASS",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_ao.png",
+    "aoMacroTexSize": 50,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.300000012,
+      0.150000006
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_b.png",
+    "baseColorMacroStrength": [
+      0.200000003,
+      0.300000012
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_b.png",
+    "baseColorMacroTexSize": 50,
+    "detailDistances": [
+      0,
+      0,
+      40,
+      70
+    ],
+    "groundmodelName": "GRASS",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_h.png",
+    "heightMacroTexSize": 50,
+    "macroDistances": [
+      0,
+      10,
+      100,
+      8000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.800000012,
+      0
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_nm.png",
+    "normalMacroStrength": [
+      0.400000006,
+      0.699999988
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_nm.png",
+    "normalMacroTexSize": 50,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.800000012,
+      0.800000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_grass_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.800000012
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_jri_macro_grass_r.png",
+    "roughnessMacroTexSize": 50
+  },
+  "JRITerrainTextureSet": {
+    "name": "JRITerrainTextureSet",
+    "class": "TerrainMaterialTextureSet",
+    "persistentId": "ac348aaa-081f-4d49-92db-d79fdfad5f79",
+    "baseTexSize": [
+      2048,
+      2048
+    ],
+    "detailTexSize": [
+      1024,
+      1024
+    ],
+    "macroTexSize": [
+      1024,
+      1024
+    ]
+  },
+  "Mud-5602597f-55c3-4a33-8cfb-3770dbba86fa": {
+    "name": "Mud-5602597f-55c3-4a33-8cfb-3770dbba86fa",
+    "internalName": "Mud",
+    "class": "TerrainMaterial",
+    "persistentId": "5602597f-55c3-4a33-8cfb-3770dbba86fa",
+    "annotation": "MUD",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_mud_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_ao.png",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_mud_b.png",
+    "baseColorMacroStrength": [
+      0.100000001,
+      0.200000003
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_b.png",
+    "groundmodelName": "MUD",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_mud_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_h.png",
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.150000006
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_mud_nm.png",
+    "normalMacroStrength": [
+      0,
+      0.600000024
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_nm.png",
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.800000012,
+      0.800000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_mud_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_r.png"
+  },
+  "NewMaterial": {
+    "internalName": "NewMaterial",
+    "class": "TerrainMaterial",
+    "persistentId": "efaf0fff-0a5b-430c-bed4-604225fd40c4",
+    "groundmodelName": "ASPHALT"
+  },
+  "Pebbles-1a2894d5-129e-4f2f-b311-ff240965862c": {
+    "name": "Pebbles-1a2894d5-129e-4f2f-b311-ff240965862c",
+    "internalName": "Pebbles",
+    "class": "TerrainMaterial",
+    "persistentId": "1a2894d5-129e-4f2f-b311-ff240965862c",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailStrength": [
+      1,
+      1
+    ],
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_ao.png",
+    "aoDetailTexSize": 2,
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_ao.png",
+    "aoMacroTexSize": 60,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_b.png",
+    "baseColorDetailTexSize": 2,
+    "baseColorMacroStrength": [
+      0.1,
+      0.2
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_b.png",
+    "baseColorMacroTexSize": 60,
+    "detailDistAtten": [
+      1,
+      1
+    ],
+    "detailDistances": [
+      0,
+      0,
+      50,
+      100
+    ],
+    "groundmodelName": "GRAVEL_WET",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_h.png",
+    "heightDetailTexSize": 2,
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_h.png",
+    "heightMacroTexSize": 60,
+    "macroDistAtten": [
+      0,
+      1
+    ],
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.7,
+      0.15
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_nm.png",
+    "normalDetailTexSize": 2,
+    "normalMacroStrength": [
+      0.5,
+      0.6
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_nm.png",
+    "normalMacroTexSize": 60,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.3,
+      0.3
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_r.png",
+    "roughnessDetailTexSize": 2,
+    "roughnessMacroStrength": [
+      0.15,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_r.png",
+    "roughnessMacroTexSize": 60
+  },
+  "PreppedAsphalt": {
+    "internalName": "PreppedAsphalt",
+    "class": "TerrainMaterial",
+    "persistentId": "03c9871e-291a-4fa5-9e71-37346a77f968",
+    "baseColorBaseTex": "/levels/utah/art/terrains/t_asphalt_ao.png",
+    "baseColorDetailTex": "/levels/utah/art/terrains/t_asphalt_nm.png",
+    "baseColorMacroTex": "/levels/utah/art/terrains/t_macro_asphalt_ao.png",
+    "groundmodelName": "ASPHALT_PREPPED"
+  },
+  "Rock-bb771e0a-1dbd-4ee1-9c4e-ae778946decc": {
+    "name": "Rock-bb771e0a-1dbd-4ee1-9c4e-ae778946decc",
+    "internalName": "Rock",
+    "class": "TerrainMaterial",
+    "persistentId": "bb771e0a-1dbd-4ee1-9c4e-ae778946decc",
+    "annotation": "ROCK",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_ao.png",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_b.png",
+    "baseColorMacroStrength": [
+      0.100000001,
+      0.200000003
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_b.png",
+    "groundmodelName": "ROCK",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_h.png",
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.150000006
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_nm.png",
+    "normalMacroStrength": [
+      0.5,
+      0.600000024
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_nm.png",
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.300000012,
+      0.300000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_r.png"
+  },
+  "Rock_cliff-afa2d2ab-7f3f-4194-a73c-128e1b62108a": {
+    "name": "Rock_cliff-afa2d2ab-7f3f-4194-a73c-128e1b62108a",
+    "internalName": "Rock_cliff",
+    "class": "TerrainMaterial",
+    "persistentId": "afa2d2ab-7f3f-4194-a73c-128e1b62108a",
+    "annotation": "ROCK",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_ao.png",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_b.png",
+    "baseColorMacroStrength": [
+      0.100000001,
+      0.200000003
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_b.png",
+    "groundmodelName": "ROCK",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_h.png",
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.150000006
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_nm.png",
+    "normalMacroStrength": [
+      0.5,
+      0.600000024
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_nm.png",
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.300000012,
+      0.300000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_rocks_pac_r.png",
+    "roughnessMacroStrength": [
+      0.150000006,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_r.png"
+  },
+  "dirt_loose-8e501e5e-205a-4c52-9e06-2416a0cfb9a8": {
+    "name": "dirt_loose-8e501e5e-205a-4c52-9e06-2416a0cfb9a8",
+    "internalName": "dirt_loose",
+    "class": "TerrainMaterial",
+    "persistentId": "8e501e5e-205a-4c52-9e06-2416a0cfb9a8",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailStrength": [
+      1,
+      1
+    ],
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_ao.png",
+    "aoDetailTexSize": 2,
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_ao.png",
+    "aoMacroTexSize": 60,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_b.png",
+    "baseColorDetailTexSize": 2,
+    "baseColorMacroStrength": [
+      0.1,
+      0.2
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_b.png",
+    "baseColorMacroTexSize": 60,
+    "detailDistAtten": [
+      1,
+      1
+    ],
+    "detailDistances": [
+      0,
+      0,
+      50,
+      100
+    ],
+    "groundmodelName": "GRAVEL",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_h.png",
+    "heightDetailTexSize": 2,
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_h.png",
+    "heightMacroTexSize": 60,
+    "macroDistAtten": [
+      0,
+      1
+    ],
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.7,
+      0.15
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_nm.png",
+    "normalDetailTexSize": 2,
+    "normalMacroStrength": [
+      0.5,
+      0.6
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_nm.png",
+    "normalMacroTexSize": 60,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.3,
+      0.3
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_dirt_sandy_r.png",
+    "roughnessDetailTexSize": 2,
+    "roughnessMacroStrength": [
+      0.15,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_r.png",
+    "roughnessMacroTexSize": 60
+  },
+  "dirt_rocky_large-0f6ca092-c788-489b-aeeb-8283266a88a0": {
+    "name": "dirt_rocky_large-0f6ca092-c788-489b-aeeb-8283266a88a0",
+    "internalName": "dirt_rocky_large",
+    "class": "TerrainMaterial",
+    "persistentId": "0f6ca092-c788-489b-aeeb-8283266a88a0",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailStrength": [
+      1,
+      1
+    ],
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_ao.png",
+    "aoDetailTexSize": 2,
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_ao.png",
+    "aoMacroTexSize": 60,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.25,
+      0.25
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_b.png",
+    "baseColorDetailTexSize": 2,
+    "baseColorMacroStrength": [
+      0.1,
+      0.2
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_b.png",
+    "baseColorMacroTexSize": 60,
+    "detailDistAtten": [
+      1,
+      1
+    ],
+    "detailDistances": [
+      0,
+      0,
+      50,
+      100
+    ],
+    "groundmodelName": "ROCK",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_h.png",
+    "heightDetailTexSize": 2,
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_h.png",
+    "heightMacroTexSize": 60,
+    "macroDistAtten": [
+      0,
+      1
+    ],
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.7,
+      0.15
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_nm.png",
+    "normalDetailTexSize": 2,
+    "normalMacroStrength": [
+      0.5,
+      0.6
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_nm.png",
+    "normalMacroTexSize": 60,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.3,
+      0.3
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_r.png",
+    "roughnessDetailTexSize": 2,
+    "roughnessMacroStrength": [
+      0.15,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_r.png",
+    "roughnessMacroTexSize": 60
+  },
+  "forest_floor-a1bd2cff-2513-43cc-850a-0b364aa45c9e": {
+    "name": "forest_floor-a1bd2cff-2513-43cc-850a-0b364aa45c9e",
+    "internalName": "forest_floor",
+    "class": "TerrainMaterial",
+    "persistentId": "a1bd2cff-2513-43cc-850a-0b364aa45c9e",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailStrength": [
+      1,
+      1
+    ],
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_ao.png",
+    "aoDetailTexSize": 2,
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_ao.png",
+    "aoMacroTexSize": 60,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.4,
+      0.2
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_b.png",
+    "baseColorDetailTexSize": 2,
+    "baseColorMacroStrength": [
+      0.1,
+      0
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_forest_overcorrect_b.png",
+    "baseColorMacroTexSize": 60,
+    "detailDistAtten": [
+      1,
+      1
+    ],
+    "detailDistances": [
+      0,
+      0,
+      50,
+      100
+    ],
+    "groundmodelName": "GRASS",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_h.png",
+    "heightDetailTexSize": 2,
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_h.png",
+    "heightMacroTexSize": 60,
+    "macroDistAtten": [
+      0,
+      1
+    ],
+    "macroDistances": [
+      0,
+      50,
+      100,
+      8000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.7,
+      0.15
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_nm.png",
+    "normalDetailTexSize": 2,
+    "normalMacroStrength": [
+      0.5,
+      0.6
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_nm.png",
+    "normalMacroTexSize": 60,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.3,
+      0.3
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_forest_floor_r.png",
+    "roughnessDetailTexSize": 2,
+    "roughnessMacroStrength": [
+      0.15,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_clumpy_r.png",
+    "roughnessMacroTexSize": 60
+  },
+  "gravel_wet-57812c1c-ac9c-4465-be35-76a90d08c222": {
+    "name": "gravel_wet-57812c1c-ac9c-4465-be35-76a90d08c222",
+    "internalName": "gravel_wet",
+    "class": "TerrainMaterial",
+    "persistentId": "57812c1c-ac9c-4465-be35-76a90d08c222",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_pebbles_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_rocky_ao.png",
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.349999994,
+      0.349999994
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_pebbles_b.png",
+    "baseColorMacroStrength": [
+      0.200000003,
+      0.400000006
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_rocky_b.png",
+    "groundmodelName": "GRAVEL_WET",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_pebbles_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_rocky_h.png",
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.150000006
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_pebbles_nm.png",
+    "normalMacroStrength": [
+      0.5,
+      0.600000024
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_rocky_nm.png",
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.5,
+      0.5
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_pebbles_r.png",
+    "roughnessMacroStrength": [
+      0.200000003,
+      0.5
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_rocky_r.png"
+  },
+  "groundmodel_asphalt1-4fa85c6d-b815-4c52-8170-2c38b6d29fae": {
+    "name": "groundmodel_asphalt1-4fa85c6d-b815-4c52-8170-2c38b6d29fae",
+    "internalName": "groundmodel_asphalt1",
+    "class": "TerrainMaterial",
+    "persistentId": "4fa85c6d-b815-4c52-8170-2c38b6d29fae",
+    "annotation": "ASPHALT",
+    "aoBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_ao.png",
+    "aoBaseTexSize": 2048,
+    "aoDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_ao.png",
+    "aoMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_ao.png",
+    "aoMacroTexSize": 50,
+    "baseColorBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTexSize": 2048,
+    "baseColorDetailStrength": [
+      0.400000006,
+      0
+    ],
+    "baseColorDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_b.png",
+    "baseColorMacroStrength": [
+      0.100000001,
+      0.200000003
+    ],
+    "baseColorMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_b.png",
+    "baseColorMacroTexSize": 50,
+    "groundmodelName": "ASPHALT_OLD",
+    "heightBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_h.png",
+    "heightBaseTexSize": 2048,
+    "heightDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_h.png",
+    "heightMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_h.png",
+    "heightMacroTexSize": 50,
+    "macroDistances": [
+      0,
+      10,
+      100,
+      3000
+    ],
+    "normalBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_nm.png",
+    "normalBaseTexSize": 2048,
+    "normalDetailStrength": [
+      0.699999988,
+      0.200000003
+    ],
+    "normalDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_nm.png",
+    "normalMacroStrength": [
+      0.100000001,
+      0.200000003
+    ],
+    "normalMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_nm.png",
+    "normalMacroTexSize": 50,
+    "roughnessBaseTex": "/levels/jungle_rock_island/art/terrains/t_terrain_base_r.png",
+    "roughnessBaseTexSize": 2048,
+    "roughnessDetailStrength": [
+      0.800000012,
+      0.300000012
+    ],
+    "roughnessDetailTex": "/levels/jungle_rock_island/art/terrains/t_jri_asphalt_r.png",
+    "roughnessMacroStrength": [
+      0.200000003,
+      0.400000006
+    ],
+    "roughnessMacroTex": "/levels/jungle_rock_island/art/terrains/t_macro_holes_r.png",
+    "roughnessMacroTexSize": 50
+  }
+}

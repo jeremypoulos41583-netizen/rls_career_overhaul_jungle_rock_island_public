@@ -1,0 +1,12 @@
+{"class":"TSStatic","persistentId":"19fa228d-de3b-40c3-a1fa-e761cc2b0a09","__parent":"Industrial_zone","position":[27.7861557,555.450684,157.550201],"annotation":"BUILDINGS","isRenderEnabled":false,"rotationMatrix":[1.31134158e-07,1,0,-1,1.31134158e-07,0,0,0,1],"shapeName":"/levels/jungle_rock_island/art/shapes/buildings/ind_bld_01.dae","useInstanceRenderData":true}
+{"name":"fences","class":"SimGroup","persistentId":"0ec34349-8134-4d34-bdd5-0c02f27a2ed4","__parent":"Industrial_zone"}
+{"name":"bld_big_a","class":"SimGroup","persistentId":"1feb8b26-6711-4644-9b91-58653b6950fe","__parent":"Industrial_zone"}
+{"name":"woodwork_zone","class":"SimGroup","persistentId":"3edf4a1a-08e9-491b-99c1-294f47e5ac6a","__parent":"Industrial_zone"}
+{"name":"mine_conveyor_props","class":"SimGroup","persistentId":"5f446253-298b-4e7a-94ba-c226bba544b2","__parent":"Industrial_zone"}
+{"name":"industrial_zone_decals","class":"SimGroup","persistentId":"665b0a04-97a5-4b09-819d-b0561a63fa37","__parent":"Industrial_zone"}
+{"name":"bld_b","class":"SimGroup","persistentId":"6b84d6d5-f008-4d75-89ca-8e6e88488c04","__parent":"Industrial_zone"}
+{"name":"ind_clutters","class":"SimGroup","persistentId":"80a002ed-8a95-46dd-b43d-de95fd04643f","__parent":"Industrial_zone"}
+{"name":"bld_long","class":"SimGroup","persistentId":"91b8d941-021a-4e4d-909a-25b7d40a4fe9","__parent":"Industrial_zone"}
+{"name":"bld_industrial_small","class":"SimGroup","persistentId":"944720f7-29ce-4076-9bde-e22517c290cc","__parent":"Industrial_zone"}
+{"name":"mine_objects","class":"SimGroup","persistentId":"e4b0ccf4-eecd-4d7c-a421-4e730cd86b2d","__parent":"Industrial_zone"}
+{"name":"bld_a","class":"SimGroup","persistentId":"eab8ede1-28f3-4b4c-a950-08a0c074a54a","__parent":"Industrial_zone"}

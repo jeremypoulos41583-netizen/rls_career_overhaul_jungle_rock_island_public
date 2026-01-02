@@ -1,0 +1,195 @@
+{
+  "localDeliveryAssociation": {
+    "name": "Local Delivery Association",
+    "description": "Logistics coordinator for Firwood County",
+    "icon": "garage02",
+    "reputationLevels": [
+      {
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "port": {
+    "name": "Port",
+    "description": "Source for all imported goods to Jungle Rock Island",
+    "icon": "garage02",
+    "loanableVehicles": [
+      {
+        "model": "md_series",
+        "config": "md_70_cargobox_port",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "mileages": {
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+      {
+        "model": "us_semi",
+        "config": "tc82_base",
+        "reputationLvl": 2,
+        "deliveryLvl": 3,
+        "mileages": {
+          "0": 100000000
+        }
+      },
+      {
+        "model": "us_semi",
+        "config": "t83_base",
+        "reputationLvl": 1,
+        "deliveryLvl": 3,
+        "mileages": {
+          "0": 5000000
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "md_70_fifthwheel",
+        "reputationLvl": 0,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "md_60_pickup_4wd",
+        "reputationLvl": 0,
+        "deliveryLvl": 2,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      }
+    ],
+    "reputationValues": {
+      "returnLoanerDamaged": -20
+    },
+    "reputationLevels": [
+      {
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "industrialComplex": {
+    "name": "Industrial Complex",
+    "description": "",
+    "icon": "garage02",
+    "reputationLevels": [
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  }
+}

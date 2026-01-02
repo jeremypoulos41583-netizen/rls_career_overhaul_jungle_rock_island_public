@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>lucar</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 57</authoring_tool>
+      <source_data>file:///H:/BeamNG_Drive/1_BNGD_MAXFiles/Industrial/Debris/Debris_piles_collection06.max</source_data>
+    </contributor>
+    <created>2020-02-20T17:55:06</created>
+    <modified>2020-02-20T17:55:06</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="debris_single_a">
+      <profile_COMMON>
+        <newparam sid="debris_single_a_color_png-surface">
+          <surface type="2D">
+            <init_from>debris_single_a_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="debris_single_a_color_png-sampler">
+          <sampler2D>
+            <source>debris_single_a_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="debris_single_a_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="lod_vertcol">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="debris_single_a-material" name="debris_single_a">
+      <instance_effect url="#debris_single_a"/>
+    </material>
+    <material id="lod_vertcol-material" name="lod_vertcol">
+      <instance_effect url="#lod_vertcol"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-debris_s_f40" name="debris_s_f40">
+      <mesh>
+        <source id="geom-debris_s_f40-positions">
+          <float_array id="geom-debris_s_f40-positions-array" count="33">9.783905 -3.100494 12.5253 4.461277 -9.109794 4.19243 6.053604 -1.965698 0.3872996 0.7676499 -0.1138958 -1.193224 3.401457 -4.092185 18.745 -10.31882 -2.115863 11.11284 -8.368896 5.253418 8.070999 -9.783905 4.714111 15.0925 -6.507706 0.8463135 17.3963 3.328446 5.550556 17.79152 4.251209 9.800803 8.772581</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f40-positions-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f40-normals">
+          <float_array id="geom-debris_s_f40-normals-array" count="33">0.9907653 -0.01521161 0.1347319 -0.07493206 -0.9834173 -0.1651531 0.8412366 0.1360791 -0.5232626 -0.4230837 0.07561978 -0.9029296 -0.01259827 -0.7398729 0.6726288 -0.6897581 -0.7166752 -0.1030072 -0.5789784 0.5993323 -0.5527973 -0.4859867 0.7689613 0.4153498 -0.3606202 -0.1587351 0.9191062 0.3098284 0.5468348 0.7778034 0.3657618 0.9040447 -0.2211819</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f40-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f40-map1">
+          <float_array id="geom-debris_s_f40-map1-array" count="45">0.0569458 0.6235352 0 0.04580688 0.6062012 0 0.05249023 0.5942383 0 0.03335571 0.5927734 0 0.04129028 0.6347656 0 0.01184082 0.6225586 0 0.003717422 0.612793 0 0.003437042 0.6391602 0 0.01528931 0.6357422 0 0.03225708 0.6489258 0 0.05651855 0.6538086 0 0.0291748 0.6645508 0 0.004859924 0.6652832 0 0.04696655 0.6855469 0 0.03121948 0.6879883 0</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f40-map1-array" count="15" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-debris_s_f40-vertices">
+          <input semantic="POSITION" source="#geom-debris_s_f40-positions"/>
+        </vertices>
+        <triangles material="debris_single_a" count="18">
+          <input semantic="VERTEX" source="#geom-debris_s_f40-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-debris_s_f40-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-debris_s_f40-map1" offset="2" set="0"/>
+          <p>0 0 0 1 1 1 2 2 2 2 2 2 1 1 1 3 3 3 1 1 1 0 0 0 4 4 4 3 3 3 1 1 1 5 5 5 4 4 4 5 5 5 1 1 1 3 3 3 5 5 5 6 6 6 5 5 5 7 7 7 6 6 6 4 4 4 8 8 8 5 5 5 8 8 8 7 7 7 5 5 5 4 4 4 9 9 9 8 8 8 9 9 9 7 7 7 8 8 8 0 0 10 9 9 9 4 4 4 10 10 11 7 7 7 9 9 9 10 10 11 9 9 9 0 0 10 7 7 7 10 10 11 6 6 12 2 2 13 10 10 11 0 0 10 6 6 12 10 10 11 3 3 14 3 3 14 10 10 11 2 2 13</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-debris_s_f30" name="debris_s_f30">
+      <mesh>
+        <source id="geom-debris_s_f30-positions">
+          <float_array id="geom-debris_s_f30-positions-array" count="18">3.537377 -1.319835 -2.863022 4.259937 11.20768 12.24322 9.783905 -3.100494 12.5253 -12.51389 6.232131 14.25338 3.401457 -4.092185 18.745 -2.698914 -9.126407 7.15982</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f30-positions-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f30-normals">
+          <float_array id="geom-debris_s_f30-normals-array" count="18">0.02306258 0.2350301 -0.9717144 0.3911918 0.9125129 0.1195378 0.948179 -0.3158516 -0.03456009 -0.9481789 0.3158517 0.03456008 -0.02306254 -0.2350301 0.9717144 -0.3911918 -0.9125128 -0.1195378</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f30-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f30-map0">
+          <float_array id="geom-debris_s_f30-map0-array" count="72">0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686 0.3882353 0.3568628 0.3215686</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f30-map0-array" count="24" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f30-map1">
+          <float_array id="geom-debris_s_f30-map1-array" count="24">0.04000854 0.692627 0 0.02870178 0.6591797 0 0.05651855 0.6538086 0 -0.003347397 0.6425781 0 0.04129028 0.6347656 0 0.03338623 0.6125488 0 0.0569458 0.6235352 0 0.04266357 0.588623 0</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f30-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-debris_s_f30-vertices">
+          <input semantic="POSITION" source="#geom-debris_s_f30-positions"/>
+        </vertices>
+        <triangles material="lod_vertcol" count="8">
+          <input semantic="VERTEX" source="#geom-debris_s_f30-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-debris_s_f30-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-debris_s_f30-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-debris_s_f30-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3 1 1 4 1 0 0 5 0 2 2 6 2 1 1 7 1 4 4 8 4 4 4 9 4 1 1 10 1 3 3 11 3 4 4 12 4 3 3 13 3 5 5 14 5 5 5 15 5 2 2 16 6 4 4 17 4 0 0 18 7 5 5 19 5 3 3 20 3 2 2 21 6 5 5 22 5 0 0 23 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-debris_s_f60" name="debris_s_f60">
+      <mesh>
+        <source id="geom-debris_s_f60-positions">
+          <float_array id="geom-debris_s_f60-positions-array" count="60">-8.368896 5.253418 8.070999 2.903793 4.479706 1.603 0.463501 -0.1464844 -4.17233e-7 6.053604 -1.965698 0.3872996 0.2149963 9.660706 9.790199 6.681702 5.906097 7.5078 9.783905 -3.100494 12.5253 -9.783905 4.714111 15.0925 4.948898 3.72699 17.3518 5.847198 -3.834778 17.608 -3.211197 6.078705 17.7796 -6.507706 0.8463135 17.3963 0.7565002 -6.152588 17.4193 4.427094 -9.660706 11.4626 -1.688004 -8.2771 13.6614 -9.469894 -0.2880859 14.4007 -7.031097 0.5072937 5.5984 3.430801 -6.183807 3.0224 1.385406 -9.424103 8.2814 8.505203 -5.002014 6.135</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f60-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f60-normals">
+          <float_array id="geom-debris_s_f60-normals-array" count="60">-0.6214295 0.5683427 -0.5392699 0.01522736 0.6954936 -0.718371 -0.4184558 -0.009995482 -0.9081822 0.7899959 0.08896713 -0.6066231 0.004310536 0.9999137 -0.01240938 0.8234015 0.5553989 -0.1163706 0.9929568 0.02384032 0.1160536 -0.6422213 0.7028303 0.3059109 0.458029 0.4261666 0.7801228 0.5356184 -0.3574343 0.7650841 -0.06633551 0.6803887 0.729843 -0.2723886 -0.1922116 0.9427934 -0.06642018 -0.3635617 0.9291993 0.4540608 -0.8529159 0.2576108 -0.6313779 -0.7749755 -0.02783942 -0.8780161 -0.4785293 0.009869004 -0.6915581 -0.5455944 -0.4733648 -0.3621392 -0.7242953 -0.5867296 0.01455889 -0.9239151 -0.3823208 0.6926924 -0.6449691 -0.3227881</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f60-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-debris_s_f60-map1">
+          <float_array id="geom-debris_s_f60-map1-array" count="72">0.004859924 0.6652832 0 0.03204346 0.6787109 0 0.02952576 0.6882324 0 0.04696655 0.6855469 0 0.0222168 0.661377 0 0.03713989 0.6665039 0 0.05651855 0.6538086 0 0.003437042 0.6391602 0 0.0369873 0.6481934 0 0.04718018 0.6364746 0 0.01914978 0.6447754 0 0.01528931 0.6357422 0 0.03585815 0.6296387 0 0.04232788 0.6181641 0 0.0569458 0.6235352 0 0.03106689 0.6228027 0 0.01087189 0.6298828 0 0.003717422 0.612793 0 0.0150528 0.6103516 0 0.03198242 0.5944824 0 0.04333496 0.6032715 0 0.05249023 0.5942383 0 0.03729248 0.6137695 0 0.05386353 0.6083984 0</float_array>
+          <technique_common>
+            <accessor source="#geom-debris_s_f60-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-debris_s_f60-vertices">
+          <input semantic="POSITION" source="#geom-debris_s_f60-positions"/>
+        </vertices>
+        <triangles material="debris_single_a" count="36">
+          <input semantic="VERTEX" source="#geom-debris_s_f60-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-debris_s_f60-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-debris_s_f60-map1" offset="2" set="0"/>
+          <p>0 0 0 1 1 1 2 2 2 2 2 2 1 1 1 3 3 3 0 0 0 4 4 4 1 1 1 1 1 1 5 5 5 3 3 3 1 1 1 4 4 4 5 5 5 3 3 3 5 5 5 6 6 6 7 7 7 4 4 4 0 0 0 5 5 5 8 8 8 6 6 6 4 4 4 8 8 8 5 5 5 6 6 6 8 8 8 9 9 9 4 4 4 7 7 7 10 10 10 4 4 4 10 10 10 8 8 8 10 10 10 7 7 7 11 11 11 10 10 10 11 11 11 8 8 8 8 8 8 12 12 12 9 9 9 12 12 12 8 8 8 11 11 11 12 12 12 13 13 13 9 9 9 13 13 13 6 6 14 9 9 9 12 12 12 11 11 11 14 14 15 12 12 12 14 14 15 13 13 13 11 11 11 7 7 7 15 15 16 14 14 15 11 11 11 15 15 16 15 15 16 7 7 7 0 0 17 0 0 17 16 16 18 15 15 16 14 14 15 15 15 16 16 16 18 2 2 19 16 16 18 0 0 17 2 2 19 17 17 20 16 16 18 16 16 18 17 17 20 14 14 15 3 3 21 17 17 20 2 2 19 18 18 22 14 14 15 17 17 20 13 13 13 14 14 15 18 18 22 19 19 23 17 17 20 3 3 21 18 18 22 17 17 20 19 19 23 18 18 22 19 19 23 13 13 13 6 6 14 19 19 23 3 3 21 19 19 23 6 6 14 13 13 13</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="debris_single_a_color_png">
+      <init_from>../../game/levels/Industrial_v2/art/shapes/buildings/debris_single_a.color.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-base00" name="base00">
+        <node id="node-collision-1" name="collision-1">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-nulldetail1" name="nulldetail1">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-start01" name="start01">
+          <node id="node-debris_s_f40" name="debris_s_f40">
+            <instance_geometry url="#geom-debris_s_f40">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="debris_single_a" target="#debris_single_a-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-debris_s_f30" name="debris_s_f30">
+            <instance_geometry url="#geom-debris_s_f30">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="lod_vertcol" target="#lod_vertcol-material"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-debris_s_f60" name="debris_s_f60">
+            <instance_geometry url="#geom-debris_s_f60">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="debris_single_a" target="#debris_single_a-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

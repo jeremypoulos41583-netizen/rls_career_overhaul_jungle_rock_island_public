@@ -1,0 +1,59 @@
+{
+"features":"levels.jungle_rock_island.info.features",
+"suitablefor":"levels.jungle_rock_island.info.suitablefor",
+"authors":"BeamNG",
+"roads":"levels.jungle_rock_island.info.roads",
+"title":"levels.jungle_rock_island.info.title",
+"defaultSpawnPointName":"spawns_hanger",
+"country":"levels.common.country.usa",
+"region":"northAmerica",
+"biome":"levels.jungle_rock_island.info.biome",
+"size":[
+  2048,
+  2048
+],
+"previews":[
+  "jungle_rock_island_preview1.jpg",
+  "jungle_rock_island_preview3.jpg",
+  "jungle_rock_island_preview2.jpg",
+  "jungle_rock_island_preview4.jpg"
+],
+"spawnPoints":[
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsIndustrial",
+    "objectname":"spawns_industrial",
+    "preview":"spawns_industrial.jpg"
+  },
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsObservatory",
+    "objectname":"spawns_observatory",
+    "preview":"spawns_observatory.jpg"
+  },
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsHangar",
+    "objectname":"spawns_hanger",
+    "preview":"spawns_hanger.jpg"
+  },
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsPeninsula",
+    "objectname":"spawns_peninsula",
+    "preview":"spawns_peninsula.jpg"
+  },
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsPort",
+    "objectname":"spawns_port",
+    "preview":"spawns_port.jpg"
+  },
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsHill",
+    "objectname":"spawns_hill",
+    "preview":"spawns_hill.jpg"
+  },
+  {
+    "translationId":"levels.jungle_rock_island.spawnpoints.spawnsResort",
+    "objectname":"spawns_resort",
+    "preview":"spawns_resort.jpg"
+  }
+],
+"description":"levels.jungle_rock_island.info.description"
+}

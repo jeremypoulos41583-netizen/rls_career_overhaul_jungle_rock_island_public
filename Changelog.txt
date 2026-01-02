@@ -1,0 +1,162 @@
+Jungle Rock Island
+Change log:
+=========================
+Beta 0.1 
+
+   - 3 garages available
+   - logistics/delivery points added
+   - organizations corresponding with delivery points
+     - loaners available at Port
+   - Online dealerships available with shared physical location at the port
+     - private sellers available as well
+   - parking spots added throughout the map 
+     - allows for taxi and repo missions
+   - Gas Station added 
+   - switch map trigger added to map
+   - profile picture added for game selection
+   - level gate/spawn point added near switch map at airport
+==========================
+Beta 0.2
+
+   - added logistics dealer
+     - truck shop, trailer dealer, and service dealer all in one place
+   - added a parking spot at hideout
+     - is outside by the pool to allow for large trucks and trailers
+   - added another garage at the industrial complex
+   - added house to "beach house" + 1 more parking spot
+   - 2 new FRE's
+===========================
+Beta 0.3
+   - added Jungle Overlanding FRE
+   - added Mud Rally FRE
+   - added Beach Circuit FRE
+   - added Dragon's Tail Drift FRE
+   - added pics for POI's
+   - changed pics for dealers
+   - adjusted FRE rewards
+===========================
+Beta 0.4
+   - raised the sandbar crossing to beach house
+   - added Mountain View garage
+   - added small warehouse
+   - added "Sandy Speedway" FRE
+   - added "Playground" crawl FRE
+     -there are no check points and the time doesn't matter. Make it to the end any way you want, with as little damage as possible
+   - added "Dagger" crawling FRE
+   - shortened staging for Airstrip Drag
+   - added drag tuning shack at the strip
+   - added Bus Work
+     - There is an inspect spot at the observatory. Head over there and pick up a bus (as a loaner). The UI will show you the rest
+       -This is still a work in progress. Need to make it follow a route that makes sense. See if you can find the best way to make   	all the stops
+============================
+Beta 0.5
+   -Finished Bus module
+	-now has a functional route that makes sense
+	-now has passenger boarding/de-boarding
+	-decreased pay with incentive to complete entire route.
+	-payout given when you exit the bus (either mid route or at the end)
+	-once route is completed can run again without exit/re-enter
+   -Added Mountainside Overlander FRE
+   -Added Jungle Rock Rally FRE
+   -Adjustments to airstrip drag
+    -Made it exactly 1/4 mile
+    -Moved it back and put a slight hill at the end
+   -Added Fuel pump next to drag tuning shack
+   -Fixed texture on road in front of fuel station
+=============================
+Beta 0.5.1
+   -Hotfix for airstrip drag:
+     -took out the hill at the end as it wasn't smooth enough and would send you flying. 
+=============================
+Beta 0.6
+   -Fixed Beach House 
+   -Turned the resort trailer parking spot around so trailers spawn in the proper direction
+   -Took away AI driving on the dam
+   -Added N2O to the gas stations (don't believe its working yet)
+   -Made bus missions able to start from the nearest stop in case you build your own bus
+   -Modified bus work to detect number of seats
+   -implemented rough ride and tip system to bus work
+   -made the monitors and exterior signs work on the dt40L bus 
+   -added a delay timer once you stop the bus to prevent it from triggering the stop multiple times
+   -added a free parking spot at Aloha Transit to taxi to bus work
+==============================
+Beta 0.7
+-various bus mission updates
+ -lowered rep gain (bus jockeys also give rep)
+ -added passenger boarding/deboarding counter
+ -updated UI display to provide all relevant info to payment/reward
+-added bus jockey between Aloha Transit and the Commercial Vehicle Sales and Service
+-added a new garage: "Cave"
+-added car jockey missions from online dealer to residential sites
+-added car jockey missions to commercial dealer
+-added more configs to Aloha Transit loaners
+ -adjusted unlock levels for different buses
+ -changed the Aloha Transit MD60 to automatic transmission
+-added Aloha Transit sign
+ -designed and created by Corey (discord:pyratgoosecatch)
+==================================================================
+0.7.1
+-fixed a spot on the road leading to lighthouse that had the terrain raised
+-tidied up in the drag tuning shack
+==================================================================
+0.8
+-reworked airport and entire area to make prepped drag facility
+ -drag strip was moved back as far as possible to give space for cool down
+ -the "road" at the end of the strip was removed and the hill was leveled
+ -made the end of the cool down deep sand in case you can't get stopped on the pavement
+  -still very much a work in progress as you can blow through it and end up in the water
+ -added drag tree and props though the tree is not working yet. Coming soon
+ -moved drag tuning shack and fuel pump to opposite side of the strip
+  -added 2 additional "shacks" and made the gameplay area encompass all 3. 
+   -price is the same for the facility because it still only has the one garage slot. 
+    -The additional buildings and larger area allows for having multiple vehicles present in one gameplay session
+ -removed "airport" 
+  -lore: the old hangar was turned into a performance shop and dealership
+-placed ferry at the port and moved the switch map trigger to it 
+ -also moved map spawn near the ferry
+=================================================================
+0.8.1
+-added signage to The Speed Shop
+-removed vehicles at speedshop
+ -they were causing traffic, navigation, and cargo to break
+-fixed terrain at the tunnel blocking the road
+-extended the cool down all the way to the road and added a sand trap with guardrails across the road
+=================================================================
+0.9
+-got the drag tree working (Thanks Raceless!)
+-reworked road textures around dragstrip
+-added offroad dealer
+-reworked gas station store to cover broken textures
+-reworked ground textures around the map to fix flickering
+ -still a work in progress
+===================================================================
+1.0
+-reworked small warehouse area
+-fixed issue with lighting
+-fixed sand showing as black 
+-restored freeroam spawnpoints to default
+-changed default start time for the map to 0700
+-lowered the target time for Jungle Rock Rally
+-changes to the end of the drag
+ -terrain changed and brush added to keep you from going over the cliff
+  -offers a more realistic feel to the area
+-moved bus stop 6 back so you can more easily take the road next to the drag strip to stop 7
+-fixed terrain to the north of the drag strip so it looks more natural
+ -resulted in a slight change to Mountainside Overlander trail
+=====================================================================
+1.1
+-.38 compatability
+-minor terrain/texture fixes around the map
+-added delivery spot to the offroad dealership
+=====================================================================
+1.1.5
+- added freeroam start triggers to drag strip again
+- fixed cars trying to drive through the speedshop
+======================================================================
+1.1.6
+- fixed bus work configs to work with the new insurance system
+=====================================================================
+1.2
+-Made bus work compatible with overhaul
+ -added bus routes file
+- reworked parking spots at Aloha Transit for easier maneuverability with a bus

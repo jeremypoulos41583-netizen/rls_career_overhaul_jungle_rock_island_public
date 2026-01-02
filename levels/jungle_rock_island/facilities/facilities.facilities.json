@@ -1,0 +1,419 @@
+{
+  "garages": [
+    {
+      "id": "alohaTransit",
+      "name": "Aloha Transit",
+      "description": "Mass Transit Authority for Jungle Rock Island",
+      "preview": "alohaTransit.png",
+      "zoneNames": ["Aloha Transit"],
+      "parkingSpotNames": ["alohaTransit"],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 100,
+      "capacity": 1,
+      "starterGarage": true
+    },
+    {
+      "id": "hideout",
+      "name": "Hideout",
+      "description": "Fled the country on warrants? Hideout here until they give up.",
+      "preview": "hideout.png",
+      "zoneNames": ["Hideout"],
+      "parkingSpotNames": ["hideout_parking1", "hideout_parking2"],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 15000,
+      "capacity": 2,
+      "starterGarage": true
+    },
+    {
+      "id": "dragTuningShack",
+      "name": "Drag Tuning",
+      "description": "Use this spot to tune your car",
+      "preview": "dragTuningShack.png",
+      "zoneNames": ["Drag Tuning Shack"],
+      "parkingSpotNames": ["dragTuningShack"],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 50000,
+      "capacity": 1,
+      "starterGarage": false
+    },
+    {
+      "id": "chopShop",
+      "name": "Chop Shop",
+      "description": "You can stay here but nothing illegal, K?",
+      "preview": "chopShop.png",
+      "zoneNames": ["Chop Shop"],
+      "parkingSpotNames": [
+        "chopShop_parking1",
+        "chopShop_parking2",
+        "chopShop_parking3"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 80000,
+      "capacity": 3,
+      "starterGarage": false
+    },
+    {
+      "id": "baysideGarage",
+      "name": "Bayside Garage",
+      "description": "One of the few places on Jungle Rock Island to call home.",
+      "preview": "baysideGarage.png",
+      "zoneNames": ["Bayside Garage"],
+      "parkingSpotNames": [
+        "baysideGarage_parking1",
+        "baysideGarage_parking2",
+        "baysideGarage_parking3",
+        "baysideGarage_parking4"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 250000,
+      "capacity": 4,
+      "starterGarage": false
+    },
+    {
+      "id": "mountainView",
+      "name": "Mountain View Camp",
+      "description": "A gorgeous place to get away from it all.",
+      "preview": "mountainView.png",
+      "zoneNames": ["mountainView"],
+      "parkingSpotNames": [
+        "camp_parking1",
+        "camp_parking2",
+        "camp_parking3"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 100000,
+      "capacity": 3,
+      "starterGarage": false
+    },
+    {
+      "id": "beachHouse",
+      "name": "Beach House",
+      "description": "Beautiful secluded setting.",
+      "preview": "beachHouse.png",
+      "zoneNames": ["Beach House"],
+      "parkingSpotNames": [
+        "beachHouse_parking1",
+        "beachHouse_parking2",
+        "beachHouse_parking3",
+        "beachHouse_parking4",
+        "beachHouse_parking5"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 400000,
+      "capacity": 5,
+      "starterGarage": false
+    },
+	{
+      "id": "cave",
+      "name": "Cave",
+      "description": "Huge Hidden garage",
+      "preview": "cave.png",
+      "zoneNames": ["Cave"],
+      "parkingSpotNames": [
+        "caveParking1",
+        "caveParking2",
+        "caveParking3",
+        "caveParking4",
+        "caveParking5",
+		"caveParking6",
+		"caveParking7",
+		"caveParking8"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": ["truck"],
+      "defaultPrice": 850000,
+      "capacity": 8,
+      "starterGarage": false
+    }
+  ],
+  "computers": [
+    {
+      "id": "alohaTransit",
+      "garageId": "alohaTransit",
+      "name": "Aloha Transit",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "alohaTransit.png",
+      "doors": [["alohaTransitGameplay_area", "alohaTransitGameplay_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": false,
+        "tuning": false,
+        "vehicleInventory": false,
+        "vehicleShop": false,
+        "partShop": false,
+        "partInventory": false,
+        "insurances": true,
+        "sleep": false
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "drive a bus" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+	{
+      "id": "cave",
+      "garageId": "cave",
+      "name": "Cave",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "cave.png",
+      "doors": [["caveComputer_area", "caveComputer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Store Vehicle" },
+        { "keyLabel": "sleep" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "hideout",
+      "garageId": "hideout",
+      "name": "Hideout",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "hideout.png",
+      "doors": [["hideout_computer_area", "hideout_computer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Store Vehicle" },
+        { "keyLabel": "sleep" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "dragTuningShack",
+      "garageId": "dragTuningShack",
+      "name": "Drag Tuning Shack",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "dragTuningShack.png",
+      "doors": [["dragTuningComputer_area", "dragTuningComputer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Tune Vehicle" },
+        { "keyLabel": "Parts Shopping" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "chopShop",
+      "garageId": "chopShop",
+      "name": "Chop Shop",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "chopShop.png",
+      "doors": [["chopShopComputer_area", "chopShopComputer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Store Vehicle" },
+        { "keyLabel": "sleep" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "baysideGarage",
+      "garageId": "baysideGarage",
+      "name": "Bayside Garage",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "baysideGarage.png",
+      "doors": [["baysideGarageComputer_area", "baysideGarageComputer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Store Vehicle" },
+        { "keyLabel": "sleep" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "mountainView",
+      "garageId": "mountainView",
+      "name": "Mountain View Camp",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "mountainView.png",
+      "doors": [["mountainViewComputer_area", "mountainViewComputer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Store Vehicle" },
+        { "keyLabel": "sleep" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+	{
+      "id": "beachHouse",
+      "garageId": "beachHouse",
+      "name": "Beach House",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "beachHouse.png",
+      "doors": [["beachHouse_computer_area", "beachHouse_computer_icon"]],
+      "screens": ["commercialGarageComputer_screen_2"],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        { "keyLabel": "Store Vehicle" },
+        { "keyLabel": "sleep" }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    }
+  ],
+  "gasStations": [
+    {
+      "id": "fuel_node_dealer",
+      "name": "NodeoLine Fuel Center",
+      "description": "Gas Station on north side of island",
+      "preview": "fuel_node_dealer.png",
+      "energyTypes": ["gasoline", "diesel", "n2o","unknown"],
+      "pumps": [
+        ["fuel_node_dealer_pump_area_1", "fuel_node_dealer_pump_icon_1"],
+        ["fuel_node_dealer_pump_area_2", "fuel_node_dealer_pump_icon_2"],
+        ["fuel_node_dealer_pump_area_3", "fuel_node_dealer_pump_icon_3"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "n2o": {
+          "priceBaseline": 25,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "unknown": {
+          "priceBaseline": 15,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "airstrip_fuel",
+      "name": "Airstrip Drag Fuel",
+      "description": "Gas Station at the drag strip",
+      "preview": "dragFuel.png",
+      "energyTypes": ["gasoline", "diesel", "n2o","unknown"],
+      "pumps": [["airstrip_fuel_pump_area_1", "airstrip_fuel_pump_icon_1"]],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 15.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 16.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "n2o": {
+          "priceBaseline": 25,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "unknown": {
+          "priceBaseline": 15,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        }
+      }
+    }
+  ]
+}

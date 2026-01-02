@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>LUCA</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 63</authoring_tool>
+      <source_data>file:///H:/BeamNG_Drive/1_BNGD_MAXFiles/Utah/ut_Signs/ut_dir_signs_006.max</source_data>
+    </contributor>
+    <created>2019-11-04T17:58:56</created>
+    <modified>2019-11-04T17:58:56</modified>
+    <unit name="centimeter" meter="0.01" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ut_bld_metal_clean">
+      <profile_COMMON>
+        <newparam sid="utah_metal_clean_d_png-surface">
+          <surface type="2D">
+            <init_from>utah_metal_clean_d_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="utah_metal_clean_d_png-sampler">
+          <sampler2D>
+            <source>utah_metal_clean_d_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="utah_metal_clean_d_png-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="usa_roadsigns_text-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">0</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">0</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">1</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="lod_vertcol">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_roadsigns">
+      <profile_COMMON>
+        <newparam sid="ut_roadsigns_tga-surface">
+          <surface type="2D">
+            <init_from>ut_roadsigns_tga</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_roadsigns_tga-sampler">
+          <sampler2D>
+            <source>ut_roadsigns_tga-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ut_roadsigns_tga-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="ut_roadsigns_tga-sampler" texcoord="CHANNEL1" />
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="eca_bld_metal_01_white-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color>0.25 0.25 0.25 1</color>
+            </specular>
+            <shininess>
+              <float>50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">0</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">0</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">1</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0.5</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_metal_trim">
+      <profile_COMMON>
+        <newparam sid="ut_metal_trim_png-surface">
+          <surface type="2D">
+            <init_from>ut_metal_trim_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_metal_trim_png-sampler">
+          <sampler2D>
+            <source>ut_metal_trim_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ut_metal_trim_png-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_bld_metal_clean_1">
+      <profile_COMMON>
+        <newparam sid="utah_metal_clean_d_png-surface">
+          <surface type="2D">
+            <init_from>utah_metal_clean_d_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="utah_metal_clean_d_png-sampler">
+          <sampler2D>
+            <source>utah_metal_clean_d_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="utah_metal_clean_d_png-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ut_bld_metal_clean-material" name="ut_bld_metal_clean">
+      <instance_effect url="#ut_bld_metal_clean" />
+    </material>
+    <material id="usa_roadsigns_text-effect-material" name="usa_roadsigns_text-effect">
+      <instance_effect url="#usa_roadsigns_text-effect" />
+    </material>
+    <material id="lod_vertcol-material" name="lod_vertcol">
+      <instance_effect url="#lod_vertcol" />
+    </material>
+    <material id="ut_roadsigns-material" name="ut_roadsigns">
+      <instance_effect url="#ut_roadsigns" />
+    </material>
+    <material id="eca_bld_metal_01_white-effect-material" name="eca_bld_metal_01_white-effect">
+      <instance_effect url="#eca_bld_metal_01_white-effect" />
+    </material>
+    <material id="ut_metal_trim-material" name="ut_metal_trim">
+      <instance_effect url="#ut_metal_trim" />
+    </material>
+    <material id="ut_bld_metal_clean_1-material" name="ut_bld_metal_clean">
+      <instance_effect url="#ut_bld_metal_clean_1" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-ut_roadsign_west_highway80" name="ut_roadsign_west_highway80">
+      <mesh>
+        <source id="geom-ut_roadsign_west_highway80-positions">
+          <float_array id="geom-ut_roadsign_west_highway80-positions-array" count="1353">-423.8031 -15.241 624.4437 423.3895 -15.241 624.4437 -423.8031 -15.241 1270.789 423.3895 -15.241 1270.789 -423.8031 -15.241 351.7683 423.3895 -15.241 351.7683 -423.8031 -15.241 600.7982 423.3895 -15.241 600.7982 -423.8031 -6.485781 624.4436 423.3895 -6.485781 624.4436 -423.8031 -6.485781 1270.789 423.3895 -6.485781 1270.789 -423.8031 -6.485781 351.7683 423.3895 -6.485781 351.7683 -423.8031 -6.485781 600.7982 423.3895 -6.485781 600.7982 383.5009 -18.82873 1243.904 384.6924 -18.82873 1264.584 -383.9145 -18.82873 1243.904 -385.106 -18.82873 1264.584 -389.9351 -18.82873 1242.585 -399.084 -18.82873 1261.276 -394.1414 -18.82873 1239.213 -410.3738 -18.82873 1252.226 -396.5219 -18.82872 1234.341 -416.7929 -18.82873 1239.075 -396.5219 -18.82863 660.891 -416.7929 -18.82863 656.157 -394.1431 -18.82863 656.022 -410.3721 -18.82863 643.0043 -389.9351 -18.82863 652.6475 -399.084 -18.82863 633.9569 -383.9145 -18.82863 651.3282 -385.106 -18.82862 630.6479 383.5009 -18.82863 651.3282 384.6924 -18.82862 630.6479 389.5215 -18.82863 652.6474 398.6704 -18.82862 633.9568 393.7278 -18.82863 656.02 409.9602 -18.82863 643.0065 396.1082 -18.82863 660.891 416.3792 -18.82863 656.1571 396.1082 -18.82873 1234.341 416.3792 -18.82873 1239.075 393.7295 -18.82873 1239.21 409.9584 -18.82873 1252.228 389.5214 -18.82873 1242.585 398.6703 -18.82873 1261.275 383.5009 -18.8287 573.9136 384.6924 -18.8287 594.5939 -383.9145 -18.8287 573.9136 -385.106 -18.8287 594.5939 -389.9376 -18.8287 572.5931 -399.0815 -18.8287 591.286 -394.1414 -18.82869 569.2218 -410.3738 -18.8287 582.2353 -396.5219 -18.82869 564.3507 -416.7929 -18.82869 569.0847 -396.5221 -18.82862 388.2167 -416.7927 -18.82862 383.4806 -394.1457 -18.82862 383.35 -410.3695 -18.82862 370.3258 -389.9378 -18.82862 379.9734 -399.0812 -18.82861 361.2802 -383.9176 -18.82862 378.653 -385.1029 -18.82861 357.9723 383.5039 -18.82862 378.653 384.6893 -18.82861 357.9723 389.5242 -18.82862 379.9734 398.6677 -18.82861 361.2802 393.732 -18.82862 383.3499 409.9558 -18.82861 370.3258 396.1085 -18.82862 388.2167 416.379 -18.82862 383.4806 396.1082 -18.82869 564.3507 416.3792 -18.82869 569.0847 393.7295 -18.8287 569.2197 409.9584 -18.8287 582.2374 389.5214 -18.8287 572.5944 398.6703 -18.8287 591.2849 396.1082 -18.82902 893.2826 396.1082 -18.82902 912.2809 -396.5219 -18.82887 893.2822 -396.5219 -18.82887 912.2805 -374.2643 -18.82885 465.784 -227.7367 -18.82885 452.82 -324.1844 -18.82885 479.0509 -227.7367 -18.82885 479.0509 -324.5183 -18.82885 427.4481 -324.1844 -18.82885 504.4541 -324.1844 -18.82885 452.82 -254.6321 -18.82885 1096.629 -125.0999 -18.82885 1096.629 -254.6321 -18.82885 1226.161 -125.0999 -18.82885 1226.161 -121.8631 -18.82885 1096.629 -15.21316 -18.82885 1096.629 -121.8631 -18.82885 1226.161 -15.21316 -18.82885 1226.161 -16.53043 -18.82885 1096.629 100.7417 -18.82885 1096.629 -16.53043 -18.82885 1226.161 100.7417 -18.82885 1226.161 116.9307 -18.82885 1096.629 210.3051 -18.82885 1096.629 116.9307 -18.82885 1226.161 210.3051 -18.82885 1226.161 -330.4291 -18.82885 786.9706 -275.4936 -18.82885 786.9706 -330.4291 -18.82885 859.3915 -275.4936 -18.82885 859.3915 -274.3179 -18.82885 786.9706 -213.5696 -18.82885 786.9706 -274.3179 -18.82885 859.3915 -213.5696 -18.82885 859.3915 -209.6195 -18.82885 786.9706 -151.5597 -18.82885 786.9706 -209.6195 -18.82885 859.3915 -151.5597 -18.82885 859.3915 -143.3348 -18.82885 786.9705 -92.90506 -18.82885 786.9706 -146.972 -18.82885 859.3915 -91.711 -18.82885 859.3915 -91.18198 -18.82885 786.9706 -33.25214 -18.82885 786.9706 -91.18198 -18.82885 859.3915 -33.25214 -18.82885 859.3915 -25.8427 -18.82885 786.9706 28.8501 -18.82885 786.9706 -25.8427 -18.82885 859.3915 28.8501 -18.82885 859.3915 37.18025 -18.82885 786.9706 80.13742 -18.82885 786.9706 37.18025 -18.82885 859.3915 80.13742 -18.82885 859.3915 88.08326 -18.82885 786.9706 148.1026 -18.82885 786.9706 88.08326 -18.82885 859.3915 148.1026 -18.82885 859.3915 154.4181 -18.82885 786.9706 211.6685 -18.82885 786.9706 154.4181 -18.82885 859.3915 211.6685 -18.82885 859.3915 218.0423 -18.82885 786.9706 275.662 -18.82885 786.9706 218.0423 -18.82885 859.3915 275.662 -18.82885 859.3915 334.5843 -18.82885 786.9706 334.5843 -18.82885 859.3915 -82.31284 -18.82885 943.2391 1.680766 -18.82885 943.2391 -82.31284 -18.82885 1065.177 1.680766 -18.82885 1065.177 6.767883 -18.82885 943.2391 92.42635 -18.82885 943.2391 6.767884 -18.82885 1066.766 92.42635 -18.82885 1066.766 -346.6689 -18.82885 691.72 -291.7378 -18.82885 691.72 -346.6689 -18.82885 764.1412 -291.7378 -18.82885 764.1412 -288.0081 -18.82885 691.72 -226.8257 -18.82885 691.72 -288.0081 -18.82885 764.1412 -226.8257 -18.82885 764.1412 -223.3773 -18.82885 691.72 -174.2867 -18.82885 691.72 -223.3773 -18.82885 764.1412 -174.2867 -18.82885 764.1412 -173.5936 -18.82885 736.7173 -145.5238 -18.82885 736.7173 -173.5936 -18.82885 764.7872 -145.5238 -18.82885 764.7872 -143.763 -18.82885 691.72 -95.8933 -18.82885 691.72 -143.763 -18.82885 764.1412 -95.8933 -18.82885 764.1412 -30.34669 -18.82885 691.72 24.7853 -18.82885 691.72 -30.34669 -18.82885 759.3098 24.78529 -18.82885 759.3098 21.28687 -18.82885 691.72 81.44917 -18.82885 691.72 21.28687 -18.82885 764.1412 81.44917 -18.82885 764.1412 88.28686 -18.82885 691.72 146.0191 -18.82885 691.72 88.28686 -18.82885 764.1412 146.0191 -18.82885 764.1412 149.6702 -18.82885 691.72 208.1535 -18.82885 691.72 149.6702 -18.82885 764.1412 208.1535 -18.82885 764.1412 238.1819 -18.82885 691.72 293.1687 -18.82885 691.72 238.1819 -18.82885 760.8561 293.1687 -18.82885 760.8561 298.4852 -18.82885 691.72 353.2442 -18.82885 691.72 298.4852 -18.82885 760.8558 353.2442 -18.82885 760.8558 -201.8376 -18.82885 485.2694 -201.8376 -18.82885 557.6902 -122.1209 -18.82885 485.2694 -71.70464 -18.82885 485.2694 -122.1209 -18.82885 557.6902 -71.70464 -18.82885 557.6902 -71.73668 -18.82885 485.2694 -20.20558 -18.82885 485.2694 -71.73668 -18.82885 557.6902 -20.20558 -18.82885 557.6902 -17.37366 -18.82885 485.2694 31.18747 -18.82885 485.2694 -17.37366 -18.82885 557.6902 31.18747 -18.82885 557.6902 75.98232 -18.82885 485.2694 128.814 -18.82885 485.2694 75.98232 -18.82885 557.6902 128.814 -18.82885 557.6902 129.6441 -18.82885 485.2694 186.6545 -18.82885 485.2694 129.6441 -18.82885 557.6902 186.6545 -18.82885 557.6902 189.7184 -18.82885 485.2694 241.7682 -18.82885 485.2694 189.7184 -18.82885 557.6902 241.7682 -18.82885 557.6902 240.1859 -18.82885 485.2694 292.2358 -18.82885 485.2694 240.1859 -18.82885 557.6902 292.2358 -18.82885 557.6902 -109.9095 -18.82885 395.7851 -57.85956 -18.82885 395.7851 -109.9095 -18.82885 468.206 -57.85956 -18.82885 468.206 -59.68585 -18.82885 395.7851 -5.907098 -18.82885 395.7851 -59.68585 -18.82885 468.206 -5.907098 -18.82885 468.206 -2.599633 -18.82885 395.7851 -2.599633 -18.82885 468.206 51.07473 -18.82885 395.7851 101.2024 -18.82885 395.7851 51.07473 -18.82885 468.206 103.147 -18.82885 468.206 104.8196 -18.82885 395.7851 160.4151 -18.82885 395.7851 104.8196 -18.82885 468.206 160.4151 -18.82885 468.206 165.8404 -18.82885 395.7851 218.7744 -18.82885 395.7851 165.8404 -18.82885 468.206 218.7744 -18.82885 468.206 282.1308 -18.82885 786.9705 282.1308 -18.82885 859.3915 51.07473 -18.82885 395.7851 51.07473 -18.82885 468.206 -118.4866 -18.82885 485.2694 -118.4866 -18.82885 557.6902 256.5165 -5.197194 -124.0826 288.2456 -5.197194 -124.0826 263.7993 10.53131 -124.0826 279.9988 11.34715 -124.0826 256.5165 -5.197194 1240.826 288.2456 -5.197194 1240.826 263.7993 10.53131 1240.826 279.9988 11.34715 1240.826 260.3366 -5.197194 -124.0826 283.4615 -4.381351 -124.0826 284.4255 -5.197194 1240.826 260.3366 -5.197194 1240.826 256.5165 -6.43802 -124.0826 288.2456 -6.43802 -124.0826 265.8134 10.10632 -124.0826 279.9126 9.290478 -124.0826 256.5165 -6.43802 1240.826 288.2456 -6.43802 1240.826 262.3507 -5.622176 -124.0826 283.3752 -6.43802 -124.0826 264.7632 11.34715 -124.0826 280.9628 10.53131 -124.0826 264.7632 11.34715 1240.826 280.9628 10.53131 1240.826 261.3005 -4.381351 -124.0826 284.4255 -5.197194 -124.0826 283.4615 -4.381351 1240.826 261.3005 -4.381351 1240.826 264.8495 9.290478 -124.0826 278.9486 10.10632 -124.0826 264.8495 9.290478 1240.826 265.8134 10.10632 1240.826 278.9486 10.10632 1240.826 279.9126 9.290478 1240.826 261.3868 -6.43802 -124.0826 282.4113 -5.622176 -124.0826 282.4113 -5.622176 1240.826 283.3752 -6.43802 1240.826 261.3868 -6.43802 1240.826 262.3507 -5.622176 1240.826 263.7356 11.60522 1124.234 263.7356 11.60522 1137.624 260.5293 -4.709533 1124.234 260.5293 -4.709533 1137.624 254.18 -5.180644 1124.234 254.18 -5.180644 1137.624 272.381 11.60522 1124.234 281.0265 11.60522 1124.234 281.0265 11.60522 1137.624 272.381 11.60522 1137.624 284.2328 -4.709533 1124.234 284.2328 -4.709533 1137.624 290.5821 -5.180644 1124.234 290.5821 -5.180644 1137.624 263.7356 11.60523 681.1517 263.7356 11.60523 694.5412 260.5293 -4.709522 681.1517 260.5293 -4.709522 694.5412 254.18 -5.180634 681.1517 254.18 -5.180634 694.5412 272.381 11.60523 681.1517 281.0265 11.60523 681.1517 281.0265 11.60523 694.5412 272.381 11.60523 694.5412 284.2328 -4.709522 681.1517 284.2328 -4.709522 694.5412 290.5821 -5.180634 681.1517 290.5821 -5.180634 694.5412 -286.3142 -5.197194 -124.0826 -254.5851 -5.197194 -124.0826 -279.0314 10.53131 -124.0826 -262.8319 11.34715 -124.0826 -286.3142 -5.197194 1240.826 -254.5851 -5.197194 1240.826 -279.0314 10.53131 1240.826 -262.8319 11.34715 1240.826 -282.494 -5.197194 -124.0826 -259.3691 -4.381351 -124.0826 -258.4052 -5.197194 1240.826 -282.494 -5.197194 1240.826 -286.3142 -6.43802 -124.0826 -254.5851 -6.43802 -124.0826 -277.0172 10.10632 -124.0826 -262.9182 9.290478 -124.0826 -286.3142 -6.43802 1240.826 -254.5851 -6.43802 1240.826 -280.4799 -5.622176 -124.0826 -259.4555 -6.43802 -124.0826 -278.0675 11.34715 -124.0826 -261.8679 10.53131 -124.0826 -278.0675 11.34715 1240.826 -261.8679 10.53131 1240.826 -281.5302 -4.381351 -124.0826 -258.4052 -5.197194 -124.0826 -259.3691 -4.381351 1240.826 -281.5302 -4.381351 1240.826 -277.9811 9.290478 -124.0826 -263.882 10.10632 -124.0826 -277.9811 9.290478 1240.826 -277.0172 10.10632 1240.826 -263.882 10.10632 1240.826 -262.9182 9.290478 1240.826 -281.4439 -6.43802 -124.0826 -260.4194 -5.622176 -124.0826 -260.4194 -5.622176 1240.826 -259.4555 -6.43802 1240.826 -281.4439 -6.43802 1240.826 -280.4799 -5.622176 1240.826 -279.0951 11.60522 1124.234 -279.0951 11.60522 1137.624 -282.3014 -4.709533 1124.234 -282.3014 -4.709533 1137.624 -288.6507 -5.180644 1124.234 -288.6507 -5.180644 1137.624 -270.4496 11.60522 1124.234 -261.8042 11.60522 1124.234 -261.8042 11.60522 1137.624 -270.4496 11.60522 1137.624 -258.5979 -4.709533 1124.234 -258.5979 -4.709533 1137.624 -252.2486 -5.180644 1124.234 -252.2486 -5.180644 1137.624 -279.0951 11.60523 681.1517 -279.0951 11.60523 694.5412 -282.3014 -4.709522 681.1517 -282.3014 -4.709522 694.5412 -288.6507 -5.180634 681.1517 -288.6507 -5.180634 694.5412 -270.4496 11.60523 681.1517 -261.8042 11.60523 681.1517 -261.8042 11.60523 694.5412 -270.4496 11.60523 694.5412 -258.5979 -4.709522 681.1517 -258.5979 -4.709522 694.5412 -252.2486 -5.180634 681.1517 -252.2486 -5.180634 694.5412 272.381 11.60523 553.9547 263.7356 11.60523 553.9547 263.7356 11.60523 567.3442 272.381 11.60523 567.3442 260.5293 -4.709522 553.9547 260.5293 -4.709522 567.3442 254.18 -5.180634 553.9547 254.18 -5.180634 567.3442 281.0265 11.60523 567.3442 281.0265 11.60523 553.9547 284.2328 -4.709522 567.3442 284.2328 -4.709522 553.9547 290.5821 -5.180634 567.3442 290.5821 -5.180634 553.9547 -270.4496 11.60523 553.9547 -279.0951 11.60523 553.9547 -279.0951 11.60523 567.3442 -270.4496 11.60523 567.3442 -282.3014 -4.709522 553.9547 -282.3014 -4.709522 567.3442 -288.6507 -5.180634 553.9547 -288.6507 -5.180634 567.3442 -261.8042 11.60523 567.3442 -261.8042 11.60523 553.9547 -258.5979 -4.709522 567.3442 -258.5979 -4.709522 553.9547 -252.2486 -5.180634 567.3442 -252.2486 -5.180634 553.9547 272.381 11.60523 385.5851 263.7356 11.60523 385.5851 263.7356 11.60523 398.9746 272.381 11.60523 398.9746 260.5293 -4.709522 385.5851 260.5293 -4.709522 398.9746 254.18 -5.180634 385.5851 254.18 -5.180634 398.9746 281.0265 11.60523 398.9746 281.0265 11.60523 385.5851 284.2328 -4.709522 398.9746 284.2328 -4.709522 385.5851 290.5821 -5.180634 398.9746 290.5821 -5.180634 385.5851 -270.4496 11.60523 385.5851 -279.0951 11.60523 385.5851 -279.0951 11.60523 398.9746 -270.4496 11.60523 398.9746 -282.3014 -4.709522 385.5851 -282.3014 -4.709522 398.9746 -288.6507 -5.180634 385.5851 -288.6507 -5.180634 398.9746 -261.8042 11.60523 398.9746 -261.8042 11.60523 385.5851 -258.5979 -4.709522 398.9746 -258.5979 -4.709522 385.5851 -252.2486 -5.180634 398.9746 -252.2486 -5.180634 385.5851</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway80-positions-array" count="451" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_west_highway80-normals">
+          <float_array id="geom-ut_roadsign_west_highway80-normals-array" count="1506">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.168217 0.98575 0 0.168217 0.98575 0 0 1 0 0 1 0 0.05017336 0.9987405 0 -0.05017336 0.9987405 0 -0.05017336 0.9987405 0 0.05017336 0.9987405 0 0.9766249 0.2149506 0 0.9766249 0.2149506 0 0.9766249 0.2149506 0 0.9766249 0.2149506 0 0 1 0 0 1 0 -0.1682265 0.9857484 0 -0.1682265 0.9857484 0 -0.9766249 0.2149506 0 -0.9765909 0.2151056 0 -0.9765909 0.2151056 0 -0.9766249 0.2149506 0 0 -1 0 -0.1387157 -0.9903323 0 -0.1387157 -0.9903323 0 0 -1 0 0.05828949 -0.9982998 0 0.05828949 -0.9982998 0 -0.05828949 -0.9982998 0 -0.05828949 -0.9982998 0 -0.9766249 -0.2149506 0 -0.9766249 -0.2149506 0 -0.9766226 -0.2149616 0 -0.9766226 -0.2149616 0 0.1387078 -0.9903334 0 0 -1 0 0 -1 0 0.1387078 -0.9903334 0 0.9766249 -0.2149506 0 0.9766249 -0.2149506 0 0.9766226 -0.2149616 0 0.9766226 -0.2149616 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812314 0.1928341 0 -0.9812314 0.1928341 0 -0.9812335 0.192823 0 -0.9812335 0.192823 0 -0.07378505 0.9972742 0 -0.07378505 0.9972742 0 -0.07415196 0.997247 0 -0.07415196 0.997247 0 0 1 0 0 1 0 0.9812314 0.1928341 0 0.9812061 0.1929627 0 0.9812061 0.1929627 0 0.9812314 0.1928341 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.981227 0.1928563 0 -0.981227 0.1928563 0 -0.9812335 0.192823 0 -0.9812335 0.192823 0 -0.07378505 0.9972742 0 -0.07378505 0.9972742 0 -0.07415196 0.997247 0 -0.07415196 0.997247 0 0 1 0 0 1 0 0.981227 0.1928563 0 0.9812061 0.1929627 0 0.9812061 0.1929627 0 0.981227 0.1928563 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.1682265 0.9857484 0 0.1682265 0.9857484 0 0 1 0 0 1 0 0.05017336 0.9987405 0 -0.05017336 0.9987405 0 -0.05017336 0.9987405 0 0.05017336 0.9987405 0 0.9766249 0.2149506 0 0.9766249 0.2149506 0 0.9766249 0.2149506 0 0.9766249 0.2149506 0 0 1 0 0 1 0 -0.168217 0.98575 0 -0.168217 0.98575 0 -0.9765909 0.2151056 0 -0.9765909 0.2151056 0 -0.9765909 0.2151056 0 -0.9765909 0.2151056 0 0 -1 0 -0.1379841 -0.9904345 0 -0.1379841 -0.9904345 0 0 -1 0 0.05755411 -0.9983425 0 0.05755411 -0.9983425 0 -0.05755278 -0.9983425 0 -0.05755278 -0.9983425 0 -0.9765909 -0.2151056 0 -0.9765909 -0.2151056 0 -0.9765884 -0.2151166 0 -0.9765884 -0.2151166 0 0.1387157 -0.9903323 0 0 -1 0 0 -1 0 0.1387157 -0.9903323 0 0.9766249 -0.2149506 0 0.9766249 -0.2149506 0 0.9766226 -0.2149616 0 0.9766226 -0.2149616 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812039 0.1929738 0 -0.9812039 0.1929738 0 -0.9812335 0.192823 0 -0.9812335 0.192823 0 -0.07451883 0.9972196 0 -0.07451883 0.9972196 0 -0.07378505 0.9972742 0 -0.07378505 0.9972742 0 0 1 0 0 1 0 0.9812314 0.1928341 0 0.9812335 0.192823 0 0.9812335 0.192823 0 0.9812314 0.1928341 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9811995 0.192996 0 -0.9811995 0.192996 0 -0.9812335 0.192823 0 -0.9812335 0.192823 0 -0.07451883 0.9972196 0 -0.07451883 0.9972196 0 -0.07378505 0.9972742 0 -0.07378505 0.9972742 0 0 1 0 0 1 0 0.981227 0.1928563 0 0.9812335 0.192823 0 0.9812335 0.192823 0 0.981227 0.1928563 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0.07378505 0.9972742 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -6.97129e-6 -1 0 -6.97129e-6 -1 0 -6.97129e-6 -1 0 -6.97129e-6 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -3.48564e-6 -1 0 -3.48564e-6 -1 0 -3.48564e-6 -1 0 -3.48564e-6 -1 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 0.9999999 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 -2.17724e-8 -1 -1.83543e-7 -2.02863e-8 -1 -1.83606e-7 2.02857e-8 -1 -1.83606e-7 2.17718e-8 -1 -1.83543e-7 2.77031e-8 -1 -1.76311e-7 2.77917e-8 -1 -1.7635e-7 7.22506e-9 -1 -1.91109e-7 7.21662e-9 -1 -1.91139e-7 4.76075e-8 -1 -1.88664e-7 4.77445e-8 -1 -1.88594e-7 8.8632e-8 -1 -1.68003e-7 8.86482e-8 -0.9999999 -1.67994e-7 1.2148e-8 -1 -1.22119e-7 1.22756e-8 -1 -1.22207e-7 -3.2344e-10 -1 -1.16918e-7 3.12739e-11 -1 -1.17183e-7 2.79268e-8 -1 -1.73023e-7 2.99727e-8 -1 -1.72185e-7 2.02853e-8 -1 -1.83606e-7 2.17713e-8 -1 -1.83543e-7 2.7703e-8 -1 -1.7631e-7 2.77915e-8 -1 -1.76349e-7 7.22521e-9 -1 -1.91108e-7 7.21668e-9 -1 -1.91139e-7 2.41257e-8 -1 -1.89487e-7 2.41932e-8 -1 -1.8942e-7 2.31658e-8 -1 -1.36317e-7 2.32366e-8 -0.9999999 -1.36406e-7 -6.89378e-9 -0.9999999 -1.38076e-7 -6.88249e-9 -1 -1.38019e-7 -2.7698e-8 -1 -1.76304e-7 -2.77864e-8 -1 -1.76343e-7 2.99727e-8 -1 -1.72185e-7 2.79268e-8 -1 -1.73023e-7 -2.79284e-8 -1 -1.73015e-7 -2.9975e-8 -1 -1.72176e-7 -7.47168e-8 -1 -1.7697e-7 -7.46226e-8 -0.9999999 -1.76877e-7 -8.71916e-8 -1 -1.82197e-7 -8.71858e-8 -1 -1.82181e-7 -1.12093e-7 -1 -2.83061e-7 -1.12179e-7 -1 -2.83393e-7 -1.13658e-7 -1 -3.77519e-7 -1.13744e-7 -1 -3.77575e-7 -8.56418e-8 -0.9999999 -3.86413e-7 -8.56433e-8 -1 -3.86349e-7 -5.56904e-8 -1 -4.69491e-7 -5.55257e-8 -0.9999999 -4.69808e-7 -1.26407e-8 -0.9999999 -5.40216e-7 -1.35723e-8 -1 -5.39247e-7 1.26392e-8 -1 -5.40217e-7 1.35707e-8 -1 -5.39247e-7 1.07914e-7 -1 -4.57812e-7 1.07455e-7 -1 -4.58195e-7 1.80072e-7 -0.9999999 -3.9532e-7 1.8005e-7 -1 -3.95334e-7 2.02926e-7 -0.9999999 -3.98175e-7 2.03027e-7 -1 -3.98167e-7 2.4304e-7 -1 -3.48078e-7 2.43016e-7 -1 -3.48219e-7 1.48116e-7 -1 -1.98654e-7 1.48301e-7 -1 -1.98839e-7 5.18978e-8 -1 -1.28611e-7 5.1936e-8 -1 -1.28805e-7 -1.90102e-7 -1 0 -1.90102e-7 -1 0 -1.90102e-7 -0.9999999 0 3.82141e-8 -1 -1.65724e-10 3.82141e-8 -1 -1.65724e-10 3.82141e-8 -1 -1.65724e-10 -1.90102e-7 -1 0 -1.90102e-7 -0.9999999 0 -1.90102e-7 -1 0 -1.9776e-8 -1 7.27136e-8 -1.9776e-8 -1 7.27137e-8 -1.9776e-8 -1 7.27136e-8 -1.9776e-8 -1 7.27136e-8 -1.9776e-8 -1 7.27136e-8 -1.9776e-8 -1 7.27137e-8 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812308 0.1928371 0 -0.9812308 0.1928371 0 -0.9812308 0.1928371 0 -0.9812308 0.1928371 0 -0.07399537 0.9972586 0 -0.07399537 0.9972586 0 -0.07399537 0.9972586 0 -0.07399537 0.9972586 0 0 1 0 0 1 0 0.9812304 0.1928388 0 0.9812304 0.1928388 0 0.9812304 0.1928388 0 0.9812304 0.1928388 0 0.07399591 0.9972586 0 0.07399591 0.9972586 0 0.07399591 0.9972586 0 0.07399591 0.9972586 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812311 0.1928353 0 -0.9812311 0.1928353 0 -0.9812311 0.1928353 0 -0.9812311 0.1928353 0 -0.07399485 0.9972587 0 -0.07399485 0.9972587 0 -0.07399485 0.9972587 0 -0.07399485 0.9972587 0 0 1 0 0 1 0 0.98123 0.1928406 0 0.98123 0.1928406 0 0.98123 0.1928406 0 0.98123 0.1928406 0 0.07399538 0.9972586 0 0.07399538 0.9972586 0 0.07399538 0.9972586 0 0.07399538 0.9972586 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812309 0.1928371 0 -0.9812309 0.1928371 0 -0.9812309 0.1928371 0 -0.9812309 0.1928371 0 -0.07399537 0.9972586 0 -0.07399537 0.9972586 0 -0.07399537 0.9972586 0 -0.07399537 0.9972586 0 0 1 0 0 1 0 0.9812305 0.1928388 0 0.9812305 0.1928388 0 0.9812305 0.1928388 0 0.9812305 0.1928388 0 0.07399591 0.9972586 0 0.07399591 0.9972586 0 0.07399591 0.9972586 0 0.07399591 0.9972586 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812312 0.1928353 0 -0.9812312 0.1928353 0 -0.9812312 0.1928353 0 -0.9812312 0.1928353 0 -0.07399485 0.9972587 0 -0.07399485 0.9972587 0 -0.07399485 0.9972587 0 -0.07399485 0.9972587 0 0 1 0 0 1 0 0.98123 0.1928406 0 0.98123 0.1928406 0 0.98123 0.1928406 0 0.98123 0.1928406 0 0.07399538 0.9972586 0 0.07399538 0.9972586 0 0.07399538 0.9972586 0 0.07399538 0.9972586 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway80-normals-array" count="502" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_west_highway80-map0">
+          <float_array id="geom-ut_roadsign_west_highway80-map0-array" count="2625">0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway80-map0-array" count="875" stride="3">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_west_highway80-map1">
+          <float_array id="geom-ut_roadsign_west_highway80-map1-array" count="1791">1.0001e-4 0.9999001 150.9746 0.9999001 9.998e-5 150.9746 9.998e-5 1.0004e-4 307.2444 1.0001e-4 0.9999001 184.7499 0.9999001 9.998e-5 184.7499 9.998e-5 1.0004e-4 167.2403 1.0001e-4 0.9999001 95.69077 0.9999001 0.9999001 113.2003 0.9999001 9.998e-5 113.2003 0 0 0 0 0 0 0 0 0 1.524148 0.4894163 0.04828084 1.524148 0.5105842 0.0482806 -0.5241481 0.5105837 0.0482806 -0.5241481 0.4894158 0.04828084 0.5105837 1.610979 -0.5241479 0.4894158 1.610979 -0.5241479 1.524148 0.4894163 -0.6109788 1.524148 0.5105842 -0.6109788 -0.5241481 0.5105837 -0.6109788 -0.5241481 0.4894158 -0.6109788 0.5105837 -0.008888125 -0.5241479 0.4894158 -0.008888125 -0.5241479 1.524148 0.4894158 1.610979 1.524148 0.5105837 1.610979 1.524148 0.4894158 -0.008888125 1.524148 0.5105837 -0.008888125 0.4894158 0.0482806 -0.5241479 0.5105837 0.04828084 -0.5241479 0.4894158 -0.6109788 -0.5241479 0.5105837 -0.6109788 -0.5241479 -0.5241479 0.5105842 1.610979 -0.5241479 0.4894163 1.610979 0.4894158 0.04828084 1.524148 0.5105837 0.0482806 1.524148 0.5105837 1.610979 1.524148 0.4894158 1.610979 1.524148 -0.5241479 0.5105842 -0.008888125 -0.5241479 0.4894163 -0.008888125 0.4894158 -0.6109788 1.524148 0.5105837 -0.6109788 1.524148 0.5105837 -0.008888125 1.524148 0.4894158 -0.008888125 1.524148 -0.5241481 0.0482806 0.5105837 1.524148 0.0482806 0.5105842 1.524148 1.610979 0.5105842 -0.5241481 -0.6109788 0.5105837 1.524148 -0.6109788 0.5105842 1.524148 -0.008888125 0.5105842 -0.5241481 0.0482806 0.5105837 1.524148 1.610979 0.5105842 -0.5241481 1.610979 0.5105837 -0.5241481 -0.6109788 0.5105837 1.524148 -0.008888125 0.5105842 -0.5241481 -0.008888125 0.5105837 92.32324 71.73759 0.8673978 92.61133 76.73756 0.8673979 -93.21828 71.73759 0.8673978 -93.50637 76.73756 0.8673979 -94.6739 71.41863 0.8673978 -96.88588 75.93752 0.8673979 -95.69089 70.60323 0.8673978 -99.61548 73.74955 0.867398 -96.26643 69.42554 0.8673978 -101.1674 70.57008 0.867398 -96.26643 -69.22019 0.8673975 -101.1674 -70.36474 0.8673978 -95.6913 -70.39738 0.8673976 -99.61505 -73.54473 0.8673977 -94.6739 -71.21327 0.8673976 -96.88588 -75.73216 0.8673977 -93.21828 -71.53224 0.8673977 -93.50637 -76.53221 0.8673977 92.32324 -71.53224 0.8673977 92.61133 -76.53221 0.8673977 93.77888 -71.21328 0.8673977 95.99085 -75.73219 0.8673977 94.79585 -70.39788 0.8673977 98.72044 -73.5442 0.8673977 95.37138 -69.22018 0.8673977 100.2724 -70.36473 0.8673977 95.37138 69.42554 0.867398 100.2724 70.57009 0.8673978 94.79626 70.60271 0.8673979 98.72002 73.75008 0.8673979 93.77885 71.41862 0.8673979 95.99083 75.93752 0.8673979 92.32324 -90.2491 0.8674172 92.61133 -85.24913 0.8674172 -93.21828 -90.2491 0.8674172 -93.50637 -85.24913 0.8674172 -94.67451 -90.56837 0.867417 -96.88528 -86.04889 0.867417 -95.69089 -91.38345 0.8674169 -99.61548 -88.23714 0.8674167 -96.26643 -92.56116 0.8674167 -101.1674 -91.41661 0.8674161 -96.26649 -135.1459 0.8674068 -101.1674 -136.291 0.8674058 -95.69193 -136.3225 0.8674065 -99.61443 -139.4715 0.8674052 -94.67457 -137.1389 0.8674065 -96.88522 -141.6584 0.8674048 -93.21904 -137.4582 0.8674064 -93.50562 -142.4582 0.8674046 92.32399 -137.4582 0.8674064 92.61058 -142.4582 0.8674046 93.77953 -137.1389 0.8674065 95.99019 -141.6585 0.8674048 94.79688 -136.3226 0.8674066 98.71939 -139.4715 0.8674051 95.37144 -135.1459 0.8674068 100.2723 -136.291 0.8674057 95.37138 -92.56116 0.8674168 100.2724 -91.4166 0.867416 94.79626 -91.38398 0.867417 98.72002 -88.23661 0.8674166 93.77886 -90.56807 0.8674171 95.99082 -86.04918 0.867417 0.1574975 0.2520619 152.4072 0.2665572 0.1244586 157.0004 0.2665572 0.252062 152.4071 0 0 0 0 0 0 0 0 0 0.2213937 0.09071153 0 0.09658349 0.1761685 0 0.09658349 0.09071153 0 0.2213937 0.1761685 0 0.2213937 0.09071153 0 0.09658349 0.1761685 0 0.1593678 0.1331804 0 0.3680366 0.05697374 0 0.32954 0.09547032 0 0.32954 0.05697374 0 0.4310578 0.05697374 0 0.3993618 0.09547032 0 0.3993617 0.05697374 0 0.0352971 0.05697374 0 4.44164e-4 0.09547032 0 4.44164e-4 0.05697374 0 0.06340626 0.05697374 0 0.03565575 0.09547032 0 0.03565575 0.05697374 0 0.09413462 0.05644344 0 0.06451565 0.09548973 0 0.06451566 0.05644345 0 0.03577758 0.05644344 0 0.00302464 0.09548973 0 0.00302464 0.05644345 0 0.4002315 0.05644345 0 0.3689281 0.09548973 0 0.3689281 0.05644345 0 0.7344127 0.05644344 0 0.7052619 0.09548973 0 0.7072231 0.05644338 0 0.4311486 0.05644345 0 0.3999153 0.09548973 0 0.3999153 0.05644345 0 0.3995089 0.05644344 0 0.3700208 0.09548973 0 0.3700208 0.05644345 0 0.3298934 0.05644348 0 0.3067327 0.09548973 0 0.3067327 0.05644348 0 0.03558933 0.05644345 0 0.003229466 0.09548973 0 0.003229466 0.05644345 0 0.4000386 0.05644344 0 0.3691716 0.09548973 0 0.3691716 0.05644345 0 0.1256947 0.05644345 0 0.09462862 0.09548973 0 0.09462861 0.05644345 0 0.5539094 0.05644345 0 0.1256947 0.09548973 0 0.1895128 0.09594902 0 0.1538544 0.1477159 0 0.1538544 0.09594902 0 0.1128762 0.09594902 0 0.07651103 0.1483909 0 0.07651103 0.09594902 0 0.3998895 0.05670397 0 0.3704374 0.09553365 0 0.3704374 0.05670397 0 0.03547918 0.05670397 0 0.002675342 0.09553365 0 0.002675343 0.05670397 0 0.579932 0.05670397 0 0.5536113 0.09553365 0 0.5536113 0.05670397 0 0.5278526 0.1054867 0 0.5374207 0.1317753 0 0.5194924 0.1234151 0 0.3308598 0.05670397 0 0.3051937 0.09553365 0 0.3051937 0.05670397 0 0.4628734 0.05670397 0 0.4333136 0.09294324 0 0.4333136 0.05670397 0 0.03553063 0.05670397 0 0.003273735 0.09553365 0 0.003273736 0.05670397 0 0.525452 0.05670397 0 0.4944981 0.09553365 0 0.4944981 0.05670397 0 0.3049978 0.05670397 0 0.2736411 0.09553365 0 0.2736411 0.05670397 0 0.1912426 0.09847986 0 0.1524914 0.1472024 0 0.1524914 0.09847986 0 0.3427766 0.09847986 0 0.3041858 0.1472022 0 0.3041858 0.09847986 0 0.6783364 0.0562376 0 0.6351941 0.09543138 0 0.6351941 0.0562376 0 0.1533298 0.0562376 0 0.6783364 0.09543138 0 0.5534058 0.0562376 0 0.5255175 0.09543138 0 0.5255175 0.0562376 0 0.5800552 0.0562376 0 0.5537742 0.09543138 0 0.5537742 0.0562376 0 0.5245351 0.0562376 0 0.4959429 0.09543138 0 0.4959429 0.0562376 0 0.4311486 0.0562376 0 0.4002948 0.09543138 0 0.4002948 0.0562376 0 0.09272602 0.0562376 0 0.06455687 0.09543138 0 0.06455687 0.0562376 0 0.3029625 0.0562376 0 0.2747934 0.09543138 0 0.2747934 0.0562376 0 0.09453905 0.05640606 0 0.06636989 0.0955999 0 0.06636989 0.05640606 0 0.03379051 0.05640606 0 0.004685797 0.0955999 0 0.004685797 0.05640606 0 0.3992658 0.05640606 0 0.3702175 0.0955999 0 0.3702175 0.05640606 0 0.7337918 0.05640603 0 0.3992658 0.0955999 0 0.4311872 0.05640604 0 0.4010992 0.0955999 0 0.4010992 0.05640604 0 0.3994836 0.05640602 0 0.3708359 0.09559992 0 0.3708359 0.05640605 0 0.3680366 0.09547032 0 0.4310578 0.09547032 0 0.0352971 0.09547032 0 0.06340626 0.09547032 0 0.09413462 0.09548973 0 0.03577757 0.09548973 0 0.4002315 0.09548973 0 0.7350564 0.09548973 0 0.4311486 0.09548973 0 0.3995089 0.09548973 0 0.3298934 0.09548973 0 0.03558933 0.09548973 0 0.4000386 0.09548973 0 0.5539095 0.09548973 0 0.1895128 0.1477159 0 0.1128762 0.1483909 0 0.3998895 0.09553365 0 0.03547918 0.09553365 0 0.5799319 0.09553365 0 0.5457809 0.1138468 0 0.3308598 0.09553365 0 0.4628734 0.09294324 0 0.03553063 0.09553365 0 0.525452 0.09553365 0 0.3049978 0.09553365 0 0.1912426 0.1472024 0 0.3427766 0.1472022 0 0.1533298 0.09543138 0 0.5534058 0.09543138 0 0.5800552 0.09543138 0 0.5245351 0.09543138 0 0.4311486 0.09543138 0 0.09272602 0.09543138 0 0.3029625 0.09543138 0 0.09453905 0.0955999 0 0.03379051 0.0955999 0 0.7348442 0.0955999 0 0.4311872 0.0955999 0 0.3994836 0.0955999 0 0.5256287 0.05644341 0 0.5256287 0.09548973 0 0.7066629 0.05640606 0 0.7066629 0.0955999 0 0.1280116 0.0562376 0 0.1280116 0.09543138 0 0.5383565 -1.15 0.4815 0.4616435 -1.15 0.4815 0.518418 -1.15 0.5215 0.4815821 -1.15 0.5215 0.5383565 2.15 0.4815 0.4616435 2.15 0.4815 0.518418 2.15 0.5215 0.4815821 2.15 0.5215 0.5291203 -1.15 0.4815 0.4708796 -1.15 0.4815 0.4708796 2.15 0.4815 0.5291203 2.15 0.4815 0.4616435 -1.15 0.4785 0.5383565 -1.15 0.4785 0.4841213 -1.15 0.5185 0.5158788 -1.15 0.5185 0.4616435 2.15 0.4785 0.5383565 2.15 0.4785 0.4841213 2.15 0.5185 0.5158788 2.15 0.5185 0.4734188 -1.15 0.4785 0.5265812 -1.15 0.4785 0.5265812 2.15 0.4785 0.4734188 2.15 0.4785 0.4834725 -1.15 0.5267898 0.5195275 -1.15 0.5207484 0.5195275 2.15 0.5207484 0.4834725 2.15 0.5267898 0.5165275 2.15 0.4732102 0.4804725 2.15 0.4792516 0.4804725 -1.15 0.4792516 0.5165275 -1.15 0.4732102 0.4834725 2.15 0.5182093 0.4834725 -1.15 0.5182093 0.5195275 -1.15 0.5242507 0.5195275 2.15 0.5242507 0.5165275 -1.15 0.4817908 0.5165275 2.15 0.4817908 0.4804725 2.15 0.4757493 0.4804725 -1.15 0.4757493 0.4815 -1.15 0.5383565 0.4815 2.15 0.5383565 0.4785 2.15 0.5383565 0.4785 -1.15 0.5383565 0.5185 2.15 0.4616435 0.5185 -1.15 0.4616435 0.5215 -1.15 0.4616435 0.5215 2.15 0.4616435 0.4808168 -1.15 0.5259274 0.4808166 2.15 0.5259274 0.4774162 -1.15 0.4792538 0.4774162 2.15 0.4792538 0.5225837 2.15 0.5207462 0.5225837 -1.15 0.5207462 0.5191832 2.15 0.4740727 0.5191832 -1.15 0.4740727 0.5222168 2.15 0.5236081 0.5222168 -1.15 0.5236081 0.5195255 2.15 0.4817464 0.5195255 -1.15 0.4817464 0.4804746 -1.15 0.5182536 0.4804745 2.15 0.5182536 0.4777832 -1.15 0.4763919 0.4777833 2.15 0.4763919 0.5265812 0.4785 0.5 0.5383565 0.4785 0.5 0.5383565 0.4815 0.5 0.5291204 0.4815 0.5 0.5242507 0.4804725 0.5 0.5267898 0.4834725 0.5 0.5182093 0.5165275 0.5 0.5207484 0.5195275 0.5 0.5158788 0.5185 0.5 0.5184179 0.5215 0.5 0.4841213 0.5185 0.5 0.4815821 0.5215 0.5 0.4817907 0.5165275 0.5 0.4792516 0.5195275 0.5 0.4757493 0.4804725 0.5 0.4732102 0.4834725 0.5 0.4734188 0.4785 0.5 0.4708796 0.4815 0.5 0.4616435 0.4785 0.5 0.4616435 0.4815 0.5 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.5383565 -1.15 0.4815 0.4616435 -1.15 0.4815 0.518418 -1.15 0.5215 0.4815821 -1.15 0.5215 0.5383565 2.15 0.4815 0.4616435 2.15 0.4815 0.518418 2.15 0.5215 0.4815821 2.15 0.5215 0.5291203 -1.15 0.4815 0.4708796 -1.15 0.4815 0.4708796 2.15 0.4815 0.5291203 2.15 0.4815 0.4616435 -1.15 0.4785 0.5383565 -1.15 0.4785 0.4841213 -1.15 0.5185 0.5158788 -1.15 0.5185 0.4616435 2.15 0.4785 0.5383565 2.15 0.4785 0.4841213 2.15 0.5185 0.5158788 2.15 0.5185 0.4734188 -1.15 0.4785 0.5265812 -1.15 0.4785 0.5265812 2.15 0.4785 0.4734188 2.15 0.4785 0.4834725 -1.15 0.5267898 0.5195275 -1.15 0.5207484 0.5195275 2.15 0.5207484 0.4834725 2.15 0.5267898 0.5165275 2.15 0.4732102 0.4804725 2.15 0.4792516 0.4804725 -1.15 0.4792516 0.5165275 -1.15 0.4732102 0.4834725 2.15 0.5182093 0.4834725 -1.15 0.5182093 0.5195275 -1.15 0.5242507 0.5195275 2.15 0.5242507 0.5165275 -1.15 0.4817908 0.5165275 2.15 0.4817908 0.4804725 2.15 0.4757493 0.4804725 -1.15 0.4757493 0.4815 -1.15 0.5383565 0.4815 2.15 0.5383565 0.4785 2.15 0.5383565 0.4785 -1.15 0.5383565 0.5185 2.15 0.4616435 0.5185 -1.15 0.4616435 0.5215 -1.15 0.4616435 0.5215 2.15 0.4616435 0.4808168 -1.15 0.5259274 0.4808166 2.15 0.5259274 0.4774162 -1.15 0.4792538 0.4774162 2.15 0.4792538 0.5225837 2.15 0.5207462 0.5225837 -1.15 0.5207462 0.5191832 2.15 0.4740727 0.5191832 -1.15 0.4740727 0.5222168 2.15 0.5236081 0.5222168 -1.15 0.5236081 0.5195255 2.15 0.4817464 0.5195255 -1.15 0.4817464 0.4804746 -1.15 0.5182536 0.4804745 2.15 0.5182536 0.4777832 -1.15 0.4763919 0.4777833 2.15 0.4763919 0.5265812 0.4785 0.5 0.5383565 0.4785 0.5 0.5383565 0.4815 0.5 0.5291204 0.4815 0.5 0.5242507 0.4804725 0.5 0.5267898 0.4834725 0.5 0.5182093 0.5165275 0.5 0.5207484 0.5195275 0.5 0.5158788 0.5185 0.5 0.5184179 0.5215 0.5 0.4841213 0.5185 0.5 0.4815821 0.5215 0.5 0.4817907 0.5165275 0.5 0.4792516 0.5195275 0.5 0.4757493 0.4804725 0.5 0.4732102 0.4834725 0.5 0.4734188 0.4785 0.5 0.4708796 0.4815 0.5 0.4616435 0.4785 0.5 0.4616435 0.4815 0.5 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9994799 0.7070453 0 0.9994799 0.692265 0 0.9536986 0.692265 0 0.9994799 0.6638397 0 0.9536986 0.6638397 0 0.9994799 0.6529551 0 0.9536986 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9994799 0.7070453 0 0.9994799 0.692265 0 0.9536986 0.692265 0 0.9994799 0.6638397 0 0.9536986 0.6638397 0 0.9994799 0.6529551 0 0.9536986 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9994799 0.7070453 0 0.9994799 0.692265 0 0.9536986 0.692265 0 0.9994799 0.6638397 0 0.9536986 0.6638397 0 0.9994799 0.6529551 0 0.9536986 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9994799 0.7070453 0 0.9994799 0.692265 0 0.9536986 0.692265 0 0.9994799 0.6638397 0 0.9536986 0.6638397 0 0.9994799 0.6529551 0 0.9536986 0.6529551 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway80-map1-array" count="597" stride="3">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+              <param name="P" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ut_roadsign_west_highway80-vertices">
+          <input semantic="POSITION" source="#geom-ut_roadsign_west_highway80-positions" />
+        </vertices>
+        <triangles material="lod_vertcol" count="20">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>2 279 0 0 0 280 1 2 1 281 2 1 6 282 3 3 4 283 4 5 5 284 5 4 2 285 6 6 1 286 7 8 3 287 8 7 6 288 9 9 5 289 10 11 7 290 11 10 0 291 12 12 8 292 13 13 9 293 14 14 9 293 14 14 1 294 15 15 0 291 12 12 2 295 16 16 10 296 17 17 8 297 18 28 8 297 18 28 0 298 19 29 2 295 16 16 4 299 20 18 12 300 21 19 13 301 22 20 13 301 22 20 5 302 23 21 4 299 20 18 6 303 24 22 14 304 25 23 12 305 26 30 12 305 26 30 4 306 27 31 6 303 24 22 3 307 28 24 11 308 29 25 10 309 30 32 10 309 30 32 2 310 31 33 3 307 28 24 1 311 32 34 9 312 33 35 11 313 34 36 11 313 34 36 3 314 35 37 1 311 32 34 7 315 36 26 15 316 37 27 14 317 38 38 14 317 38 38 6 318 39 39 7 315 36 26 5 319 40 40 13 320 41 41 15 321 42 42 15 321 42 42 7 322 43 43 5 319 40 40</p>
+        </triangles>
+        <triangles material="ut_bld_metal_clean" count="4">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>9 323 44 44 8 324 45 45 10 325 46 46 13 326 47 47 12 327 48 48 14 328 49 49 9 329 50 50 10 330 51 51 11 331 52 52 13 332 53 53 14 333 54 54 15 334 55 55</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="64">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>19 337 58 59 18 338 59 58 16 335 56 56 16 335 56 56 17 336 57 57 19 337 58 59 18 338 60 58 19 337 61 59 21 339 62 61 21 339 62 61 20 340 63 60 18 338 60 58 20 340 64 60 21 339 65 61 23 341 66 63 23 341 66 63 22 342 67 62 20 340 64 60 22 342 68 62 23 341 69 63 25 343 70 65 25 343 70 65 24 344 71 64 22 342 68 62 24 344 72 64 25 343 73 65 27 345 74 67 27 345 74 67 26 346 75 66 24 344 72 64 26 346 76 66 27 345 77 67 29 347 78 69 29 347 78 69 28 348 79 68 26 346 76 66 28 348 80 68 29 347 81 69 31 349 82 71 31 349 82 71 30 350 83 70 28 348 80 68 30 350 84 70 31 349 85 71 33 351 86 73 33 351 86 73 32 352 87 72 30 350 84 70 35 353 90 75 34 354 91 74 32 352 88 72 32 352 88 72 33 351 89 73 35 353 90 75 34 354 92 74 35 353 93 75 37 355 94 77 37 355 94 77 36 356 95 76 34 354 92 74 36 356 96 76 37 355 97 77 39 357 98 79 39 357 98 79 38 358 99 78 36 356 96 76 38 358 100 78 39 357 101 79 41 359 102 81 41 359 102 81 40 360 103 80 38 358 100 78 40 360 104 80 41 359 105 81 43 361 106 83 43 361 106 83 42 362 107 82 40 360 104 80 42 362 108 82 43 361 109 83 45 363 110 85 45 363 110 85 44 364 111 84 42 362 108 82 44 364 112 84 45 363 113 85 47 365 114 87 47 365 114 87 46 366 115 86 44 364 112 84 46 366 116 86 47 365 117 87 17 336 118 57 17 336 118 57 16 335 119 56 46 366 116 86 51 369 122 91 50 370 123 90 48 367 120 88 48 367 120 88 49 368 121 89 51 369 122 91 50 370 124 90 51 369 125 91 53 371 126 93 53 371 126 93 52 372 127 92 50 370 124 90 52 372 128 92 53 371 129 93 55 373 130 95 55 373 130 95 54 374 131 94 52 372 128 92 54 374 132 94 55 373 133 95 57 375 134 97 57 375 134 97 56 376 135 96 54 374 132 94 56 376 136 96 57 375 137 97 59 377 138 99 59 377 138 99 58 378 139 98 56 376 136 96 58 378 140 98 59 377 141 99 61 379 142 101 61 379 142 101 60 380 143 100 58 378 140 98 60 380 144 100 61 379 145 101 63 381 146 103 63 381 146 103 62 382 147 102 60 380 144 100 62 382 148 102 63 381 149 103 65 383 150 105 65 383 150 105 64 384 151 104 62 382 148 102 67 385 154 107 66 386 155 106 64 384 152 104 64 384 152 104 65 383 153 105 67 385 154 107 66 386 156 106 67 385 157 107 69 387 158 109 69 387 158 109 68 388 159 108 66 386 156 106 68 388 160 108 69 387 161 109 71 389 162 111 71 389 162 111 70 390 163 110 68 388 160 108 70 390 164 110 71 389 165 111 73 391 166 113 73 391 166 113 72 392 167 112 70 390 164 110 72 392 168 112 73 391 169 113 75 393 170 115 75 393 170 115 74 394 171 114 72 392 168 112 74 394 172 114 75 393 173 115 77 395 174 117 77 395 174 117 76 396 175 116 74 394 172 114 76 396 176 116 77 395 177 117 79 397 178 119 79 397 178 119 78 398 179 118 76 396 176 116 78 398 180 118 79 397 181 119 49 368 182 89 49 368 182 89 48 367 183 88 78 398 180 118</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="2">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>80 399 184 120 83 400 185 121 82 401 186 122 80 405 190 123 81 406 191 124 83 407 192 125</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="3">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>88 402 187 130 89 403 188 131 84 404 189 128 85 408 193 126 87 409 194 129 90 410 195 132 87 411 196 129 86 412 197 127 90 413 198 132</p>
+        </triangles>
+        <triangles material="ut_roadsigns" count="84">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>92 0 199 133 93 0 200 134 91 0 201 135 96 1 202 136 97 1 203 137 95 1 204 138 100 1 205 139 101 1 206 140 99 1 207 141 104 2 208 142 105 2 209 143 103 2 210 144 108 3 211 145 109 3 212 146 107 3 213 147 112 4 214 148 113 4 215 149 111 4 216 150 116 4 217 151 117 4 218 152 115 4 219 153 120 5 220 154 121 5 221 155 119 5 222 156 124 6 223 157 125 6 224 158 123 6 225 159 128 4 226 160 129 4 227 161 127 4 228 162 132 7 229 163 133 7 230 164 131 7 231 165 136 4 232 166 137 4 233 167 135 4 234 168 140 4 235 169 141 4 236 170 139 4 237 171 144 8 238 172 145 8 239 173 143 8 240 174 147 9 241 175 254 9 242 296 253 9 243 295 150 10 244 177 151 10 245 178 149 10 246 179 154 11 247 180 155 11 248 181 153 11 249 182 158 8 250 183 159 8 251 184 157 8 252 185 162 3 253 186 163 3 254 187 161 3 255 188 166 12 256 189 167 12 257 190 165 12 258 191 170 13 259 192 171 13 260 193 169 13 261 194 174 14 262 195 175 14 263 196 173 14 264 197 178 15 265 198 179 15 266 199 177 15 267 200 182 4 268 201 183 4 269 202 181 4 270 203 186 12 271 204 187 12 272 205 185 12 273 206 190 16 274 207 191 16 275 208 189 16 276 209 194 17 277 210 195 17 278 211 193 17 279 212 198 18 280 213 199 18 281 214 197 18 282 215 203 19 283 216 202 19 284 217 201 19 285 218 204 20 286 219 258 20 287 300 257 20 288 299 208 21 289 221 209 21 290 222 207 21 291 223 212 22 292 224 213 22 293 225 211 22 294 226 216 23 295 227 217 23 296 228 215 23 297 229 220 24 298 230 221 24 299 231 219 24 300 232 224 25 301 233 225 25 302 234 223 25 303 235 228 26 304 236 229 26 305 237 227 26 306 238 232 27 307 239 233 27 308 240 231 27 309 241 236 28 310 242 237 28 311 243 235 28 312 244 241 29 313 245 240 29 314 246 239 29 315 247 242 29 316 248 256 29 317 298 255 29 318 297 246 30 319 250 247 30 320 251 245 30 321 252 250 30 322 253 251 30 323 254 249 30 324 255 92 31 325 133 94 31 326 256 93 31 327 134 96 32 328 136 98 32 329 257 97 32 330 137 100 33 331 139 102 33 332 258 101 33 333 140 104 2 334 142 106 2 335 259 105 2 336 143 108 3 337 145 110 3 338 260 109 3 339 146 112 4 340 148 114 4 341 261 113 4 342 149 116 4 343 151 118 4 344 262 117 4 345 152 120 5 346 154 122 5 347 263 121 5 348 155 124 6 349 157 126 6 350 264 125 6 351 158 128 4 352 160 130 4 353 265 129 4 354 161 132 34 355 163 134 34 356 266 133 34 357 164 136 35 358 166 138 35 359 267 137 35 360 167 140 4 361 169 142 4 362 268 141 4 363 170 144 3 364 172 146 3 365 176 145 3 366 173 147 36 367 175 148 36 368 269 254 36 369 296 150 37 370 177 152 37 371 270 151 37 372 178 154 11 373 180 156 11 374 271 155 11 375 181 158 4 376 183 160 4 377 272 159 4 378 184 162 8 379 186 164 8 380 273 163 8 381 187 166 38 382 189 168 38 383 274 167 38 384 190 170 39 385 192 172 39 386 275 171 39 387 193 174 40 388 195 176 40 389 276 175 40 390 196 178 15 391 198 180 15 392 277 179 15 393 199 182 41 394 201 184 41 395 278 183 41 396 202 186 42 397 204 188 42 398 279 187 42 399 205 190 38 400 207 192 38 401 280 191 38 402 208 194 17 403 210 196 17 404 281 195 17 405 211 198 43 406 213 200 43 407 282 199 43 408 214 203 44 409 216 205 44 410 220 202 44 411 217 204 45 412 219 206 45 413 283 258 45 414 300 208 46 415 221 210 46 416 284 209 46 417 222 212 47 418 224 214 47 419 285 213 47 420 225 216 48 421 227 218 48 422 286 217 48 423 228 220 49 424 230 222 49 425 287 221 49 426 231 224 50 427 233 226 50 428 288 225 50 429 234 228 50 430 236 230 50 431 289 229 50 432 237 232 51 433 239 234 51 434 290 233 51 435 240 236 52 436 242 238 52 437 291 237 52 438 243 241 52 439 245 243 52 440 249 240 52 441 246 242 53 442 248 244 53 443 292 256 53 444 298 246 54 445 250 248 54 446 293 247 54 447 251 250 54 448 253 252 54 449 294 251 54 450 254</p>
+        </triangles>
+        <triangles material="ut_bld_metal_clean_2" count="116">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>264 57 453 306 260 58 454 302 284 55 451 310 284 55 451 310 269 56 452 311 264 57 453 306 281 61 457 307 266 62 458 308 262 59 455 304 262 59 455 304 279 60 456 303 281 61 457 307 282 65 461 327 285 66 462 328 268 63 459 325 268 63 459 325 280 64 460 326 282 65 461 327 270 69 465 312 267 70 466 309 259 67 463 301 259 67 463 301 263 68 464 305 270 69 465 312 261 73 469 331 283 74 470 332 286 71 467 329 286 71 467 329 265 72 468 330 261 73 469 331 278 77 473 322 272 78 474 314 276 75 471 318 276 75 471 318 296 76 472 323 278 77 473 322 288 81 477 316 291 82 478 320 290 79 475 319 290 79 475 319 273 80 476 315 288 81 477 316 294 85 481 335 295 86 482 336 292 83 479 333 292 83 479 333 274 84 480 334 294 85 481 335 271 89 485 313 293 90 486 321 297 87 483 324 297 87 483 324 275 88 484 317 271 89 485 313 298 93 489 339 277 94 490 340 287 91 487 337 287 91 487 337 289 92 488 338 298 93 489 339 276 97 493 343 272 98 494 344 260 95 491 341 260 95 491 341 264 96 492 342 276 97 493 343 271 101 497 347 275 102 498 348 263 99 495 345 263 99 495 345 259 100 496 346 271 101 497 347 284 55 499 349 268 63 500 325 285 66 501 328 285 66 501 328 269 56 502 350 284 55 499 349 279 60 503 351 261 73 504 331 265 72 505 330 265 72 505 330 281 61 506 352 279 60 503 351 266 62 507 353 282 65 508 327 280 64 509 326 280 64 509 326 262 59 510 354 266 62 507 353 270 69 511 355 286 71 512 329 283 74 513 332 283 74 513 332 267 70 514 356 270 69 511 355 296 76 515 357 295 86 516 336 294 85 517 335 294 85 517 335 278 77 518 358 296 76 515 357 290 79 519 359 289 92 520 338 287 91 521 337 287 91 521 337 273 80 522 360 290 79 519 359 288 81 523 361 274 84 524 334 292 83 525 333 292 83 525 333 291 82 526 362 288 81 523 361 293 90 527 363 277 94 528 340 298 93 529 339 298 93 529 339 297 87 530 364 293 90 527 363 276 104 532 366 264 105 533 367 269 106 534 368 269 106 534 368 296 103 531 365 276 104 532 366 296 103 536 365 269 106 537 368 285 108 538 370 285 108 538 370 295 107 535 369 296 103 536 365 292 109 539 371 295 107 540 369 285 108 541 370 285 108 541 370 282 110 542 372 292 109 539 371 292 109 544 371 282 110 545 372 266 112 546 374 266 112 546 374 291 111 543 373 292 109 544 371 291 111 548 373 266 112 549 374 281 114 550 376 281 114 550 376 290 113 547 375 291 111 548 373 290 113 552 375 281 114 553 376 265 116 554 378 265 116 554 378 289 115 551 377 290 113 552 375 289 115 556 377 265 116 557 378 286 118 558 380 286 118 558 380 298 117 555 379 289 115 556 377 298 117 560 379 286 118 561 380 270 120 562 382 270 120 562 382 297 119 559 381 298 117 560 379 275 121 563 383 297 119 564 381 270 120 565 382 270 120 565 382 263 122 566 384 275 121 563 383 332 169 617 422 328 170 618 418 352 167 615 426 352 167 615 426 337 168 616 427 332 169 617 422 349 173 621 423 334 174 622 424 330 171 619 420 330 171 619 420 347 172 620 419 349 173 621 423 350 177 625 443 353 178 626 444 336 175 623 441 336 175 623 441 348 176 624 442 350 177 625 443 338 181 629 428 335 182 630 425 327 179 627 417 327 179 627 417 331 180 628 421 338 181 629 428 329 185 633 447 351 186 634 448 354 183 631 445 354 183 631 445 333 184 632 446 329 185 633 447 346 189 637 438 340 190 638 430 344 187 635 434 344 187 635 434 364 188 636 439 346 189 637 438 356 193 641 432 359 194 642 436 358 191 639 435 358 191 639 435 341 192 640 431 356 193 641 432 362 197 645 451 363 198 646 452 360 195 643 449 360 195 643 449 342 196 644 450 362 197 645 451 339 201 649 429 361 202 650 437 365 199 647 440 365 199 647 440 343 200 648 433 339 201 649 429 366 205 653 455 345 206 654 456 355 203 651 453 355 203 651 453 357 204 652 454 366 205 653 455 344 209 657 459 340 210 658 460 328 207 655 457 328 207 655 457 332 208 656 458 344 209 657 459 339 213 661 463 343 214 662 464 331 211 659 461 331 211 659 461 327 212 660 462 339 213 661 463 352 167 663 465 336 175 664 441 353 178 665 444 353 178 665 444 337 168 666 466 352 167 663 465 347 172 667 467 329 185 668 447 333 184 669 446 333 184 669 446 349 173 670 468 347 172 667 467 334 174 671 469 350 177 672 443 348 176 673 442 348 176 673 442 330 171 674 470 334 174 671 469 338 181 675 471 354 183 676 445 351 186 677 448 351 186 677 448 335 182 678 472 338 181 675 471 364 188 679 473 363 198 680 452 362 197 681 451 362 197 681 451 346 189 682 474 364 188 679 473 358 191 683 475 357 204 684 454 355 203 685 453 355 203 685 453 341 192 686 476 358 191 683 475 356 193 687 477 342 196 688 450 360 195 689 449 360 195 689 449 359 194 690 478 356 193 687 477 361 202 691 479 345 206 692 456 366 205 693 455 366 205 693 455 365 199 694 480 361 202 691 479 344 216 696 482 332 217 697 483 337 218 698 484 337 218 698 484 364 215 695 481 344 216 696 482 364 215 700 481 337 218 701 484 353 220 702 486 353 220 702 486 363 219 699 485 364 215 700 481 360 221 703 487 363 219 704 485 353 220 705 486 353 220 705 486 350 222 706 488 360 221 703 487 360 221 708 487 350 222 709 488 334 224 710 490 334 224 710 490 359 223 707 489 360 221 708 487 359 223 712 489 334 224 713 490 349 226 714 492 349 226 714 492 358 225 711 491 359 223 712 489 358 225 716 491 349 226 717 492 333 228 718 494 333 228 718 494 357 227 715 493 358 225 716 491 357 227 720 493 333 228 721 494 354 230 722 496 354 230 722 496 366 229 719 495 357 227 720 493 366 229 724 495 354 230 725 496 338 232 726 498 338 232 726 498 365 231 723 497 366 229 724 495 343 233 727 499 365 231 728 497 338 232 729 498 338 232 729 498 331 234 730 500 343 233 727 499</p>
+        </triangles>
+        <triangles material="ut_metal_trim" count="96">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway80-map1" offset="3" set="0" />
+          <p>299 124 568 386 300 125 569 387 308 126 570 388 308 126 570 388 305 123 567 385 299 124 568 386 300 127 571 387 299 128 572 386 301 129 573 389 301 129 573 389 302 130 574 390 300 127 571 387 302 131 575 390 301 132 576 389 303 133 577 391 303 133 577 391 304 134 578 392 302 131 575 390 306 136 582 394 305 123 579 393 308 126 580 396 308 126 580 396 307 135 581 395 306 136 582 394 307 137 583 395 310 138 584 398 309 139 585 397 309 139 585 397 306 140 586 394 307 137 583 395 310 141 587 398 312 142 588 400 311 143 589 399 311 143 589 399 309 144 590 397 310 141 587 398 313 146 592 402 314 147 593 403 322 148 594 404 322 148 594 404 319 145 591 401 313 146 592 402 314 149 595 403 313 150 596 402 315 151 597 405 315 151 597 405 316 152 598 406 314 149 595 403 316 153 599 406 315 154 600 405 317 155 601 407 317 155 601 407 318 156 602 408 316 153 599 406 320 158 606 410 319 145 603 409 322 148 604 412 322 148 604 412 321 157 605 411 320 158 606 410 321 159 607 411 324 160 608 414 323 161 609 413 323 161 609 413 320 162 610 410 321 159 607 411 324 163 611 414 326 164 612 416 325 165 613 415 325 165 613 415 323 166 614 413 324 163 611 414 367 236 732 502 368 237 733 503 376 238 734 504 376 238 734 504 373 235 731 501 367 236 732 502 368 239 735 503 367 240 736 502 369 241 737 505 369 241 737 505 370 242 738 506 368 239 735 503 370 243 739 506 369 244 740 505 371 245 741 507 371 245 741 507 372 246 742 508 370 243 739 506 374 248 746 510 373 235 743 509 376 238 744 512 376 238 744 512 375 247 745 511 374 248 746 510 375 249 747 511 378 250 748 514 377 251 749 513 377 251 749 513 374 252 750 510 375 249 747 511 378 253 751 514 380 254 752 516 379 255 753 515 379 255 753 515 377 256 754 513 378 253 751 514 381 258 756 518 382 259 757 519 390 260 758 520 390 260 758 520 387 257 755 517 381 258 756 518 382 261 759 519 381 262 760 518 383 263 761 521 383 263 761 521 384 264 762 522 382 261 759 519 384 265 763 522 383 266 764 521 385 267 765 523 385 267 765 523 386 268 766 524 384 265 763 522 388 270 770 526 387 257 767 525 390 260 768 528 390 260 768 528 389 269 769 527 388 270 770 526 389 271 771 527 392 272 772 530 391 273 773 529 391 273 773 529 388 274 774 526 389 271 771 527 392 275 775 530 394 276 776 532 393 277 777 531 393 277 777 531 391 278 778 529 392 275 775 530 396 415 780 534 397 416 781 535 398 417 782 536 398 417 782 536 395 414 779 533 396 415 780 534 397 418 783 535 396 419 784 534 399 420 785 537 399 420 785 537 400 421 786 538 397 418 783 535 400 422 787 538 399 423 788 537 401 424 789 539 401 424 789 539 402 425 790 540 400 422 787 538 404 427 794 544 395 414 791 541 398 417 792 542 398 417 792 542 403 426 793 543 404 427 794 544 403 428 795 543 405 429 796 545 406 430 797 546 406 430 797 546 404 431 798 544 403 428 795 543 405 432 799 545 407 433 800 547 408 434 801 548 408 434 801 548 406 435 802 546 405 432 799 545 410 437 804 550 411 438 805 551 412 439 806 552 412 439 806 552 409 436 803 549 410 437 804 550 411 440 807 551 410 441 808 550 413 442 809 553 413 442 809 553 414 443 810 554 411 440 807 551 414 444 811 554 413 445 812 553 415 446 813 555 415 446 813 555 416 447 814 556 414 444 811 554 418 449 818 560 409 436 815 557 412 439 816 558 412 439 816 558 417 448 817 559 418 449 818 560 417 450 819 559 419 451 820 561 420 452 821 562 420 452 821 562 418 453 822 560 417 450 819 559 419 454 823 561 421 455 824 563 422 456 825 564 422 456 825 564 420 457 826 562 419 454 823 561 424 459 828 566 425 460 829 567 426 461 830 568 426 461 830 568 423 458 827 565 424 459 828 566 425 462 831 567 424 463 832 566 427 464 833 569 427 464 833 569 428 465 834 570 425 462 831 567 428 466 835 570 427 467 836 569 429 468 837 571 429 468 837 571 430 469 838 572 428 466 835 570 432 471 842 576 423 458 839 573 426 461 840 574 426 461 840 574 431 470 841 575 432 471 842 576 431 472 843 575 433 473 844 577 434 474 845 578 434 474 845 578 432 475 846 576 431 472 843 575 433 476 847 577 435 477 848 579 436 478 849 580 436 478 849 580 434 479 850 578 433 476 847 577 438 481 852 582 439 482 853 583 440 483 854 584 440 483 854 584 437 480 851 581 438 481 852 582 439 484 855 583 438 485 856 582 441 486 857 585 441 486 857 585 442 487 858 586 439 484 855 583 442 488 859 586 441 489 860 585 443 490 861 587 443 490 861 587 444 491 862 588 442 488 859 586 446 493 866 592 437 480 863 589 440 483 864 590 440 483 864 590 445 492 865 591 446 493 866 592 445 494 867 591 447 495 868 593 448 496 869 594 448 496 869 594 446 497 870 592 445 494 867 591 447 498 871 593 449 499 872 595 450 500 873 596 450 500 873 596 448 501 874 594 447 498 871 593</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ut_roadsign_west_highway20" name="ut_roadsign_west_highway20">
+      <mesh>
+        <source id="geom-ut_roadsign_west_highway20-positions">
+          <float_array id="geom-ut_roadsign_west_highway20-positions-array" count="96">-423.8031 -15.241 624.4437 423.3895 -15.241 624.4437 -423.8031 -15.241 1270.789 423.3895 -15.241 1270.789 -423.8031 -15.241 351.7683 423.3895 -15.241 351.7683 -423.8031 -15.241 600.7982 423.3895 -15.241 600.7982 -423.8031 -6.485781 624.4436 423.3895 -6.485781 624.4436 -423.8031 -6.485781 1270.789 423.3895 -6.485781 1270.789 -423.8031 -6.485781 351.7683 423.3895 -6.485781 351.7683 -423.8031 -6.485781 600.7982 423.3895 -6.485781 600.7982 -286.3136 -8.272171 1240.826 -286.3136 -8.272171 -124.0826 -254.5844 -8.272171 -124.0826 -254.5844 -8.272171 1240.826 -254.5844 -4.684387 1240.826 -254.5844 -4.684387 -124.0826 -286.3136 -4.684381 -124.0826 -286.3136 -4.684381 1240.826 256.5184 -8.272171 1240.826 256.5184 -8.272171 -124.0826 288.2476 -8.272171 -124.0826 288.2476 -8.272171 1240.826 288.2476 -4.684387 1240.826 288.2476 -4.684387 -124.0826 256.5184 -4.684381 -124.0826 256.5184 -4.684381 1240.826</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway20-positions-array" count="32" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_west_highway20-normals">
+          <float_array id="geom-ut_roadsign_west_highway20-normals-array" count="120">0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway20-normals-array" count="40" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_west_highway20-map0">
+          <float_array id="geom-ut_roadsign_west_highway20-map0-array" count="120">0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway20-map0-array" count="40" stride="3">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_west_highway20-map1">
+          <float_array id="geom-ut_roadsign_west_highway20-map1-array" count="120">1.0001e-4 0.9999001 150.9746 0.9999001 9.998e-5 150.9746 9.998e-5 1.0004e-4 307.2444 1.0001e-4 0.9999001 184.7499 0.9999001 9.998e-5 184.7499 9.998e-5 1.0004e-4 167.2403 1.0001e-4 0.9999001 95.69077 0.9999001 0.9999001 113.2003 0.9999001 9.998e-5 113.2003 0 0 0 0 0 0 0 0 0 -0.5241481 0.0482806 0.5105837 1.524148 0.0482806 0.5105842 1.524148 1.610979 0.5105842 -0.5241481 -0.6109788 0.5105837 1.524148 -0.6109788 0.5105842 1.524148 -0.008888125 0.5105842 -0.5241481 0.0482806 0.5105837 1.524148 1.610979 0.5105842 -0.5241481 1.610979 0.5105837 -0.5241481 -0.6109788 0.5105837 1.524148 -0.008888125 0.5105842 -0.5241481 -0.008888125 0.5105837 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_west_highway20-map1-array" count="40" stride="3">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+              <param name="P" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ut_roadsign_west_highway20-vertices">
+          <input semantic="POSITION" source="#geom-ut_roadsign_west_highway20-positions" />
+        </vertices>
+        <triangles material="lod_vertcol" count="16">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_west_highway20-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_west_highway20-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_west_highway20-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_west_highway20-map1" offset="3" set="0" />
+          <p>2 0 0 0 0 1 1 2 1 2 2 1 6 3 3 3 4 4 4 5 5 5 5 4 2 6 6 6 1 7 7 8 3 8 8 7 6 9 9 9 5 10 10 11 7 11 11 10 9 12 12 12 8 13 13 13 10 14 14 14 13 15 15 15 12 16 16 16 14 17 17 17 9 18 18 18 10 19 19 19 11 20 20 20 13 21 21 21 14 22 22 22 15 23 23 23 16 24 24 24 17 25 25 25 18 26 26 26 18 26 26 26 19 27 27 27 16 24 24 24 20 28 28 28 21 29 29 29 22 30 30 30 22 30 30 30 23 31 31 31 20 28 28 28 24 32 32 32 25 33 33 33 26 34 34 34 26 34 34 34 27 35 35 35 24 32 32 32 28 36 36 36 29 37 37 37 30 38 38 38 30 38 38 38 31 39 39 39 28 36 36 36</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="ut_roadsigns_tga">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Decals/Utah/utah_roadsigns/ut_roadsigns.tga</init_from>
+    </image>
+    <image id="utah_metal_clean_d_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/utah_metal_clean/utah_metal_clean_d.png</init_from>
+    </image>
+    <image id="ut_metal_trim_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Trims/Utah/Utah_metal_trim/ut_metal_trim_SP/ut_metal_trim.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight" />
+      </node>
+      <node id="node-base00" name="base00">
+        <scale>0.2417746 0.2417746 0.2417746</scale>
+        <node id="node-collision-1" name="collision-1">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-start01" name="start01">
+          <node id="node-ut_roadsign_west_highway80" name="ut_roadsign_west_highway80">
+            <translate>-1.2207e-4 0 0</translate>
+            <instance_geometry url="#geom-ut_roadsign_west_highway80">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ut_bld_metal_clean_2" target="#ut_bld_metal_clean_1-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="ut_metal_trim" target="#ut_metal_trim-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="ut_roadsigns" target="#ut_roadsigns-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="ut_bld_metal_clean" target="#ut_bld_metal_clean-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="lod_vertcol" target="#lod_vertcol-material" />
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-ut_roadsign_west_highway20" name="ut_roadsign_west_highway20">
+            <translate>-2.44141e-4 0 0</translate>
+            <instance_geometry url="#geom-ut_roadsign_west_highway20">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="lod_vertcol" target="#lod_vertcol-material" />
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-nulldetail1" name="nulldetail1">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene" />
+  </scene>
+</COLLADA>

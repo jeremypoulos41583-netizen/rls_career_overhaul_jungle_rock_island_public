@@ -1,0 +1,61 @@
+{
+  "Body Style":"Box Truck",
+  "BoundingBox":[
+    [
+      -0.8854,
+      -1.156,
+      -0.5474
+    ],
+    [
+      1.7534,
+      7.1805,
+      2.8588
+    ]
+  ],
+  "Commercial Class":"Class 6 Truck",
+  "Config Type":"Custom",
+  "Configuration":"MD70 Cargo Box Port",
+  "Value":40000,
+  "Population":500,
+  "Weight":7550,
+  "Weight/Power":38.52040816,
+  "Power":196,
+  "PowerPeakRPM":2400,
+  "Torque":625,
+  "TorquePeakRPM":"1150 - 1900",
+  "Transmission":"Manual",
+  "Description":"Early front cab equipped with a cargo box upfit",
+  "Drag Times":{
+    "brakingG":0.5402930826,
+    "time_0_60":0,
+    "time_1000":24.84200109,
+    "time_1_4":29.35200134,
+    "time_1_8":19.38850078,
+    "time_330":12.93500047,
+    "time_60":4.796500195,
+    "velAt_1_4":22.77567272,
+    "velAt_1_8":17.39074095
+  },
+  "Drivetrain":"RWD",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Off-Road Score":23,
+  "Population":8000,
+  "Power":196,
+  "PowerPeakRPM":2400,
+  "Propulsion":"ICE",
+  "Top Speed":25.69987106,
+  "Torque":625,
+  "TorquePeakRPM":"1150 - 1900",
+  "Transmission":"Manual",
+  "Value":86000,
+  "Weight":7550,
+  "Weight/Power":38.52040816,
+  "Years":{
+    "max":1992,
+    "min":1986
+  },
+  "defaultPaintName1":"White",
+  "defaultPaintName2":"Black",
+  "defaultPaintName3":"White"
+}

@@ -1,0 +1,62 @@
+{
+  "vertexColor_glow": {
+    "name": "vertexColor_glow",
+    "mapTo": "vertexColor_glow",
+    "class": "Material",
+    "persistentId": "6244b732-a759-4704-8643-7d48cde33544",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "emissive": true,
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          3.92156911
+        ],
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701,
+        "vertColor": true,
+        "vertColorEmissive": true
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

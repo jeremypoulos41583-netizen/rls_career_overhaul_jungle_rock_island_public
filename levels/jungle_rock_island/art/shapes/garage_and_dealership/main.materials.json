@@ -1,0 +1,283 @@
+{
+  "fabric_generic_dealership": {
+    "name": "fabric_generic_dealership",
+    "mapTo": "fabric_generic_dealership",
+    "class": "Material",
+    "persistentId": "d03c8399-080f-4364-9afe-bdc7f37b5ad1",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/t_fabric_generic_dealership_ao.data.png",
+        "baseColorMap": "/art/shapes/garage_and_dealership/t_fabric_generic_dealership_b.color.png",
+        "normalMap": "/art/shapes/garage_and_dealership/t_fabric_generic_dealership_nm.normal.png",
+        "roughnessMap": "/art/shapes/garage_and_dealership/t_fabric_generic_dealership_r.data.png",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "annotation": "OBSTACLES",
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "ind_metal_trim": {
+    "name": "ind_metal_trim",
+    "mapTo": "ind_metal_trim",
+    "class": "Material",
+    "persistentId": "6fc54099-1c9a-4a9b-995f-74b5a831e70c",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/Clutter/ind_metal_trim_ao.data.png",
+        "baseColorFactor": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "baseColorMap": "/art/shapes/garage_and_dealership/Clutter/ind_metal_trim_b.color.png",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "metallicFactor": 0.300000012,
+        "metallicMap": "/art/shapes/garage_and_dealership/Clutter/ind_metal_trim_m.data.png",
+        "normalMap": "/art/shapes/garage_and_dealership/Clutter/Ind_metal_trim_nm.normal.png",
+        "opacityMap": "/art/shapes/garage_and_dealership/Clutter/ind_metal_trim_o.data.png",
+        "overlayMap": "/art/shapes/garage_and_dealership/Clutter/utah_breakup_texture.dds",
+        "roughnessFactor": 0.667999983,
+        "roughnessMap": "/art/shapes/garage_and_dealership/Clutter/ind_metal_trim_r.data.png",
+        "specular": [
+          0.996078014,
+          0.996078014,
+          0.996078014,
+          1
+        ],
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 104,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "materialTag3": "vegetation",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "1.3",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "ind_plywood_old": {
+    "name": "ind_plywood_old",
+    "mapTo": "ind_plywood_old",
+    "class": "Material",
+    "persistentId": "22466117-6eb1-4877-b075-846ede29108b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/t_ind_plywood_old_ao.data.png",
+        "ambientOcclusionMapUseUV": null,
+        "baseColorMap": "/art/shapes/garage_and_dealership/t_ind_plywood_old_b.color.png",
+        "diffuseMapUseUV": null,
+        "normalMap": "/art/shapes/garage_and_dealership/t_ind_plywood_old_nm.normal.png",
+        "opacityMapUseUV": null,
+        "overlayMap": "/art/shapes/garage_and_dealership/Clutter/utah_breakup_texture.dds",
+        "roughnessFactor": 0.879999995,
+        "roughnessMap": "/art/shapes/garage_and_dealership/t_ind_plywood_old_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "ambientOcclusionMapUseUV": 1,
+        "baseColorMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_b.color.png",
+        "diffuseMapUseUV": 1,
+        "opacityMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "roughnessFactor": null,
+        "roughnessMap": "/art/shapes/garage_and_dealership/garage/t_breakup_general_r.data.png",
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "ambientOcclusionMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "opacityMapUseUV": null,
+        "roughnessFactor": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "ambientOcclusionMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "opacityMapUseUV": null,
+        "roughnessFactor": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "alphaRef": 121,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "WOOD",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "materialTag3": "vegetation",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "0.294118",
+    "specularStrength1": "0.2",
+    "version": 1.5
+  },
+  "m_billboardsigns_dealers": {
+    "name": "m_billboardsigns_dealers",
+    "mapTo": "m_billboardsigns_dealers",
+    "class": "Material",
+    "persistentId": "8da9f0e3-2e03-4c56-92b9-b7fad479facf",
+    "Stages": [
+      {
+        "baseColorMap": "/art/shapes/garage_and_dealership/t_billboardsigns_dealers_b.color.png",
+        "opacityMap": "/art/shapes/garage_and_dealership/t_billboardsigns_dealers_o.data.png",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 128,
+    "alphaTest": true,
+    "annotation": "OBSTACLES",
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "m_plastic_01": {
+    "name": "m_plastic_01",
+    "mapTo": "m_plastic_01",
+    "class": "Material",
+    "persistentId": "d3692c15-36ad-4eed-959d-e698491c355d",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/t_plastic_01_ao.data.png",
+        "baseColorMap": "/art/shapes/garage_and_dealership/t_plastic_01_b.color.png",
+        "normalMap": "/art/shapes/garage_and_dealership/t_plastic_01_nm.normal.png",
+        "roughnessFactor": 0.223000005,
+        "roughnessMap": "/art/shapes/garage_and_dealership/t_plastic_01_r.data.png",
+        "vertColor": true
+      },
+      {
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "roughnessFactor": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "PLASTIC",
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "m_plastic_trim": {
+    "name": "m_plastic_trim",
+    "mapTo": "m_plastic_trim",
+    "class": "Material",
+    "persistentId": "58af4fda-ddc7-45c0-9fd1-1cd95ff9a327",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/art/shapes/garage_and_dealership/t_plastic_trim_01_ao.data.png",
+        "baseColorMap": "/art/shapes/garage_and_dealership/t_plastic_trim_01_b.color.png",
+        "diffuseMapUseUV": null,
+        "normalMap": "/art/shapes/garage_and_dealership/t_plastic_trim_01_nm.normal.png",
+        "opacityMap": "/art/shapes/garage_and_dealership/t_plastic_trim_01_o.data.png",
+        "opacityMapUseUV": null,
+        "pixelSpecular": true,
+        "roughnessMap": "/art/shapes/garage_and_dealership/t_plastic_trim_01_r.data.png",
+        "roughnessMapUseUV": null,
+        "vertColor": true
+      },
+      {
+        "baseColorMap": "/levels/automation_test_track/art/shapes/buildings/t_breakup_general_b.color.png",
+        "diffuseMapUseUV": 1,
+        "opacityMap": "/levels/automation_test_track/art/shapes/buildings/t_breakup_general_o.data.png",
+        "opacityMapUseUV": 1,
+        "pixelSpecular": null,
+        "roughnessMap": "/levels/automation_test_track/art/shapes/buildings/t_breakup_general_r.data.png",
+        "roughnessMapUseUV": 1,
+        "vertColor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessMapUseUV": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "alphaRef": 70,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

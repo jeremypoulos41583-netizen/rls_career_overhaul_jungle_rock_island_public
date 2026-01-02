@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>LUCA</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 63</authoring_tool>
+      <source_data>file:///H:/BeamNG_Drive/1_BNGD_MAXFiles/Utah/ut_Signs/ut_dir_signs_006.max</source_data>
+    </contributor>
+    <created>2019-11-04T17:59:40</created>
+    <modified>2019-11-04T17:59:40</modified>
+    <unit name="centimeter" meter="0.01" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ut_bld_metal_clean">
+      <profile_COMMON>
+        <newparam sid="utah_metal_clean_d_png-surface">
+          <surface type="2D">
+            <init_from>utah_metal_clean_d_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="utah_metal_clean_d_png-sampler">
+          <sampler2D>
+            <source>utah_metal_clean_d_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="utah_metal_clean_d_png-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="usa_roadsigns_text-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">0</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">0</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">1</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="lod_vertcol">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_roadsigns">
+      <profile_COMMON>
+        <newparam sid="ut_roadsigns_tga-surface">
+          <surface type="2D">
+            <init_from>ut_roadsigns_tga</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_roadsigns_tga-sampler">
+          <sampler2D>
+            <source>ut_roadsigns_tga-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ut_roadsigns_tga-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="ut_roadsigns_tga-sampler" texcoord="CHANNEL1" />
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="eca_bld_metal_01_white-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color>0.25 0.25 0.25 1</color>
+            </specular>
+            <shininess>
+              <float>50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">0</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">0</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">1</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0.5</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_metal_trim">
+      <profile_COMMON>
+        <newparam sid="ut_metal_trim_png-surface">
+          <surface type="2D">
+            <init_from>ut_metal_trim_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_metal_trim_png-sampler">
+          <sampler2D>
+            <source>ut_metal_trim_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ut_metal_trim_png-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_bld_metal_clean_1">
+      <profile_COMMON>
+        <newparam sid="utah_metal_clean_d_png-surface">
+          <surface type="2D">
+            <init_from>utah_metal_clean_d_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="utah_metal_clean_d_png-sampler">
+          <sampler2D>
+            <source>utah_metal_clean_d_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="utah_metal_clean_d_png-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Material__107624">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ut_bld_metal_clean-material" name="ut_bld_metal_clean">
+      <instance_effect url="#ut_bld_metal_clean" />
+    </material>
+    <material id="usa_roadsigns_text-effect-material" name="usa_roadsigns_text-effect">
+      <instance_effect url="#usa_roadsigns_text-effect" />
+    </material>
+    <material id="lod_vertcol-material" name="lod_vertcol">
+      <instance_effect url="#lod_vertcol" />
+    </material>
+    <material id="ut_roadsigns-material" name="ut_roadsigns">
+      <instance_effect url="#ut_roadsigns" />
+    </material>
+    <material id="eca_bld_metal_01_white-effect-material" name="eca_bld_metal_01_white-effect">
+      <instance_effect url="#eca_bld_metal_01_white-effect" />
+    </material>
+    <material id="ut_metal_trim-material" name="ut_metal_trim">
+      <instance_effect url="#ut_metal_trim" />
+    </material>
+    <material id="ut_bld_metal_clean_1-material" name="ut_bld_metal_clean">
+      <instance_effect url="#ut_bld_metal_clean_1" />
+    </material>
+    <material id="Material__107624-material" name="Material__107624">
+      <instance_effect url="#Material__107624" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-ut_roadsign_onramp80" name="ut_roadsign_onramp80">
+      <mesh>
+        <source id="geom-ut_roadsign_onramp80-positions">
+          <float_array id="geom-ut_roadsign_onramp80-positions-array" count="738">-423.8032 -15.241 522.8847 423.3896 -15.241 522.8847 -423.8032 -15.24101 1270.789 423.3896 -15.24101 1270.789 -423.8032 -6.485777 522.8846 423.3896 -6.485777 522.8846 -423.8032 -6.485782 1270.789 423.3896 -6.485782 1270.789 383.5009 -18.82873 1243.904 384.6925 -18.82873 1264.585 -383.9146 -18.82873 1243.904 -385.1061 -18.82873 1264.585 -389.9352 -18.82873 1242.585 -399.0841 -18.82873 1261.276 -394.1415 -18.82873 1239.213 -410.3739 -18.82873 1252.226 -396.5219 -18.82873 1234.342 -416.793 -18.82873 1239.076 -396.522 -18.82863 559.332 -416.793 -18.82863 554.598 -394.1432 -18.82863 554.463 -410.3722 -18.82863 541.4453 -389.9352 -18.82863 551.0884 -399.0841 -18.82862 532.3979 -383.9146 -18.82863 549.7692 -385.1061 -18.82862 529.0889 383.5009 -18.82863 549.7692 384.6925 -18.82862 529.0889 389.5216 -18.82863 551.0884 398.6705 -18.82862 532.3978 393.7279 -18.82863 554.4609 409.9603 -18.82863 541.4475 396.1083 -18.82863 559.332 416.3793 -18.82863 554.5981 396.1083 -18.82873 1234.342 416.3793 -18.82873 1239.076 393.7296 -18.82873 1239.21 409.9585 -18.82873 1252.228 389.5215 -18.82873 1242.585 398.6704 -18.82873 1261.276 396.1083 -18.82903 893.2828 396.1083 -18.82903 912.2811 -396.5219 -18.82888 893.2824 -396.5219 -18.82888 912.2808 -127.0383 -18.82887 1000.89 79.03065 -18.82888 982.642 -56.60855 -18.82886 1019.532 79.03065 -18.82887 1019.532 -57.07811 -18.82887 946.9765 -56.60845 -18.82887 1055.274 -56.60855 -18.82887 982.642 -254.6322 -18.82885 1096.629 -125.0999 -18.82885 1096.629 -254.6322 -18.82885 1226.161 -125.0999 -18.82885 1226.161 -121.8632 -18.82885 1096.629 -15.21316 -18.82885 1096.629 -121.8632 -18.82885 1226.161 -15.21316 -18.82885 1226.161 -16.53043 -18.82885 1096.629 100.7417 -18.82885 1096.629 -16.53043 -18.82885 1226.161 100.7417 -18.82885 1226.161 116.9307 -18.82885 1096.629 210.3051 -18.82885 1096.629 116.9307 -18.82885 1226.161 210.3051 -18.82885 1226.161 256.5165 -5.197195 -124.0826 288.2457 -5.197195 -124.0826 263.7994 10.53131 -124.0826 279.9989 11.34715 -124.0826 256.5165 -5.197195 1240.826 288.2457 -5.197195 1240.826 263.7994 10.53131 1240.826 279.9989 11.34715 1240.826 260.3367 -5.197195 -124.0826 283.4616 -4.381351 -124.0826 284.4255 -5.197195 1240.826 260.3367 -5.197195 1240.826 256.5165 -6.438021 -124.0826 288.2457 -6.438021 -124.0826 265.8135 10.10633 -124.0826 279.9126 9.29048 -124.0826 256.5165 -6.438021 1240.826 288.2457 -6.438021 1240.826 262.3508 -5.622177 -124.0826 283.3753 -6.438021 -124.0826 264.7633 11.34715 -124.0826 280.9628 10.53131 -124.0826 264.7633 11.34715 1240.826 280.9628 10.53131 1240.826 261.3006 -4.381351 -124.0826 284.4255 -5.197195 -124.0826 283.4616 -4.381351 1240.826 261.3006 -4.381351 1240.826 264.8496 9.29048 -124.0826 278.9487 10.10633 -124.0826 264.8496 9.29048 1240.826 265.8135 10.10633 1240.826 278.9487 10.10633 1240.826 279.9126 9.29048 1240.826 261.3869 -6.438021 -124.0826 282.4114 -5.622177 -124.0826 282.4114 -5.622177 1240.826 283.3753 -6.438021 1240.826 261.3869 -6.438021 1240.826 262.3508 -5.622177 1240.826 263.7356 11.60522 1124.234 263.7356 11.60522 1137.624 260.5294 -4.709534 1124.234 260.5294 -4.709534 1137.624 254.18 -5.180645 1124.234 254.18 -5.180645 1137.624 272.3811 11.60522 1124.234 281.0266 11.60522 1124.234 281.0266 11.60522 1137.624 272.3811 11.60522 1137.624 284.2329 -4.709534 1124.234 284.2329 -4.709534 1137.624 290.5822 -5.180645 1124.234 290.5822 -5.180645 1137.624 263.7356 11.60523 613.6428 263.7356 11.60523 627.0322 260.5294 -4.709523 613.6428 260.5294 -4.709523 627.0322 254.18 -5.180636 613.6428 254.18 -5.180636 627.0322 272.3811 11.60523 613.6428 281.0266 11.60523 613.6428 281.0266 11.60523 627.0322 272.3811 11.60523 627.0322 284.2329 -4.709523 613.6428 284.2329 -4.709523 627.0322 290.5822 -5.180636 613.6428 290.5822 -5.180636 627.0322 -286.3143 -5.197195 -124.0826 -254.5851 -5.197195 -124.0826 -279.0314 10.53131 -124.0826 -262.8319 11.34715 -124.0826 -286.3143 -5.197195 1240.826 -254.5851 -5.197195 1240.826 -279.0314 10.53131 1240.826 -262.8319 11.34715 1240.826 -282.4941 -5.197195 -124.0826 -259.3692 -4.381351 -124.0826 -258.4053 -5.197195 1240.826 -282.4941 -5.197195 1240.826 -286.3143 -6.438021 -124.0826 -254.5851 -6.438021 -124.0826 -277.0173 10.10633 -124.0826 -262.9182 9.29048 -124.0826 -286.3143 -6.438021 1240.826 -254.5851 -6.438021 1240.826 -280.48 -5.622177 -124.0826 -259.4555 -6.438021 -124.0826 -278.0675 11.34715 -124.0826 -261.868 10.53131 -124.0826 -278.0675 11.34715 1240.826 -261.868 10.53131 1240.826 -281.5302 -4.381351 -124.0826 -258.4053 -5.197195 -124.0826 -259.3692 -4.381351 1240.826 -281.5302 -4.381351 1240.826 -277.9812 9.29048 -124.0826 -263.8821 10.10633 -124.0826 -277.9812 9.29048 1240.826 -277.0173 10.10633 1240.826 -263.8821 10.10633 1240.826 -262.9182 9.29048 1240.826 -281.4439 -6.438021 -124.0826 -260.4194 -5.622177 -124.0826 -260.4194 -5.622177 1240.826 -259.4555 -6.438021 1240.826 -281.4439 -6.438021 1240.826 -280.48 -5.622177 1240.826 -279.0952 11.60522 1124.234 -279.0952 11.60522 1137.624 -282.3014 -4.709534 1124.234 -282.3014 -4.709534 1137.624 -288.6508 -5.180645 1124.234 -288.6508 -5.180645 1137.624 -270.4497 11.60522 1124.234 -261.8042 11.60522 1124.234 -261.8042 11.60522 1137.624 -270.4497 11.60522 1137.624 -258.598 -4.709534 1124.234 -258.598 -4.709534 1137.624 -252.2486 -5.180645 1124.234 -252.2486 -5.180645 1137.624 -279.0952 11.60523 613.6428 -279.0952 11.60523 627.0322 -282.3014 -4.709523 613.6428 -282.3014 -4.709523 627.0322 -288.6508 -5.180636 613.6428 -288.6508 -5.180636 627.0322 -270.4497 11.60523 613.6428 -261.8043 11.60523 613.6428 -261.8043 11.60523 627.0322 -270.4497 11.60523 627.0322 -258.598 -4.709523 613.6428 -258.598 -4.709523 627.0322 -252.2486 -5.180636 613.6428 -252.2486 -5.180636 627.0322 53.3135 -18.82894 759.9827 81.66504 -18.82894 759.9827 53.3135 -18.82894 864.8156 81.66504 -18.82894 864.8156 336.2642 -18.82894 864.8156 248.7116 -18.82894 864.8156 336.2642 -18.82894 759.9827 248.7116 -18.82894 759.9827 238.459 -18.82894 864.8156 176.2763 -18.82894 864.8156 238.459 -18.82894 759.9828 176.2763 -18.82894 759.9828 164.7041 -18.82894 864.8156 95.29276 -18.82894 864.8156 164.7041 -18.82894 759.9828 95.29276 -18.82894 759.9828 42.15688 -18.82894 864.8156 -25.21336 -18.82894 864.8156 42.15688 -18.82894 759.9827 -25.21336 -18.82894 759.9828 -34.39565 -18.82894 864.8156 -111.7694 -18.82894 864.8156 -34.39565 -18.82894 759.9827 -111.7694 -18.82894 759.9827 -121.8596 -18.82894 864.8156 -202.6505 -18.82894 864.8156 -121.8596 -18.82894 759.9827 -202.6505 -18.82894 759.9827 -211.706 -18.82894 864.8156 -240.5426 -18.82894 864.8156 -211.706 -18.82894 759.9828 -240.5426 -18.82894 759.9828 -257.8033 -18.82894 864.8156 -338.7632 -18.82894 864.8156 -257.8033 -18.82894 759.9828 -338.7632 -18.82894 759.9828 9.070304 -18.82886 691.852 8.600658 -18.82886 583.5546 79.03053 -18.82886 637.9384 -127.0385 -18.82886 656.1865 -127.0385 -18.82885 619.2966 8.600745 -18.82886 656.1865 8.600749 -18.82885 619.2966</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp80-positions-array" count="246" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_onramp80-normals">
+          <float_array id="geom-ut_roadsign_onramp80-normals-array" count="1104">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.1678546 0.9858118 0 0.1678546 0.9858118 0 0 1 0 0 1 0 0.0488293 0.9988071 0 -0.0488293 0.9988071 0 -0.0488293 0.9988071 0 0.0488293 0.9988071 0 0.9766206 0.214971 0 0.9766206 0.214971 0 0.9766206 0.214971 0 0.9766206 0.214971 0 0 1 0 0 1 0 -0.1678546 0.9858118 0 -0.1678546 0.9858118 0 -0.9766206 0.214971 0 -0.9765804 0.2151529 0 -0.9765804 0.2151529 0 -0.9766206 0.214971 0 0 -1 0 -0.1373539 -0.9905221 0 -0.1373539 -0.9905221 0 0 -1 0 0.05798405 -0.9983175 0 0.05798405 -0.9983175 0 -0.05798405 -0.9983175 0 -0.05798405 -0.9983175 0 -0.9766206 -0.214971 0 -0.9766206 -0.214971 0 -0.9766206 -0.214971 0 -0.9766206 -0.214971 0 0.1373539 -0.9905221 0 0 -1 0 0 -1 0 0.1373539 -0.9905221 0 0.9766206 -0.214971 0 0.9766206 -0.214971 0 0.9766206 -0.214971 0 0.9766206 -0.214971 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0 0 1 0 0 0.9999999 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 0.9999999 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.07324635 0.9973139 0 -0.07324635 0.9973139 0 -0.07476386 0.9972013 0 -0.07476386 0.9972013 0 0 1 0 0 1 0 0.9812849 0.1925619 0 0.9812579 0.1926995 0 0.9812579 0.1926995 0 0.9812849 0.1925619 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.07324635 0.9973139 0 -0.07324635 0.9973139 0 -0.07476386 0.9972013 0 -0.07476386 0.9972013 0 0 1 0 0 1 0 0.9812849 0.1925619 0 0.9812579 0.1926995 0 0.9812579 0.1926995 0 0.9812849 0.1925619 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.1678546 0.9858118 0 0.1678546 0.9858118 0 0 1 0 0 1 0 0.0488293 0.9988071 0 -0.0488293 0.9988071 0 -0.0488293 0.9988071 0 0.0488293 0.9988071 0 0.9766206 0.214971 0 0.9766206 0.214971 0 0.9766206 0.214971 0 0.9766206 0.214971 0 0 1 0 0 1 0 -0.1678546 0.9858118 0 -0.1678546 0.9858118 0 -0.9765905 0.2151074 0 -0.9765804 0.2151529 0 -0.9765804 0.2151529 0 -0.9765905 0.2151074 0 0 -1 0 -0.1373409 -0.9905239 0 -0.1373409 -0.9905239 0 0 -1 0 0.05798405 -0.9983175 0 0.05798405 -0.9983175 0 -0.05798405 -0.9983175 0 -0.05798405 -0.9983175 0 -0.9765804 -0.2151529 0 -0.9765804 -0.2151529 0 -0.9765905 -0.2151074 0 -0.9765905 -0.2151074 0 0.1373539 -0.9905221 0 0 -1 0 0 -1 0 0.1373539 -0.9905221 0 0.9766206 -0.214971 0 0.9766206 -0.214971 0 0.9766206 -0.214971 0 0.9766206 -0.214971 0 1 0 0 1 0 0 1 0 0 1 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0 0 1 0 0 0.9999999 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 0.9999999 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812668 0.1926536 0 -0.9812668 0.1926536 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.07324983 0.9973136 0 -0.07324983 0.9973136 0 -0.07324635 0.9973139 0 -0.07324635 0.9973139 0 0 1 0 0 1 0 0.9812849 0.1925619 0 0.9812849 0.1925619 0 0.9812849 0.1925619 0 0.9812849 0.1925619 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9812668 0.1926536 0 -0.9812668 0.1926536 0 -0.9812849 0.1925619 0 -0.9812849 0.1925619 0 -0.07324983 0.9973136 0 -0.07324983 0.9973136 0 -0.07324635 0.9973139 0 -0.07324635 0.9973139 0 0 1 0 0 1 0 0.9812849 0.1925619 0 0.9812849 0.1925619 0 0.9812849 0.1925619 0 0.9812849 0.1925619 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0.07324635 0.9973139 0 0 -1 -6.37564e-9 0 -1 -6.37564e-9 0 -0.9999999 -6.37564e-9 0 -0.9999999 -6.37564e-9 0 -1 -6.37564e-9 0 -1 -6.37564e-9 0 -6.97128e-6 -1 0 -6.97128e-6 -1 0 -6.97128e-6 -1 0 -6.97128e-6 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 -2.17724e-8 -1 -1.83543e-7 -2.02863e-8 -1 -1.83606e-7 2.02857e-8 -1 -1.83606e-7 2.17718e-8 -1 -1.83543e-7 2.77031e-8 -1 -1.76311e-7 2.77917e-8 -1 -1.7635e-7 7.22506e-9 -1 -1.91109e-7 7.21662e-9 -1 -1.91139e-7 4.76075e-8 -1 -1.80565e-7 4.77445e-8 -1 -1.80471e-7 8.8949e-8 -1 -1.06739e-7 8.89642e-8 -0.9999999 -1.06863e-7 1.24641e-8 -1 -6.91013e-8 1.25923e-8 -1 -6.90938e-8 -1.08842e-8 -1 -1.62549e-7 -1.05936e-8 -1 -1.63091e-7 1.77833e-8 -1 -2.64826e-7 1.90861e-8 -1 -2.63956e-7 3.04284e-8 -1 -2.75409e-7 3.26574e-8 -0.9999999 -2.75315e-7 3.82634e-8 -1 -2.21942e-7 3.84162e-8 -1 -2.22258e-7 6.90401e-9 -1 -1.38079e-7 6.89503e-9 -1 -1.38034e-7 2.38038e-8 -1 -1.28097e-7 2.38723e-8 -1 -1.28161e-7 2.31658e-8 -1 -1.28095e-7 2.32366e-8 -0.9999999 -1.2816e-7 -6.89378e-9 -0.9999999 -1.38076e-7 -6.88249e-9 -1 -1.38019e-7 -2.7698e-8 -1 -1.76304e-7 -2.77864e-8 -1 -1.76343e-7 -1.90102e-7 -1 0 -1.90102e-7 -1 0 -1.90102e-7 -0.9999999 0 2.71725e-8 -1 -1.17841e-10 2.71725e-8 -1 -1.17841e-10 2.71725e-8 -0.9999999 -1.17841e-10 -1.90102e-7 -1 0 -1.90102e-7 -0.9999999 0 -1.90102e-7 -1 0 -1.40619e-8 -1 2.58519e-7 -1.40619e-8 -0.9999999 2.58519e-7 -1.40619e-8 -1 2.58519e-7 -2.81239e-8 -1 3.10223e-7 -2.81239e-8 -1 3.10223e-7 -2.81239e-8 -0.9999999 3.10223e-7 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -2.71725e-8 -0.9999999 1.17837e-10 -2.71725e-8 -0.9999999 1.17837e-10 -2.71725e-8 -1 1.17837e-10 1.40619e-8 -1 -3.10223e-7 1.40619e-8 -1 -3.10223e-7 1.40619e-8 -1 -3.10223e-7 2.81239e-8 -1 -3.61927e-7 2.81239e-8 -1 -3.61927e-7 2.81239e-8 -0.9999999 -3.61927e-7</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp80-normals-array" count="368" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_onramp80-map0">
+          <float_array id="geom-ut_roadsign_onramp80-map0-array" count="1566">0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 0.6196079 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp80-map0-array" count="522" stride="3">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_onramp80-map1">
+          <float_array id="geom-ut_roadsign_onramp80-map1-array" count="1092">1.0001e-4 0.9999001 150.9746 0.9999001 9.998e-5 150.9746 9.998e-5 1.0004e-4 307.2444 1.0001e-4 0.9999001 95.69077 0.9999001 0.9999001 113.2003 0.9999001 9.998e-5 113.2003 1.524148 0.4894163 0.04828084 1.524148 0.5105842 0.0482806 -0.5241481 0.5105837 0.0482806 -0.5241481 0.4894158 0.04828084 0.5105837 1.610979 -0.5241479 0.4894158 1.610979 -0.5241479 1.524148 0.4894158 1.610979 1.524148 0.5105837 1.610979 0.4894158 0.0482806 -0.5241479 0.5105837 0.04828084 -0.5241479 -0.5241479 0.5105842 1.610979 -0.5241479 0.4894163 1.610979 0.4894158 0.04828084 1.524148 0.5105837 0.0482806 1.524148 0.5105837 1.610979 1.524148 0.4894158 1.610979 1.524148 -0.5241481 0.0482806 0.5105837 1.524148 0.0482806 0.5105842 1.524148 1.610979 0.5105842 -0.5241481 0.0482806 0.5105837 1.524148 1.610979 0.5105842 -0.5241481 1.610979 0.5105837 92.32324 71.73759 0.8673978 92.61133 76.73756 0.8673979 -93.21828 71.73759 0.8673978 -93.50637 76.73756 0.8673979 -94.6739 71.41863 0.8673978 -96.88588 75.93752 0.8673979 -95.69089 70.60323 0.8673978 -99.61548 73.74955 0.867398 -96.26643 69.42554 0.8673978 -101.1674 70.57008 0.867398 -96.26643 -69.22019 0.8673975 -101.1674 -70.36474 0.8673978 -95.6913 -70.39738 0.8673976 -99.61505 -73.54473 0.8673977 -94.6739 -71.21327 0.8673976 -96.88588 -75.73216 0.8673977 -93.21828 -71.53224 0.8673977 -93.50637 -76.53221 0.8673977 92.32324 -71.53224 0.8673977 92.61133 -76.53221 0.8673977 93.77888 -71.21328 0.8673977 95.99085 -75.73219 0.8673977 94.79585 -70.39788 0.8673977 98.72044 -73.5442 0.8673977 95.37138 -69.22018 0.8673977 100.2724 -70.36473 0.8673977 95.37138 69.42554 0.867398 100.2724 70.57009 0.8673978 94.79626 70.60271 0.8673979 98.72002 73.75008 0.8673979 93.77885 71.41862 0.8673979 95.99083 75.93752 0.8673979 0.1574975 0.2520619 152.4072 0.2665572 0.1244586 157.0004 0.2665572 0.252062 152.4071 0 0 0 0 0 0 0 0 0 0.2213937 0.09071153 0 0.09658349 0.1761685 0 0.09658349 0.09071153 0 0.2213937 0.1761685 0 0.2213937 0.09071153 0 0.09658349 0.1761685 0 0.1593678 0.1331804 0 0.3680366 0.05697374 0 0.32954 0.09547032 0 0.32954 0.05697374 0 0.4310578 0.05697374 0 0.3993618 0.09547032 0 0.3993617 0.05697374 0 0.0352971 0.05697374 0 4.44164e-4 0.09547032 0 4.44164e-4 0.05697374 0 0.06340626 0.05697374 0 0.03565575 0.09547032 0 0.03565575 0.05697374 0 0.3680366 0.09547032 0 0.4310578 0.09547032 0 0.0352971 0.09547032 0 0.06340626 0.09547032 0 0.5383565 -1.15 0.4815 0.4616435 -1.15 0.4815 0.518418 -1.15 0.5215 0.4815821 -1.15 0.5215 0.5383565 2.15 0.4815 0.4616435 2.15 0.4815 0.518418 2.15 0.5215 0.4815821 2.15 0.5215 0.5291203 -1.15 0.4815 0.4708796 -1.15 0.4815 0.4708796 2.15 0.4815 0.5291203 2.15 0.4815 0.4616435 -1.15 0.4785 0.5383565 -1.15 0.4785 0.4841213 -1.15 0.5185 0.5158788 -1.15 0.5185 0.4616435 2.15 0.4785 0.5383565 2.15 0.4785 0.4841213 2.15 0.5185 0.5158788 2.15 0.5185 0.4734188 -1.15 0.4785 0.5265812 -1.15 0.4785 0.5265812 2.15 0.4785 0.4734188 2.15 0.4785 0.4834725 -1.15 0.5267898 0.5195275 -1.15 0.5207484 0.5195275 2.15 0.5207484 0.4834725 2.15 0.5267898 0.5165275 2.15 0.4732102 0.4804725 2.15 0.4792516 0.4804725 -1.15 0.4792516 0.5165275 -1.15 0.4732102 0.4834725 2.15 0.5182093 0.4834725 -1.15 0.5182093 0.5195275 -1.15 0.5242507 0.5195275 2.15 0.5242507 0.5165275 -1.15 0.4817908 0.5165275 2.15 0.4817908 0.4804725 2.15 0.4757493 0.4804725 -1.15 0.4757493 0.4815 -1.15 0.5383565 0.4815 2.15 0.5383565 0.4785 2.15 0.5383565 0.4785 -1.15 0.5383565 0.5185 2.15 0.4616435 0.5185 -1.15 0.4616435 0.5215 -1.15 0.4616435 0.5215 2.15 0.4616435 0.4808168 -1.15 0.5259274 0.4808166 2.15 0.5259274 0.4774162 -1.15 0.4792538 0.4774162 2.15 0.4792538 0.5225837 2.15 0.5207462 0.5225837 -1.15 0.5207462 0.5191832 2.15 0.4740727 0.5191832 -1.15 0.4740727 0.5222168 2.15 0.5236081 0.5222168 -1.15 0.5236081 0.5195255 2.15 0.4817464 0.5195255 -1.15 0.4817464 0.4804746 -1.15 0.5182536 0.4804745 2.15 0.5182536 0.4777832 -1.15 0.4763919 0.4777833 2.15 0.4763919 0.5265812 0.4785 0.5 0.5383565 0.4785 0.5 0.5383565 0.4815 0.5 0.5291204 0.4815 0.5 0.5242507 0.4804725 0.5 0.5267898 0.4834725 0.5 0.5182093 0.5165275 0.5 0.5207484 0.5195275 0.5 0.5158788 0.5185 0.5 0.5184179 0.5215 0.5 0.4841213 0.5185 0.5 0.4815821 0.5215 0.5 0.4817907 0.5165275 0.5 0.4792516 0.5195275 0.5 0.4757493 0.4804725 0.5 0.4732102 0.4834725 0.5 0.4734188 0.4785 0.5 0.4708796 0.4815 0.5 0.4616435 0.4785 0.5 0.4616435 0.4815 0.5 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.5383565 -1.15 0.4815 0.4616435 -1.15 0.4815 0.518418 -1.15 0.5215 0.4815821 -1.15 0.5215 0.5383565 2.15 0.4815 0.4616435 2.15 0.4815 0.518418 2.15 0.5215 0.4815821 2.15 0.5215 0.5291203 -1.15 0.4815 0.4708796 -1.15 0.4815 0.4708796 2.15 0.4815 0.5291203 2.15 0.4815 0.4616435 -1.15 0.4785 0.5383565 -1.15 0.4785 0.4841213 -1.15 0.5185 0.5158788 -1.15 0.5185 0.4616435 2.15 0.4785 0.5383565 2.15 0.4785 0.4841213 2.15 0.5185 0.5158788 2.15 0.5185 0.4734188 -1.15 0.4785 0.5265812 -1.15 0.4785 0.5265812 2.15 0.4785 0.4734188 2.15 0.4785 0.4834725 -1.15 0.5267898 0.5195275 -1.15 0.5207484 0.5195275 2.15 0.5207484 0.4834725 2.15 0.5267898 0.5165275 2.15 0.4732102 0.4804725 2.15 0.4792516 0.4804725 -1.15 0.4792516 0.5165275 -1.15 0.4732102 0.4834725 2.15 0.5182093 0.4834725 -1.15 0.5182093 0.5195275 -1.15 0.5242507 0.5195275 2.15 0.5242507 0.5165275 -1.15 0.4817908 0.5165275 2.15 0.4817908 0.4804725 2.15 0.4757493 0.4804725 -1.15 0.4757493 0.4815 -1.15 0.5383565 0.4815 2.15 0.5383565 0.4785 2.15 0.5383565 0.4785 -1.15 0.5383565 0.5185 2.15 0.4616435 0.5185 -1.15 0.4616435 0.5215 -1.15 0.4616435 0.5215 2.15 0.4616435 0.4808168 -1.15 0.5259274 0.4808166 2.15 0.5259274 0.4774162 -1.15 0.4792538 0.4774162 2.15 0.4792538 0.5225837 2.15 0.5207462 0.5225837 -1.15 0.5207462 0.5191832 2.15 0.4740727 0.5191832 -1.15 0.4740727 0.5222168 2.15 0.5236081 0.5222168 -1.15 0.5236081 0.5195255 2.15 0.4817464 0.5195255 -1.15 0.4817464 0.4804746 -1.15 0.5182536 0.4804745 2.15 0.5182536 0.4777832 -1.15 0.4763919 0.4777833 2.15 0.4763919 0.5265812 0.4785 0.5 0.5383565 0.4785 0.5 0.5383565 0.4815 0.5 0.5291204 0.4815 0.5 0.5242507 0.4804725 0.5 0.5267898 0.4834725 0.5 0.5182093 0.5165275 0.5 0.5207484 0.5195275 0.5 0.5158788 0.5185 0.5 0.5184179 0.5215 0.5 0.4841213 0.5185 0.5 0.4815821 0.5215 0.5 0.4817907 0.5165275 0.5 0.4792516 0.5195275 0.5 0.4757493 0.4804725 0.5 0.4732102 0.4834725 0.5 0.4734188 0.4785 0.5 0.4708796 0.4815 0.5 0.4616435 0.4785 0.5 0.4616435 0.4815 0.5 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.9536986 0.7070453 0 0.9536986 0.692265 0 0.9994799 0.692265 0 0.9994799 0.7070453 0 0.9536986 0.6638397 0 0.9994799 0.6638397 0 0.9536986 0.6529551 0 0.9994799 0.6529551 0 0.2528393 0.05619514 0 0.2425139 0.09437453 0 0.2425139 0.05619515 0 0.126642 0.05619515 0 0.09475592 0.09437453 0 0.09475592 0.05619515 0 0.3294683 0.05619517 0 0.3068217 0.09437453 0 0.3068217 0.05619517 0 0.1523179 0.05619517 0 0.1270388 0.09437453 0 0.1270388 0.05619517 0 0.1782283 0.05619515 0 0.1536925 0.09437453 0 0.1536925 0.05619517 0 0.2398266 0.05619515 0 0.2116476 0.09437453 0 0.2116476 0.05619515 0 0.09379159 0.05619515 0 0.0643681 0.09437453 0 0.0643681 0.05619515 0 0.2533323 0.05619517 0 0.2428302 0.09437453 0 0.2428302 0.05619515 0 0.525246 0.05619515 0 0.495761 0.09437453 0 0.495761 0.05619515 0 0.2528394 0.09437453 0 0.126642 0.09437453 0 0.3294683 0.09437453 0 0.1523179 0.09437453 0 0.1782283 0.09437453 0 0.2398266 0.09437453 0 0.09379159 0.09437453 0 0.2533323 0.09437453 0 0.525246 0.09437453 0 0.2213937 0.09071153 0 0.09658349 0.1761685 0 0.09658349 0.09071153 0 0.2213937 0.09071153 0 0.2213937 0.1761685 0 0.1593678 0.1331804 0 0.09658349 0.1761685 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp80-map1-array" count="364" stride="3">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+              <param name="P" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ut_roadsign_onramp80-vertices">
+          <input semantic="POSITION" source="#geom-ut_roadsign_onramp80-positions" />
+        </vertices>
+        <triangles material="lod_vertcol" count="10">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>2 230 0 0 0 231 1 2 1 232 2 1 2 233 3 3 1 234 4 5 3 235 5 4 0 236 6 6 4 237 7 7 5 238 8 8 5 238 8 8 1 239 9 9 0 236 6 6 2 240 10 10 6 241 11 11 4 242 12 14 4 242 12 14 0 243 13 15 2 240 10 10 3 244 14 12 7 245 15 13 6 246 16 16 6 246 16 16 2 247 17 17 3 244 14 12 1 248 18 18 5 249 19 19 7 250 20 20 7 250 20 20 3 251 21 21 1 248 18 18</p>
+        </triangles>
+        <triangles material="ut_bld_metal_clean" count="2">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>5 252 22 22 4 253 23 23 6 254 24 24 5 255 25 25 6 256 26 26 7 257 27 27</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="32">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>11 260 30 31 10 261 31 30 8 258 28 28 8 258 28 28 9 259 29 29 11 260 30 31 10 261 32 30 11 260 33 31 13 262 34 33 13 262 34 33 12 263 35 32 10 261 32 30 12 263 36 32 13 262 37 33 15 264 38 35 15 264 38 35 14 265 39 34 12 263 36 32 14 265 40 34 15 264 41 35 17 266 42 37 17 266 42 37 16 267 43 36 14 265 40 34 16 267 44 36 17 266 45 37 19 268 46 39 19 268 46 39 18 269 47 38 16 267 44 36 18 269 48 38 19 268 49 39 21 270 50 41 21 270 50 41 20 271 51 40 18 269 48 38 20 271 52 40 21 270 53 41 23 272 54 43 23 272 54 43 22 273 55 42 20 271 52 40 22 273 56 42 23 272 57 43 25 274 58 45 25 274 58 45 24 275 59 44 22 273 56 42 27 276 62 47 26 277 63 46 24 275 60 44 24 275 60 44 25 274 61 45 27 276 62 47 26 277 64 46 27 276 65 47 29 278 66 49 29 278 66 49 28 279 67 48 26 277 64 46 28 279 68 48 29 278 69 49 31 280 70 51 31 280 70 51 30 281 71 50 28 279 68 48 30 281 72 50 31 280 73 51 33 282 74 53 33 282 74 53 32 283 75 52 30 281 72 50 32 283 76 52 33 282 77 53 35 284 78 55 35 284 78 55 34 285 79 54 32 283 76 52 34 285 80 54 35 284 81 55 37 286 82 57 37 286 82 57 36 287 83 56 34 285 80 54 36 287 84 56 37 286 85 57 39 288 86 59 39 288 86 59 38 289 87 58 36 287 84 56 38 289 88 58 39 288 89 59 9 259 90 29 9 259 90 29 8 258 91 28 38 289 88 58</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="2">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>40 290 92 60 43 291 93 61 42 292 94 62 40 296 98 63 41 297 99 64 43 298 100 65</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="3">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>48 293 95 70 49 294 96 71 44 295 97 68 45 299 101 66 47 300 102 69 50 301 103 72 47 302 104 69 46 303 105 67 50 304 106 72</p>
+        </triangles>
+        <triangles material="ut_roadsigns" count="8">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>52 0 107 73 53 0 108 74 51 0 109 75 56 1 110 76 57 1 111 77 55 1 112 78 60 1 113 79 61 1 114 80 59 1 115 81 64 2 116 82 65 2 117 83 63 2 118 84 52 3 119 73 54 3 120 85 53 3 121 74 56 4 122 76 58 4 123 86 57 4 124 77 60 5 125 79 62 5 126 87 61 5 127 80 64 2 128 82 66 2 129 88 65 2 130 83</p>
+        </triangles>
+        <triangles material="ut_bld_metal_clean_1_1" count="116">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>72 8 133 94 68 9 134 90 92 6 131 98 92 6 131 98 77 7 132 99 72 8 133 94 89 12 137 95 74 13 138 96 70 10 135 92 70 10 135 92 87 11 136 91 89 12 137 95 90 16 141 115 93 17 142 116 76 14 139 113 76 14 139 113 88 15 140 114 90 16 141 115 78 20 145 100 75 21 146 97 67 18 143 89 67 18 143 89 71 19 144 93 78 20 145 100 69 24 149 119 91 25 150 120 94 22 147 117 94 22 147 117 73 23 148 118 69 24 149 119 86 28 153 110 80 29 154 102 84 26 151 106 84 26 151 106 104 27 152 111 86 28 153 110 96 32 157 104 99 33 158 108 98 30 155 107 98 30 155 107 81 31 156 103 96 32 157 104 102 36 161 123 103 37 162 124 100 34 159 121 100 34 159 121 82 35 160 122 102 36 161 123 79 40 165 101 101 41 166 109 105 38 163 112 105 38 163 112 83 39 164 105 79 40 165 101 106 44 169 127 85 45 170 128 95 42 167 125 95 42 167 125 97 43 168 126 106 44 169 127 84 48 173 131 80 49 174 132 68 46 171 129 68 46 171 129 72 47 172 130 84 48 173 131 79 52 177 135 83 53 178 136 71 50 175 133 71 50 175 133 67 51 176 134 79 52 177 135 92 6 179 137 76 14 180 113 93 17 181 116 93 17 181 116 77 7 182 138 92 6 179 137 87 11 183 139 69 24 184 119 73 23 185 118 73 23 185 118 89 12 186 140 87 11 183 139 74 13 187 141 90 16 188 115 88 15 189 114 88 15 189 114 70 10 190 142 74 13 187 141 78 20 191 143 94 22 192 117 91 25 193 120 91 25 193 120 75 21 194 144 78 20 191 143 104 27 195 145 103 37 196 124 102 36 197 123 102 36 197 123 86 28 198 146 104 27 195 145 98 30 199 147 97 43 200 126 95 42 201 125 95 42 201 125 81 31 202 148 98 30 199 147 96 32 203 149 82 35 204 122 100 34 205 121 100 34 205 121 99 33 206 150 96 32 203 149 101 41 207 151 85 45 208 128 106 44 209 127 106 44 209 127 105 38 210 152 101 41 207 151 84 55 212 154 72 56 213 155 77 57 214 156 77 57 214 156 104 54 211 153 84 55 212 154 104 54 216 153 77 57 217 156 93 59 218 158 93 59 218 158 103 58 215 157 104 54 216 153 100 60 219 159 103 58 220 157 93 59 221 158 93 59 221 158 90 61 222 160 100 60 219 159 100 60 224 159 90 61 225 160 74 63 226 162 74 63 226 162 99 62 223 161 100 60 224 159 99 62 228 161 74 63 229 162 89 65 230 164 89 65 230 164 98 64 227 163 99 62 228 161 98 64 232 163 89 65 233 164 73 67 234 166 73 67 234 166 97 66 231 165 98 64 232 163 97 66 236 165 73 67 237 166 94 69 238 168 94 69 238 168 106 68 235 167 97 66 236 165 106 68 240 167 94 69 241 168 78 71 242 170 78 71 242 170 105 70 239 169 106 68 240 167 83 72 243 171 105 70 244 169 78 71 245 170 78 71 245 170 71 73 246 172 83 72 243 171 140 120 297 210 136 121 298 206 160 118 295 214 160 118 295 214 145 119 296 215 140 120 297 210 157 124 301 211 142 125 302 212 138 122 299 208 138 122 299 208 155 123 300 207 157 124 301 211 158 128 305 231 161 129 306 232 144 126 303 229 144 126 303 229 156 127 304 230 158 128 305 231 146 132 309 216 143 133 310 213 135 130 307 205 135 130 307 205 139 131 308 209 146 132 309 216 137 136 313 235 159 137 314 236 162 134 311 233 162 134 311 233 141 135 312 234 137 136 313 235 154 140 317 226 148 141 318 218 152 138 315 222 152 138 315 222 172 139 316 227 154 140 317 226 164 144 321 220 167 145 322 224 166 142 319 223 166 142 319 223 149 143 320 219 164 144 321 220 170 148 325 239 171 149 326 240 168 146 323 237 168 146 323 237 150 147 324 238 170 148 325 239 147 152 329 217 169 153 330 225 173 150 327 228 173 150 327 228 151 151 328 221 147 152 329 217 174 156 333 243 153 157 334 244 163 154 331 241 163 154 331 241 165 155 332 242 174 156 333 243 152 160 337 247 148 161 338 248 136 158 335 245 136 158 335 245 140 159 336 246 152 160 337 247 147 164 341 251 151 165 342 252 139 162 339 249 139 162 339 249 135 163 340 250 147 164 341 251 160 118 343 253 144 126 344 229 161 129 345 232 161 129 345 232 145 119 346 254 160 118 343 253 155 123 347 255 137 136 348 235 141 135 349 234 141 135 349 234 157 124 350 256 155 123 347 255 142 125 351 257 158 128 352 231 156 127 353 230 156 127 353 230 138 122 354 258 142 125 351 257 146 132 355 259 162 134 356 233 159 137 357 236 159 137 357 236 143 133 358 260 146 132 355 259 172 139 359 261 171 149 360 240 170 148 361 239 170 148 361 239 154 140 362 262 172 139 359 261 166 142 363 263 165 155 364 242 163 154 365 241 163 154 365 241 149 143 366 264 166 142 363 263 164 144 367 265 150 147 368 238 168 146 369 237 168 146 369 237 167 145 370 266 164 144 367 265 169 153 371 267 153 157 372 244 174 156 373 243 174 156 373 243 173 150 374 268 169 153 371 267 152 167 376 270 140 168 377 271 145 169 378 272 145 169 378 272 172 166 375 269 152 167 376 270 172 166 380 269 145 169 381 272 161 171 382 274 161 171 382 274 171 170 379 273 172 166 380 269 168 172 383 275 171 170 384 273 161 171 385 274 161 171 385 274 158 173 386 276 168 172 383 275 168 172 388 275 158 173 389 276 142 175 390 278 142 175 390 278 167 174 387 277 168 172 388 275 167 174 392 277 142 175 393 278 157 177 394 280 157 177 394 280 166 176 391 279 167 174 392 277 166 176 396 279 157 177 397 280 141 179 398 282 141 179 398 282 165 178 395 281 166 176 396 279 165 178 400 281 141 179 401 282 162 181 402 284 162 181 402 284 174 180 399 283 165 178 400 281 174 180 404 283 162 181 405 284 146 183 406 286 146 183 406 286 173 182 403 285 174 180 404 283 151 184 407 287 173 182 408 285 146 183 409 286 146 183 409 286 139 185 410 288 151 184 407 287</p>
+        </triangles>
+        <triangles material="ut_metal_trim" count="48">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>107 75 248 174 108 76 249 175 116 77 250 176 116 77 250 176 113 74 247 173 107 75 248 174 108 78 251 175 107 79 252 174 109 80 253 177 109 80 253 177 110 81 254 178 108 78 251 175 110 82 255 178 109 83 256 177 111 84 257 179 111 84 257 179 112 85 258 180 110 82 255 178 114 87 262 182 113 74 259 181 116 77 260 184 116 77 260 184 115 86 261 183 114 87 262 182 115 88 263 183 118 89 264 186 117 90 265 185 117 90 265 185 114 91 266 182 115 88 263 183 118 92 267 186 120 93 268 188 119 94 269 187 119 94 269 187 117 95 270 185 118 92 267 186 121 97 272 190 122 98 273 191 130 99 274 192 130 99 274 192 127 96 271 189 121 97 272 190 122 100 275 191 121 101 276 190 123 102 277 193 123 102 277 193 124 103 278 194 122 100 275 191 124 104 279 194 123 105 280 193 125 106 281 195 125 106 281 195 126 107 282 196 124 104 279 194 128 109 286 198 127 96 283 197 130 99 284 200 130 99 284 200 129 108 285 199 128 109 286 198 129 110 287 199 132 111 288 202 131 112 289 201 131 112 289 201 128 113 290 198 129 110 287 199 132 114 291 202 134 115 292 204 133 116 293 203 133 116 293 203 131 117 294 201 132 114 291 202 175 187 412 290 176 188 413 291 184 189 414 292 184 189 414 292 181 186 411 289 175 187 412 290 176 190 415 291 175 191 416 290 177 192 417 293 177 192 417 293 178 193 418 294 176 190 415 291 178 194 419 294 177 195 420 293 179 196 421 295 179 196 421 295 180 197 422 296 178 194 419 294 182 199 426 298 181 186 423 297 184 189 424 300 184 189 424 300 183 198 425 299 182 199 426 298 183 200 427 299 186 201 428 302 185 202 429 301 185 202 429 301 182 203 430 298 183 200 427 299 186 204 431 302 188 205 432 304 187 206 433 303 187 206 433 303 185 207 434 301 186 204 431 302 189 209 436 306 190 210 437 307 198 211 438 308 198 211 438 308 195 208 435 305 189 209 436 306 190 212 439 307 189 213 440 306 191 214 441 309 191 214 441 309 192 215 442 310 190 212 439 307 192 216 443 310 191 217 444 309 193 218 445 311 193 218 445 311 194 219 446 312 192 216 443 310 196 221 450 314 195 208 447 313 198 211 448 316 198 211 448 316 197 220 449 315 196 221 450 314 197 222 451 315 200 223 452 318 199 224 453 317 199 224 453 317 196 225 454 314 197 222 451 315 200 226 455 318 202 227 456 320 201 228 457 319 201 228 457 319 199 229 458 317 200 226 455 318</p>
+        </triangles>
+        <triangles material="ut_roadsigns" count="18">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>204 305 459 321 205 306 460 322 203 307 461 323 209 308 462 324 208 309 463 325 210 310 464 326 213 311 465 327 212 312 466 328 214 313 467 329 217 314 468 330 216 315 469 331 218 316 470 332 221 317 471 333 220 318 472 334 222 319 473 335 225 320 474 336 224 321 475 337 226 322 476 338 229 323 477 339 228 324 478 340 230 325 479 341 233 326 480 342 232 327 481 343 234 328 482 344 237 329 483 345 236 330 484 346 238 331 485 347 204 332 486 321 206 333 487 348 205 334 488 322 209 335 489 324 207 336 490 349 208 337 491 325 213 338 492 327 211 339 493 350 212 340 494 328 217 341 495 330 215 342 496 351 216 343 497 331 221 344 498 333 219 345 499 352 220 346 500 334 225 347 501 336 223 348 502 353 224 349 503 337 229 350 504 339 227 351 505 354 228 352 506 340 233 353 507 342 231 354 508 355 232 355 509 343 237 356 510 345 235 357 511 356 236 358 512 346</p>
+        </triangles>
+        <triangles material="lod_vertcol" count="3">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp80-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp80-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp80-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp80-map1" offset="3" set="0" />
+          <p>239 359 513 357 240 360 514 358 241 361 515 359 242 362 516 360 243 363 517 361 244 364 518 362 243 365 519 361 245 366 520 363 244 367 521 362</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ut_roadsign_onramp20" name="ut_roadsign_onramp20">
+      <mesh>
+        <source id="geom-ut_roadsign_onramp20-positions">
+          <float_array id="geom-ut_roadsign_onramp20-positions-array" count="72">-423.8032 -15.241 522.8847 423.3896 -15.241 522.8847 -423.8032 -15.24101 1270.789 423.3896 -15.24101 1270.789 -423.8032 -6.485777 522.8846 423.3896 -6.485777 522.8846 -423.8032 -6.485782 1270.789 423.3896 -6.485782 1270.789 -286.3143 -8.272171 1240.826 -286.3143 -8.272171 -124.0826 -254.5852 -8.272171 -124.0826 -254.5852 -8.272171 1240.826 -254.5852 -4.684387 1240.826 -254.5852 -4.684387 -124.0826 -286.3143 -4.684381 -124.0826 -286.3143 -4.684381 1240.826 256.5168 -8.272171 1240.826 256.5168 -8.272171 -124.0826 288.246 -8.272171 -124.0826 288.246 -8.272171 1240.826 288.246 -4.684387 1240.826 288.246 -4.684387 -124.0826 256.5168 -4.684381 -124.0826 256.5168 -4.684381 1240.826</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp20-positions-array" count="24" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_onramp20-normals">
+          <float_array id="geom-ut_roadsign_onramp20-normals-array" count="84">0 -1 -6.37564e-9 0 -1 -6.37564e-9 0 -0.9999999 -6.37564e-9 0 -0.9999999 -6.37564e-9 0 -1 -6.37564e-9 0 -1 -6.37564e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 1 7.01321e-9 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0 1.65312e-7 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp20-normals-array" count="28" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_onramp20-map0">
+          <float_array id="geom-ut_roadsign_onramp20-map0-array" count="84">0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1098039 0.4235294 0.2352941 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353 0.1764706 0.1803922 0.1882353</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp20-map0-array" count="28" stride="3">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_roadsign_onramp20-map1">
+          <float_array id="geom-ut_roadsign_onramp20-map1-array" count="84">1.0001e-4 0.9999001 150.9746 0.9999001 9.998e-5 150.9746 9.998e-5 1.0004e-4 307.2444 1.0001e-4 0.9999001 95.69077 0.9999001 0.9999001 113.2003 0.9999001 9.998e-5 113.2003 -0.5241481 0.0482806 0.5105837 1.524148 0.0482806 0.5105842 1.524148 1.610979 0.5105842 -0.5241481 0.0482806 0.5105837 1.524148 1.610979 0.5105842 -0.5241481 1.610979 0.5105837 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785 0.4616435 2.15 0.4785 0.514806 -1.15 0.4785 0.4616435 -1.15 0.4785 0.514806 2.15 0.4785</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_roadsign_onramp20-map1-array" count="28" stride="3">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+              <param name="P" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ut_roadsign_onramp20-vertices">
+          <input semantic="POSITION" source="#geom-ut_roadsign_onramp20-positions" />
+        </vertices>
+        <triangles material="lod_vertcol" count="12">
+          <input semantic="VERTEX" source="#geom-ut_roadsign_onramp20-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_roadsign_onramp20-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_roadsign_onramp20-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_roadsign_onramp20-map1" offset="3" set="0" />
+          <p>2 0 0 0 0 1 1 2 1 2 2 1 2 3 3 3 1 4 4 5 3 5 5 4 5 6 6 6 4 7 7 7 6 8 8 8 5 9 9 9 6 10 10 10 7 11 11 11 8 12 12 12 9 13 13 13 10 14 14 14 10 14 14 14 11 15 15 15 8 12 12 12 12 16 16 16 13 17 17 17 14 18 18 18 14 18 18 18 15 19 19 19 12 16 16 16 16 20 20 20 17 21 21 21 18 22 22 22 18 22 22 22 19 23 23 23 16 20 20 20 20 24 24 24 21 25 25 25 22 26 26 26 22 26 26 26 23 27 27 27 20 24 24 24</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="ut_roadsigns_tga">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Decals/Utah/utah_roadsigns/ut_roadsigns.tga</init_from>
+    </image>
+    <image id="utah_metal_clean_d_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/utah_metal_clean/utah_metal_clean_d.png</init_from>
+    </image>
+    <image id="ut_metal_trim_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Trims/Utah/Utah_metal_trim/ut_metal_trim_SP/ut_metal_trim.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight" />
+      </node>
+      <node id="node-base00" name="base00">
+        <scale>0.2417746 0.2417746 0.2417746</scale>
+        <node id="node-collision-1" name="collision-1">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-start01" name="start01">
+          <node id="node-ut_roadsign_onramp80" name="ut_roadsign_onramp80">
+            <translate>-2.44141e-4 0 0</translate>
+            <instance_geometry url="#geom-ut_roadsign_onramp80">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ut_bld_metal_clean_1_1" target="#ut_bld_metal_clean_1-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="ut_metal_trim" target="#ut_metal_trim-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="ut_roadsigns" target="#ut_roadsigns-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="ut_bld_metal_clean" target="#ut_bld_metal_clean-material">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  </instance_material>
+                  <instance_material symbol="lod_vertcol" target="#lod_vertcol-material" />
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-ut_roadsign_onramp20" name="ut_roadsign_onramp20">
+            <translate>-2.44141e-4 0 0</translate>
+            <instance_geometry url="#geom-ut_roadsign_onramp20">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="lod_vertcol" target="#lod_vertcol-material" />
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-nulldetail1" name="nulldetail1">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene" />
+  </scene>
+</COLLADA>

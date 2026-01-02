@@ -1,0 +1,17 @@
+{
+  "materials": [
+    {
+      "name": "speedshop_sign",
+      "mapTo": "speedshop_sign",
+      "class": "Material",
+      "diffuseMap": "speedshop_sign.png",
+      "emissive": true,
+      "castShadows": false,
+      "doubleSided": true,
+      "translucent": true,
+      "glow": true,
+      "specularPower": 32,
+      "diffuse": [1, 1, 1, 1]
+    }
+  ]
+}

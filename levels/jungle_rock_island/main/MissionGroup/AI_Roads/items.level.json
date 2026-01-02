@@ -1,0 +1,3 @@
+{"name":"Resort","class":"SimGroup","persistentId":"2ecbb9bc-f32f-4819-ac6e-7fba5a424c39","__parent":"AI_Roads"}
+{"name":"asphalt","class":"SimGroup","persistentId":"c2cb1f7d-8f68-4f02-9dc4-0cbba3624e35","__parent":"AI_Roads"}
+{"name":"Dirt","class":"SimGroup","persistentId":"84c73254-6bb9-469a-9f19-0925e640b5ce","__parent":"AI_Roads"}

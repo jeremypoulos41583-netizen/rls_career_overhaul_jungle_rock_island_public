@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>LUCA</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 63</authoring_tool>
+      <source_data>file:///H:/BeamNG_Drive/1_BNGD_MAXFiles/Utah/ut_Auto_repair_zone/Auto%20repair_zone_081.max</source_data>
+    </contributor>
+    <created>2019-10-09T10:49:30</created>
+    <modified>2019-10-09T10:49:30</modified>
+    <unit name="centimeter" meter="0.01" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ut_bld_plastic">
+      <profile_COMMON>
+        <newparam sid="ut_plastic_d_dds-surface">
+          <surface type="2D">
+            <init_from>ut_plastic_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_plastic_d_dds-sampler">
+          <sampler2D>
+            <source>ut_plastic_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ut_plastic_d_dds-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="vertcolor_glow">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="ut_plastic_trim">
+      <profile_COMMON>
+        <newparam sid="ut_plastic_trim_d_dds-surface">
+          <surface type="2D">
+            <init_from>ut_plastic_trim_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_plastic_trim_d_dds-sampler">
+          <sampler2D>
+            <source>ut_plastic_trim_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ut_plastic_trim_d_dds-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ut_bld_plastic-material" name="ut_bld_plastic">
+      <instance_effect url="#ut_bld_plastic" />
+    </material>
+    <material id="vertcolor_glow-material" name="vertcolor_glow">
+      <instance_effect url="#vertcolor_glow" />
+    </material>
+    <material id="ut_plastic_trim-material" name="ut_plastic_trim">
+      <instance_effect url="#ut_plastic_trim" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Shape001" name="Shape001">
+      <spline closed="0">
+        <source id="geom-Shape001-positions">
+          <float_array id="geom-Shape001-positions-array" count="60">886.6712 4848.057 90 516.9956 5002.629 90 429.5107 5019.739 90 341.5219 5018.767 90 255.1571 5000.682 90 172.6637 4966.432 90 96.34393 4917.001 90 28.49377 4853.394 90 -28.60051 4776.623 90 -72.86417 4687.253 90 -1087.748 2087.046 90 -1286.197 1951.473 90 -4228.313 1951.473 90 -4228.313 -1141.572 90 -4137.274 -1525.28 90 -3945.633 -1851.905 90 -3735.803 -2083.989 90 -3481.021 -2280.023 90 -3181.713 -2433.125 90 -2836.574 -2536.845 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape001-positions-array" count="20" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape001-intangents">
+          <float_array id="geom-Shape001-intangents-array" count="60">886.6712 4848.057 90 640.2208 4951.105 90 458.6723 5014.036 90 370.8515 5019.091 90 283.9454 5006.71 90 200.1615 4977.849 90 121.7838 4933.478 90 51.11049 4874.596 90 -9.569082 4802.213 90 -58.10962 4717.043 90 -749.4533 2953.782 90 -1198.463 1951.473 90 -3247.608 1951.473 90 -4228.313 -110.5568 90 -4179.364 -1424.424 90 -4014.06 -1732.136 90 -3805.747 -2006.628 90 -3565.948 -2214.679 90 -3281.482 -2382.091 90 -2951.621 -2502.271 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape001-intangents-array" count="20" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape001-outtangents">
+          <float_array id="geom-Shape001-outtangents-array" count="60">763.446 4899.581 90 487.834 5008.333 90 400.1811 5019.416 90 312.7336 5012.739 90 227.6593 4989.265 90 147.2238 4949.955 90 73.72721 4895.799 90 9.462345 4827.804 90 -43.35506 4746.833 90 -411.1588 3820.518 90 -1119.648 2005.317 90 -2266.902 1951.473 90 -4228.313 920.4579 90 -4228.313 -1250.857 90 -4082.487 -1612.366 90 -3875.69 -1929.266 90 -3650.876 -2149.334 90 -3381.251 -2331.057 90 -3066.667 -2467.698 90 -2836.574 -2536.845 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape001-outtangents-array" count="20" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape001-interpolations">
+          <Name_array id="geom-Shape001-interpolations-array" count="20">BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER</Name_array>
+          <technique_common>
+            <accessor source="#geom-Shape001-interpolations-array" count="20" stride="1">
+              <param name="INTERPOLATION" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <control_vertices>
+          <input semantic="POSITION" source="#geom-Shape001-positions" />
+          <input semantic="IN_TANGENT" source="#geom-Shape001-intangents" />
+          <input semantic="OUT_TANGENT" source="#geom-Shape001-outtangents" />
+          <input semantic="INTERPOLATION" source="#geom-Shape001-interpolations" />
+        </control_vertices>
+      </spline>
+    </geometry>
+    <geometry id="geom-Shape002" name="Shape002">
+      <spline closed="0">
+        <source id="geom-Shape002-positions">
+          <float_array id="geom-Shape002-positions-array" count="30">3809.871 3015.128 90 3842.41 3120.889 90 3854.49 3227.296 90 3847.33 3332.532 90 3821.835 3433.858 90 3778.924 3528.529 90 3719.54 3613.803 90 3644.612 3686.99 90 3555.015 3745.44 90 2366.474 4227.004 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape002-positions-array" count="10" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape002-intangents">
+          <float_array id="geom-Shape002-intangents-array" count="30">3809.871 3015.128 90 3831.564 3085.635 90 3850.464 3191.827 90 3849.717 3297.453 90 3830.334 3400.083 90 3793.228 3496.972 90 3739.335 3585.379 90 3669.588 3662.594 90 3584.881 3725.957 90 2762.654 4066.482 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape002-intangents-array" count="10" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape002-outtangents">
+          <float_array id="geom-Shape002-outtangents-array" count="30">3820.718 3050.382 90 3846.437 3156.358 90 3852.104 3262.375 90 3838.832 3366.307 90 3807.532 3465.415 90 3759.129 3556.954 90 3694.564 3638.199 90 3614.747 3706.473 90 3158.834 3905.961 90 2366.474 4227.004 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape002-outtangents-array" count="10" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape002-interpolations">
+          <Name_array id="geom-Shape002-interpolations-array" count="10">BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER</Name_array>
+          <technique_common>
+            <accessor source="#geom-Shape002-interpolations-array" count="10" stride="1">
+              <param name="INTERPOLATION" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <control_vertices>
+          <input semantic="POSITION" source="#geom-Shape002-positions" />
+          <input semantic="IN_TANGENT" source="#geom-Shape002-intangents" />
+          <input semantic="OUT_TANGENT" source="#geom-Shape002-outtangents" />
+          <input semantic="INTERPOLATION" source="#geom-Shape002-interpolations" />
+        </control_vertices>
+      </spline>
+    </geometry>
+    <geometry id="geom-Shape003" name="Shape003">
+      <spline closed="0">
+        <source id="geom-Shape003-positions">
+          <float_array id="geom-Shape003-positions-array" count="81">-1588.349 -2542.923 90 -1524.722 -2469.417 90 -1461.228 -2397.135 90 -1398.091 -2327.409 90 -1335.513 -2261.56 90 -1273.683 -2200.904 90 -1212.752 -2146.751 90 -1152.818 -2100.413 90 -1093.906 -2063.236 90 -1028.475 -2032.885 90 -954.1969 -2007.017 90 -878.2606 -1988.428 90 -801.1969 -1977.135 90 -723.5401 -1973.151 90 -645.808 -1976.49 90 -568.5333 -1987.168 90 -492.2455 -2005.199 90 -417.0748 -2030.743 90 1116.405 -2751.882 90 1220.855 -2782.889 90 1323.902 -2798.811 90 1423.195 -2798.858 90 1516.472 -2782.324 90 1601.631 -2748.533 90 1676.818 -2696.688 90 1740.292 -2625.67 90 1790.581 -2533.09 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape003-positions-array" count="27" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape003-intangents">
+          <float_array id="geom-Shape003-intangents-array" count="81">-1588.349 -2542.923 90 -1545.931 -2493.919 90 -1482.393 -2421.229 90 -1419.137 -2350.651 90 -1356.372 -2283.51 90 -1294.293 -2221.123 90 -1233.062 -2164.802 90 -1172.796 -2115.859 90 -1113.543 -2075.628 90 -1050.286 -2043.002 90 -978.9564 -2015.64 90 -903.5727 -1994.624 90 -826.8848 -1980.899 90 -749.4257 -1974.479 90 -671.7187 -1975.377 90 -594.2916 -1983.609 90 -517.6747 -1999.189 90 -442.1317 -2022.229 90 605.2452 -2511.503 90 1186.039 -2772.553 90 1289.553 -2793.504 90 1390.098 -2798.843 90 1485.38 -2787.835 90 1573.245 -2759.797 90 1651.756 -2713.969 90 1719.134 -2649.343 90 1773.818 -2563.95 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape003-intangents-array" count="27" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape003-outtangents">
+          <float_array id="geom-Shape003-outtangents-array" count="81">-1567.14 -2518.421 90 -1503.557 -2445.323 90 -1440.182 -2373.893 90 -1377.231 -2305.459 90 -1314.903 -2241.341 90 -1253.372 -2182.853 90 -1192.774 -2131.305 90 -1133.181 -2088.021 90 -1072.096 -2053.119 90 -1003.716 -2024.262 90 -928.8848 -2000.821 90 -852.5727 -1984.664 90 -775.3113 -1975.807 90 -697.6294 -1974.264 90 -620.0498 -1980.05 90 -543.1041 -1993.178 90 -467.1886 -2013.714 90 94.08521 -2271.123 90 1151.222 -2762.218 90 1255.204 -2788.197 90 1357 -2798.827 90 1454.287 -2793.347 90 1544.859 -2771.06 90 1626.694 -2731.251 90 1697.976 -2673.015 90 1757.055 -2594.81 90 1790.581 -2533.09 90</float_array>
+          <technique_common>
+            <accessor source="#geom-Shape003-outtangents-array" count="27" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Shape003-interpolations">
+          <Name_array id="geom-Shape003-interpolations-array" count="27">BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER</Name_array>
+          <technique_common>
+            <accessor source="#geom-Shape003-interpolations-array" count="27" stride="1">
+              <param name="INTERPOLATION" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <control_vertices>
+          <input semantic="POSITION" source="#geom-Shape003-positions" />
+          <input semantic="IN_TANGENT" source="#geom-Shape003-intangents" />
+          <input semantic="OUT_TANGENT" source="#geom-Shape003-outtangents" />
+          <input semantic="INTERPOLATION" source="#geom-Shape003-interpolations" />
+        </control_vertices>
+      </spline>
+    </geometry>
+    <geometry id="geom-ut_neon" name="ut_neon">
+      <mesh>
+        <source id="geom-ut_neon-positions">
+          <float_array id="geom-ut_neon-positions-array" count="192">-76.99339 2.500001 -4.328674 -76.99339 -2.499999 -4.328674 -76.99339 -1.767766 -6.096441 -76.99339 6.83424e-7 -6.828674 -76.99339 1.767767 -6.096441 -74.99339 2.500001 -4.328674 -74.99339 -2.499999 -4.328675 -74.99339 -1.767766 -6.096442 -74.99339 7.70847e-7 -6.828674 -74.99339 1.767767 -6.096442 -76.99339 2.500001 -5.72205e-6 -76.99339 -2.499999 -5.72205e-6 -74.99339 2.500001 -5.72205e-6 -74.99339 -2.499999 -6.19888e-6 -76.99339 2.500001 -2.16434 -76.99339 -2.499999 -2.16434 -74.99339 2.500001 -2.16434 -74.99339 -2.499999 -2.16434 76.99339 -2.499993 -4.328681 76.99339 -1.767759 -6.096448 74.99339 -1.767759 -6.096448 74.99339 -2.499993 -4.328681 76.99339 7.4144e-6 -6.828681 74.99339 7.32698e-6 -6.828681 76.99339 1.767774 -6.096448 74.99339 1.767774 -6.096448 76.99339 2.500007 -4.328681 74.99339 2.500007 -4.328681 76.99339 2.500007 -2.164347 74.99339 2.500007 -2.164347 74.99339 -2.499993 -2.164347 76.99339 -2.499993 -2.164347 76.99339 -2.499993 -1.23978e-5 74.99339 -2.499993 -1.28746e-5 74.99339 2.500007 -1.23978e-5 76.99339 2.500007 -1.23978e-5 0 2.500001 -6.19888e-6 0 2.500001 -2.16434 0 -2.499999 -6.19888e-6 0 -2.499999 -2.16434 -75.00001 2.000001 -4.328674 -75.00001 1.000001 -2.596623 -75.00001 -0.9999993 -2.596624 -75.00001 -1.999999 -4.328675 -75.00001 -0.9999991 -6.060725 -75.00001 1 -6.060725 75 2.000007 -4.328681 75 1.000007 -2.59663 75 -0.9999928 -2.59663 75 -1.999993 -4.328681 75 -0.9999925 -6.060732 75 1.000007 -6.060732 -72.52 1.000001 -2.596624 72.51999 1.000007 -2.59663 72.51999 2.000007 -4.328681 -72.52 2.000001 -4.328674 -72.52 -0.9999993 -2.596624 72.51999 -0.9999929 -2.59663 -72.52 -1.999999 -4.328675 72.51999 -1.999993 -4.328681 -72.52 -0.999999 -6.060725 72.51999 -0.9999926 -6.060732 -72.52 1.000001 -6.060725 72.51999 1.000007 -6.060732</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_neon-positions-array" count="64" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_neon-normals">
+          <float_array id="geom-ut_neon-normals-array" count="474">-3.20812e-8 -0.9807853 -0.1950904 -6.68493e-8 -0.7071067 -0.7071068 -1.41761e-7 -0.7071066 -0.7071069 -4.65132e-8 -0.9807853 -0.1950905 -6.29756e-8 -7.18758e-8 -1 -5.95913e-8 -8.21438e-8 -1 -1.70029e-7 0.7071068 -0.7071067 -1.47759e-7 0.7071066 -0.7071068 0 0.9807853 -0.1950904 -3.83435e-8 0.9807853 -0.1950904 0 1 0 0 1 0 0 -1 0 0 -1 0 1.80665e-7 -2.31016e-8 1 0 -9.53674e-8 1 5.7754e-8 -7.22658e-8 1 2.38419e-7 0 1 0 0.9999999 0 0 1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 -9.53674e-8 0.9999999 0 -9.53674e-8 1 0 -9.53674e-8 1 6.35839e-9 0 0.9999999 6.35839e-9 0 1 6.35839e-9 0 1 0 -1 0 0 -1 0 0 9.53674e-8 -0.9999999 0 9.53674e-8 -1 -4.45087e-8 9.53674e-8 -1 -4.45087e-8 9.53674e-8 -1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 0.9999999 0 0 1 0 0 -4.43346e-8 -0.9238795 -0.3826836 -9.12389e-8 -0.9238794 -0.3826835 -2.53844e-8 -0.7071067 -0.7071068 4.65393e-9 -0.7071067 -0.7071068 -4.65393e-9 -4.10719e-8 -1 4.65393e-9 4.10719e-8 -1 -4.65394e-9 0.7071067 -0.7071069 0 0.7071067 -0.7071068 0 0.9238794 -0.3826836 0 0.9238794 -0.3826836 0 0.9999999 0 0 1 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 -1.80665e-7 -2.31016e-8 1 -2.38419e-7 0 1 -5.7754e-8 -7.22658e-8 1 0 -9.53674e-8 1 0 1 0 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0 0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -8.90174e-8 1 0 -8.90174e-8 1 0 -8.90175e-8 1 0 -8.90174e-8 1 0 -8.90174e-8 1 0 -8.90175e-8 1 0 8.26591e-8 0 1 8.26591e-8 0 1 8.2659e-8 0 0.9999999 8.90175e-8 -9.53674e-8 1 8.90175e-8 -9.53674e-8 1 8.90174e-8 -9.53674e-8 0.9999999 8.90174e-8 -1 0 8.90174e-8 -1 0 8.90174e-8 -1 0 8.90174e-8 -1 0 8.90174e-8 -1 0 8.90174e-8 -1 0 -8.90175e-8 9.53674e-8 -1 -8.90175e-8 9.53674e-8 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -3.25004e-9 0.5 0.8660253 -6.28162e-8 1 -5.25788e-7 -6.30514e-8 1 8.76314e-8 2.2763e-8 0.4999995 0.8660257 3.9391e-8 -0.4999996 0.8660256 7.70345e-8 -0.5000005 0.8660251 4.25039e-8 -1 3.50525e-7 4.99145e-8 -1 -5.91511e-7 -2.56012e-9 -0.5000004 -0.8660253 3.07983e-9 -0.4999995 -0.8660257 -4.96625e-8 0.4999996 -0.8660257 -4.26338e-8 0.5000003 -0.8660253 -3.76842e-8 0.5 0.8660255 -8.2486e-8 1 0 -6.67241e-8 1 -2.19078e-8 5.92225e-8 0.4999999 0.8660255 1.2017e-8 -0.5000001 0.8660254 8.63368e-8 -0.5000001 0.8660254 4.1243e-8 -1 -1.09539e-7 4.80682e-8 -1 -1.64309e-7 1.88421e-8 -0.4999999 -0.8660254 2.40341e-8 -0.5 -0.8660255 -2.4034e-8 0.4999999 -0.8660254 -3.76842e-8 0.5 -0.8660254</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_neon-normals-array" count="158" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_neon-map0">
+          <float_array id="geom-ut_neon-map0-array" count="684">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079 0.2196079</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_neon-map0-array" count="228" stride="3">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ut_neon-map1">
+          <float_array id="geom-ut_neon-map1-array" count="414">0.295507 0.1514207 0 0.3028293 0.1337431 0 0.2351296 0.9425032 0 0.2159955 0.9425032 0 0.2159956 0.9225033 0 0.3171526 0.2454372 0 0.2955092 0.2454372 0 0.2351296 0.9225033 0 0.1968614 0.942503 0 0.1968615 0.9225029 0 0.3381846 0.1337431 0 0.3455069 0.1514207 0 0.4934828 0.915781 0 0.4934829 0.8957809 0 0.295507 0.1730641 0 0.3455069 0.1730641 0 0.2955092 0.1954373 0 0.3171526 0.1954373 0 0.1777274 0.9425028 0 0.4764991 0.162063 0 0.4764991 0.9119971 0 0.2542636 0.9425029 0 0.1777274 0.9225028 0 0.156084 0.9425024 0 0.156084 0.9225025 0 0.1344407 0.9425023 0 0.1344407 0.9225025 0 0.1344407 0.1725678 0 0.1560841 0.1725678 0 0.2542636 0.9225029 0 0.2759068 0.9225026 0 0.2759068 0.9425027 0 0.2975501 0.9225025 0 0.2975501 0.9425025 0 0.2759067 0.172568 0 0.29755 0.172568 0 0.5434828 0.8957809 0 0.5434828 0.915781 0 0.4934828 0.1458464 0 0.5434828 0.1458464 0 0.4264991 0.9119971 0 0.4264991 0.162063 0 0.3348303 0.2381149 0 0.3348303 0.2027597 0 0.3421526 0.2204373 0 0.295507 0.1947075 0 0.3455069 0.1947075 0 0.320507 0.1264207 0 0.2542636 0.9425029 0 0.2351296 0.9425032 0 0.2351296 0.9225033 0 0.2542636 0.9225029 0 0.2159955 0.9425032 0 0.2159956 0.9225033 0 0.1968614 0.942503 0 0.1968615 0.9225029 0 0.1777274 0.9425028 0 0.1777274 0.9225028 0 0.156084 0.9425024 0 0.156084 0.9225025 0 0.2759068 0.9225026 0 0.2759068 0.9425027 0 0.4934828 0.915781 0 0.4934829 0.8957809 0 0.5434828 0.8957809 0 0.5434828 0.915781 0 0.1344407 0.9425023 0 0.1344407 0.9225025 0 0.2975501 0.9225025 0 0.2975501 0.9425025 0 0.1344407 0.1725678 0 0.1560841 0.1725678 0 0.4934828 0.1458464 0 0.5434828 0.1458464 0 0.2759067 0.172568 0 0.29755 0.172568 0 0.4764991 0.162063 0 0.4764991 0.9119971 0 0.4264991 0.9119971 0 0.4264991 0.162063 0 0.3171526 0.2454372 0 0.2955092 0.2454372 0 0.2955092 0.1954373 0 0.3171526 0.1954373 0 0.3348303 0.2381149 0 0.3348303 0.2027597 0 0.295507 0.1514207 0 0.3028293 0.1337431 0 0.3381846 0.1337431 0 0.3455069 0.1514207 0 0.295507 0.1730641 0 0.3455069 0.1730641 0 0.295507 0.1947075 0 0.3455069 0.1947075 0 0.320507 0.1264207 0 0.3421526 0.2204373 0 0.9166667 0.01653334 1 0.9166667 0.9834666 1 0.75 0.9834666 1 0.75 0.01653337 1 1.083333 0.01653334 1 1.083333 0.9834666 1 0.08333334 0.01653334 1 0.08333334 0.9834666 1 0.25 0.01653334 1 0.25 0.9834666 1 0.4166667 0.01653334 0.9999999 0.4166667 0.9834666 0.9999999 0.5833333 0.01653334 1 0.5833333 0.9834666 1 0.5073899 0.834208 0.9999995 0.5273899 0.834208 0.9999995 0.4273898 0.834208 0.9999995 0.4473898 0.834208 0.9999995 0.4673898 0.834208 0.9999995 0.4873898 0.834208 0.9999995 0.3868532 0.8588772 1.000001 0.4068531 0.8588772 1.000001 0.3068532 0.8588772 1.000001 0.3268532 0.8588772 1.000001 0.3468531 0.8588772 1.000001 0.3668531 0.8588772 1.000001 0.5473899 0.834208 0.9999995 0.4268532 0.8588772 1.000001 0.5273899 0.859008 0.9999995 0.4068532 0.834077 1.000001 0.3868532 0.834077 1.000001 0.5073899 0.8590081 0.9999995 0.5473899 0.859008 0.9999995 0.4268532 0.834077 1.000001 0.4273898 0.859008 0.9999995 0.3068532 0.8340771 1.000001 0.4473898 0.859008 0.9999995 0.3268532 0.8340771 1.000001 0.4673898 0.859008 0.9999995 0.3468531 0.8340771 1.000001 0.4873898 0.859008 0.9999995 0.3668531 0.8340771 1.000001</float_array>
+          <technique_common>
+            <accessor source="#geom-ut_neon-map1-array" count="138" stride="3">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+              <param name="P" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ut_neon-vertices">
+          <input semantic="POSITION" source="#geom-ut_neon-positions" />
+        </vertices>
+        <triangles material="ut_bld_plastic" count="76">
+          <input semantic="VERTEX" source="#geom-ut_neon-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_neon-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_neon-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_neon-map1" offset="3" set="0" />
+          <p>1 0 0 21 2 1 1 2 7 2 2 7 7 2 2 7 6 3 3 29 1 0 0 21 2 1 4 2 3 4 5 3 8 5 6 4 8 5 6 4 7 2 7 7 2 1 4 2 3 4 8 3 4 6 9 8 9 7 10 9 9 7 10 9 8 5 11 4 3 4 8 3 4 6 12 8 0 8 13 18 5 9 14 22 5 9 14 22 9 7 15 9 4 6 12 8 0 8 17 18 14 10 18 23 16 11 19 24 16 11 19 24 5 9 16 22 0 8 17 18 6 3 21 29 17 12 22 30 15 13 23 31 15 13 23 31 1 0 20 21 6 3 21 29 13 14 25 13 12 15 26 36 10 16 27 37 10 16 27 37 11 17 24 12 13 14 25 13 10 18 29 25 12 19 30 26 16 11 31 24 16 11 31 24 14 10 28 23 10 18 29 25 13 20 33 32 11 21 34 33 15 13 35 31 15 13 35 31 17 12 32 30 13 20 33 32 16 11 36 24 12 19 37 26 36 22 38 27 36 22 38 27 37 23 39 28 16 11 36 24 12 24 40 36 13 25 41 13 38 26 42 38 38 27 42 38 36 28 43 39 12 29 40 36 13 20 44 32 17 12 45 30 39 30 46 34 39 30 46 34 38 31 47 35 13 20 44 32 17 32 49 20 16 33 50 40 37 34 51 41 37 34 51 41 39 35 48 19 17 32 49 20 16 36 53 6 17 37 54 16 6 38 55 17 6 38 55 17 5 39 52 5 16 36 53 6 5 39 57 5 6 38 58 17 7 40 59 43 7 40 59 43 9 41 56 42 5 39 57 5 4 42 61 1 2 43 62 10 1 44 63 11 1 44 63 11 0 45 60 0 4 42 61 1 0 45 65 0 1 44 66 11 15 46 67 15 15 46 67 15 14 47 64 14 0 45 65 0 14 47 69 14 15 46 70 15 11 48 71 46 11 48 71 46 10 49 68 45 14 47 69 14 2 50 72 10 4 51 73 1 3 52 74 47 8 53 75 44 9 54 76 42 7 55 77 43 18 56 78 48 21 57 79 51 20 58 80 50 20 58 80 50 19 59 81 49 18 56 78 48 19 59 82 49 20 58 83 50 23 60 84 53 23 60 84 53 22 61 85 52 19 59 82 49 22 61 86 52 23 60 87 53 25 62 88 55 25 62 88 55 24 63 89 54 22 61 86 52 24 63 90 54 25 62 91 55 27 64 92 57 27 64 92 57 26 65 93 56 24 63 90 54 26 66 97 56 27 67 94 57 29 68 95 59 29 69 95 59 28 70 96 58 26 71 97 56 21 72 101 51 18 73 98 48 31 74 99 61 31 75 99 61 30 76 100 60 21 77 101 51 33 78 105 63 32 79 102 62 35 80 103 65 35 80 103 65 34 81 104 64 33 78 105 63 35 82 109 66 28 83 106 58 29 84 107 59 29 85 107 59 34 86 108 67 35 87 109 66 33 88 113 68 30 89 110 60 31 90 111 61 31 91 111 61 32 92 112 69 33 93 113 68 29 94 114 59 37 95 115 71 36 96 116 70 36 97 116 70 34 98 117 67 29 99 114 59 34 100 118 64 36 101 119 73 38 102 120 72 38 103 120 72 33 104 121 63 34 105 118 64 33 106 122 68 38 107 123 75 39 108 124 74 39 109 124 74 30 110 125 60 33 111 122 68 30 112 129 77 39 35 126 76 37 34 127 79 37 34 127 79 29 113 128 78 30 112 129 77 29 114 133 81 27 115 130 80 21 116 131 83 21 116 131 83 30 117 132 82 29 114 133 81 27 115 137 80 25 118 134 84 20 119 135 85 20 119 135 85 21 116 136 83 27 115 137 80 24 120 141 87 26 121 138 86 18 122 139 89 18 122 139 89 19 123 140 88 24 120 141 87 26 121 145 86 28 124 142 90 31 125 143 91 31 125 143 91 18 122 144 89 26 121 145 86 28 124 149 90 35 126 146 92 32 127 147 93 32 127 147 93 31 125 148 91 28 124 149 90 19 128 150 88 22 129 151 94 24 130 152 87 23 131 153 95 20 132 154 85 25 133 155 84</p>
+        </triangles>
+        <triangles material="vertcolor_glow" count="12">
+          <input semantic="VERTEX" source="#geom-ut_neon-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_neon-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_neon-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_neon-map1" offset="3" set="0" />
+          <p>53 134 157 97 54 135 158 98 55 136 159 99 55 136 159 99 52 137 156 96 53 134 157 97 57 138 161 101 53 134 162 97 52 137 163 96 52 137 163 96 56 139 160 100 57 138 161 101 59 140 165 105 57 138 166 103 56 139 167 102 56 139 167 102 58 141 164 104 59 140 165 105 61 142 169 107 59 140 170 105 58 141 171 104 58 141 171 104 60 143 168 106 61 142 169 107 63 144 173 109 61 142 174 107 60 143 175 106 60 143 175 106 62 145 172 108 63 144 173 109 54 135 177 98 63 144 178 109 62 145 179 108 62 145 179 108 55 136 176 99 54 135 177 98</p>
+        </triangles>
+        <triangles material="ut_plastic_trim" count="24">
+          <input semantic="VERTEX" source="#geom-ut_neon-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ut_neon-normals" offset="1" />
+          <input semantic="COLOR" source="#geom-ut_neon-map0" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#geom-ut_neon-map1" offset="3" set="0" />
+          <p>47 146 181 117 46 147 182 116 54 135 183 126 54 135 183 126 53 134 180 125 47 146 181 117 40 148 185 110 41 149 186 111 52 137 187 124 52 137 187 124 55 136 184 127 40 148 185 110 48 150 189 123 47 146 190 117 53 134 191 125 53 134 191 125 57 138 188 129 48 150 189 123 41 149 193 111 42 151 194 122 56 139 195 128 56 139 195 128 52 137 192 124 41 149 193 111 49 152 197 119 48 150 198 118 57 138 199 131 57 138 199 131 59 140 196 133 49 152 197 119 42 151 201 112 43 153 202 113 58 141 203 132 58 141 203 132 56 139 200 130 42 151 201 112 50 154 205 120 49 152 206 119 59 140 207 133 59 140 207 133 61 142 204 135 50 154 205 120 43 153 209 113 44 155 210 114 60 143 211 134 60 143 211 134 58 141 208 132 43 153 209 113 51 156 213 121 50 154 214 120 61 142 215 135 61 142 215 135 63 144 212 137 51 156 213 121 44 155 217 114 45 157 218 115 62 145 219 136 62 145 219 136 60 143 216 134 44 155 217 114 46 147 221 116 51 156 222 121 63 144 223 137 63 144 223 137 54 135 220 126 46 147 221 116 45 157 225 115 40 148 226 110 55 136 227 127 55 136 227 127 62 145 224 136 45 157 225 115</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="ut_plastic_d_dds">
+      <init_from>file:///H:/game/levels/Utah_v2/art/shapes/buildings/ut_plastic_d.dds</init_from>
+    </image>
+    <image id="ut_plastic_trim_d_dds">
+      <init_from>file:///H:/game/levels/Utah_v2/art/shapes/buildings/ut_plastic_trim_d.dds</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight" />
+      </node>
+      <node id="node-ut_neon" name="ut_neon">
+        <instance_geometry url="#geom-ut_neon">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ut_plastic_trim" target="#ut_plastic_trim-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+              <instance_material symbol="ut_bld_plastic" target="#ut_bld_plastic-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+              <instance_material symbol="vertcolor_glow" target="#vertcolor_glow-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene" />
+  </scene>
+</COLLADA>
