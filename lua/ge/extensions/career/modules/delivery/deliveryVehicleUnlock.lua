@@ -14,8 +14,9 @@ end
 -- List of unlock flags to always want to enable.
 local flagsToUnlock = {
   "busVeh",     
-  "pickupVeh",
-  }
+  "pickupVeh"
+    
+}
 
 local function unlockFlags()
   if career_modules_unlockFlags and career_modules_unlockFlags.setFlag then

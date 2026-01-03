@@ -152,11 +152,7 @@ Beta 0.7
 1.1.5
 - added freeroam start triggers to drag strip again
 - fixed cars trying to drive through the speedshop
-======================================================================
-1.1.6
-- fixed bus work configs to work with the new insurance system
 =====================================================================
-1.2
--Made bus work compatible with overhaul
- -added bus routes file
-- reworked parking spots at Aloha Transit for easier maneuverability with a bus
+1.1.6
+- fixed bus work configs causing lua error
+- adjusted finish trigger at dragstrip to (hopefully) fix issue with it intermittently failing 
