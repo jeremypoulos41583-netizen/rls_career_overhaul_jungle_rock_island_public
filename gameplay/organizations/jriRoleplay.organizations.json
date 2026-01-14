@@ -7,7 +7,7 @@
       {
         "model": "citybus",
         "config": "busWork_base",
-        "reputationLvl": -1,
+        "reputationLvl": 1,
         "deliveryLvl": 0,
         "mileages": {
           "-1": 804672000,
@@ -22,7 +22,7 @@
 	  {
         "model": "citybus",
         "config": "busWork_city",
-        "reputationLvl": 0,
+        "reputationLvl": 2,
         "deliveryLvl": 0,
         "mileages": {
           "-1": 804672000,
