@@ -156,3 +156,7 @@ Beta 0.7
 1.1.6
 - fixed bus work configs causing lua error
 - adjusted finish trigger at dragstrip to (hopefully) fix issue with it intermittently failing 
+=====================================================================
+1.1.7
+- fixed bus work loaner configs
+- added bus routes file for future expansion of bus routes
