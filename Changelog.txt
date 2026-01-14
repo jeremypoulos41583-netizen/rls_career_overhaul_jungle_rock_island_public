@@ -160,3 +160,6 @@ Beta 0.7
 1.1.7
 - fixed bus work loaner configs
 - added bus routes file for future expansion of bus routes
+=====================================================================
+Beta 1.1.7.1
+- removed bus.lua from career modules at it is now part of the overhaul
