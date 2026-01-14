@@ -149,14 +149,14 @@ local function calculateSeatingCapacity()
 end
 
 -- Requests the current player's vehicle parts tree from the game engine and clears any cached copy.
--- After calling, if a player vehicle exists, an asynchronous request is queued; the retrieved parts tree is delivered back to the extension via gameplay_bus.returnPartsTree.
+-- After calling, if a player vehicle exists, an asynchronous request is queued; the retrieved parts tree is delivered back to the extension via career_modules_bus.returnPartsTree.
 local function retrievePartsTree()
     currentVehiclePartsTree = nil
     local vehicle = be:getPlayerVehicle(0)
     if vehicle then
         vehicle:queueLuaCommand([[
       local partsTree = v.config.partsTree
-      obj:queueGameEngineLua('gameplay_bus.returnPartsTree(' .. serialize(partsTree) .. ')')
+      obj:queueGameEngineLua('career_modules_bus.returnPartsTree(' .. serialize(partsTree) .. ')')
     ]])
     end
 end
