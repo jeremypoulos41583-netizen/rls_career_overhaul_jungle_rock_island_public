@@ -1,0 +1,27 @@
+{
+  "routes": {
+    "north_island": {
+      "name": "North Island",
+      "stops": [
+        ["jri_bs_01_b", "Aloha Transit"],
+        ["jri_bs_15", "Industrial Park"],
+        ["jri_bs_16", "North Mountain"],
+        ["jri_bs_04", "West Mountain"],
+        ["jri_bs_05_b", "Wilderness Trail"],
+        ["jri_bs_03_b", "Dragon's Tail Base"],
+        ["jri_bs_13", "Resort"],
+        ["jri_bs_10", "Ocean View Rd S"],
+        ["jri_bs_10_b", "Drag Strip"],
+        ["jri_wp_01", "Jungle Rock Island Loop Waypoint 1"],
+        ["jri_bs_08", "Bay Side"],
+        ["jri_bs_17", "West Tunnel"],
+        ["jri_bs_06", "Port"],
+        ["jri_wp_02", "Jungle Rock Island Loop Waypoint 2"],
+        ["jri_wp_03", "Jungle Rock Island Loop Waypoint 3"],
+        ["jri_bs_18", "Ferry"],
+        ["jri_bs_01", "Aloha Transit"]
+      ]
+    }
+  }
+}
+
