@@ -1,0 +1,26 @@
+name: Build ZIP on PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Create ZIP archive
+        run: |
+          zip -r rls_career_overhaul_american_road.zip . -x "*.git*"
+      
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}
+          path: rls_career_overhaul_american_road.zip
+          retention-days: 30
