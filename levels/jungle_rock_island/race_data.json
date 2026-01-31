@@ -1,18 +1,5 @@
 {
   "races":{
-    "airstripDrag":{
-      "bestTime":7,
-      "checkpointRoad":[
-        "airstripDrag"
-      ],
-      "displaySpeed":true,
-      "label":"Drag Strip",
-      "reward":10500,
-      "type":[
-        "motorsport",
-        "drag"
-      ]
-    },
     "beachCircuit":{
       "bestTime":30,
       "checkpointRoad":[
@@ -57,6 +44,16 @@
         "motorsport",
         "offroad",
         "crawl"
+      ]
+    },
+    "drag":{
+      "bestTime":11,
+      "checkpoints":2,
+      "displaySpeed":true,
+      "label":"Drag Strip",
+      "reward":1650,
+      "type":[
+        "drag"
       ]
     },
     "dragonTail":{
