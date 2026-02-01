@@ -1,0 +1,12 @@
+{
+  "id": "jriStrip",
+  "name": "jri Drag Strip",
+  "description": "Main drag racing facility at jri Raceway",
+  "stripIds": [
+    "/levels/jungle_rock_island/dragstrips/jriStrip_main.strip.json"
+  ],
+  "metadata": {
+    "created": "2024-01-01",
+    "modified": "2024-01-01"
+  }
+}
