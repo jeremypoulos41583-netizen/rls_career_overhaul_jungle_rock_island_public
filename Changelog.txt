@@ -160,3 +160,8 @@ Beta 0.7
 1.1.7
 - fixed bus work loaner configs
 - added bus routes file for future expansion of bus routes
+=====================================================================
+1.1.7.2
+- Fixed drag tree
+- Fixed flickering decals around dragstrip
+- Fixed terrain around dragstrip

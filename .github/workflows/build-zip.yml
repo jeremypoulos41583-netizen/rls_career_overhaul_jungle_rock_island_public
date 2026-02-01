@@ -14,13 +14,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Create ZIP archive
-        run: |
-          zip -r rls_career_overhaul_jungle_rock_island.zip . -x "*.git*"
-      
-      - name: Upload ZIP artifact
+      - name: Upload mod directories as artifact
         uses: actions/upload-artifact@v4
         with:
           name: rls_career_overhaul_jungle_rock_island-pr-${{ github.event.pull_request.number }}
-          path: rls_career_overhaul_jungle_rock_island.zip
+          path: |
+            gameplay/
+            levels/
+            lua/
+            vehicles/
+            scripts/
+            ui/
           retention-days: 30
+          if-no-files-found: error
+          compression-level: 2
