@@ -1,0 +1,13 @@
+# CODEOWNERS file for rls_career_overhaul_american_road
+# 
+# This file defines who gets automatically requested for review when PRs are created.
+# When a PR is opened from dev to main, the specified owners will be notified.
+#
+# Format: pattern @owner1 @owner2 @org/team-name
+# The last matching pattern takes precedence.
+#
+# Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for all files - QA team will be notified for all changes
+# Currently set to @Bigred2998 (matching the existing CODEOWNERS on dev branch)
+* @Bigred2998
