@@ -161,6 +161,7 @@ Beta 0.7
 - fixed bus work loaner configs
 - added bus routes file for future expansion of bus routes
 =====================================================================
+<<<<<<< HEAD
 Beta 1.1.7.1
 - removed bus.lua from career modules at it is now part of the overhaul
 =====================================================================
@@ -173,3 +174,9 @@ Beta 1.1.7.1
 Beta 1.1.8
 - Buffed drag pay
 - Merged Beta compatibility
+=======
+1.1.7.2
+- Fixed drag tree
+- Fixed flickering decals around dragstrip
+- Fixed terrain around dragstrip
+>>>>>>> 9aadbd5e91fe05d4ebb005647b5969dd2fb44186
