@@ -169,3 +169,7 @@ Beta 1.1.7.1
 - fixed ground textures and decal road flickering in drag area
 - adjusted drag rewards to be the same as Hirochi Raceway for consistency
     - gives better rewards for 7-10 second cars
+========================================================================
+Beta 1.1.8
+- Buffed drag pay
+- Merged Beta compatibility

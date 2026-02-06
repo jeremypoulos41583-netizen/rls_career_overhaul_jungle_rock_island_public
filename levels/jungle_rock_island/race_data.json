@@ -51,7 +51,7 @@
       "checkpoints":2,
       "displaySpeed":true,
       "label":"Drag Strip",
-      "reward":1650,
+      "reward":3200,
       "type":[
         "drag"
       ]
