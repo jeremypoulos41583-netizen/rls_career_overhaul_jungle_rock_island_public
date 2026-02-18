@@ -1,0 +1,80 @@
+# Create a GitHub Release with a BeamNG-ready zip.
+# Run manually: choose major, minor, or patch bump.
+# Zip has one top-level folder rls_career_overhaul_jungle_rock_island/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
+name: Release on tag
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Version bump type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Get previous tag and compute new version
+        id: version
+        run: |
+          BUMP="${{ github.event.inputs.bump }}"
+          PREV=$( (git tag -l 'v*'; git tag -l | grep -E '^[0-9]+\.[0-9]+(\.[0-9]+)?$') | sort -V | tail -1)
+          if [ -z "$PREV" ]; then
+            PREV="v1.0.0"
+          fi
+          V="${PREV#v}"
+          MAJOR=$(echo "$V" | cut -d. -f1)
+          MINOR=$(echo "$V" | cut -d. -f2)
+          PATCH=$(echo "$V" | cut -d. -f3)
+          [ -z "$PATCH" ] && PATCH=0
+          case "$BUMP" in
+            major) MAJOR=$((MAJOR + 1)); MINOR=0; PATCH=0 ;;
+            minor) MINOR=$((MINOR + 1)); PATCH=0 ;;
+            patch) PATCH=$((PATCH + 1)) ;;
+          esac
+          NEW_TAG="v${MAJOR}.${MINOR}.${PATCH}"
+          echo "previous_tag=$PREV" >> $GITHUB_OUTPUT
+          echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+          echo "Bump: $BUMP | Previous: $PREV -> New: $NEW_TAG"
+
+      - name: Create and push tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${{ steps.version.outputs.new_tag }}"
+          git push origin "${{ steps.version.outputs.new_tag }}"
+
+      - name: Create BeamNG mod zip
+        run: |
+          MOD_DIR="rls_career_overhaul_jungle_rock_island"
+          mkdir -p "zip_temp/$MOD_DIR"
+          cp -r gameplay levels lua vehicles scripts ui "zip_temp/$MOD_DIR/"
+          cd zip_temp && zip -r "../rls_career_overhaul_jungle_rock_island-${{ steps.version.outputs.new_tag }}.zip" "$MOD_DIR" -x "*.git*" && cd ..
+          rm -rf zip_temp
+
+      - name: Create Release and upload zip
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.new_tag }}
+          name: ${{ steps.version.outputs.new_tag }}
+          body: |
+            Previous release: ${{ steps.version.outputs.previous_tag }}
+          files: rls_career_overhaul_jungle_rock_island-${{ steps.version.outputs.new_tag }}.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
