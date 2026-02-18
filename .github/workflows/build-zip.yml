@@ -6,14 +6,43 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pull-requests: write
+  actions: write
+  issues: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+        with:
+          lfs: true
+
+      - name: Delete old artifacts
+        run: |
+          PR_NUMBER="${{ github.event.number }}"
+          ARTIFACT_PREFIX="rls_career_overhaul_jungle_rock_island-pr-${PR_NUMBER}"
+
+          echo "Looking for artifacts starting with: $ARTIFACT_PREFIX"
+
+          ARTIFACTS_JSON=$(gh api repos/${{ github.repository }}/actions/artifacts --jq "[.artifacts[] | select(.name | startswith(\"$ARTIFACT_PREFIX\")) | {id: .id, name: .name}]" 2>/dev/null || echo "[]")
+
+          ARTIFACT_COUNT=$(echo "$ARTIFACTS_JSON" | jq 'length')
+
+          if [ "$ARTIFACT_COUNT" = "0" ] || [ -z "$ARTIFACTS_JSON" ] || [ "$ARTIFACTS_JSON" = "[]" ]; then
+            echo "No existing artifacts found"
+          else
+            echo "Found $ARTIFACT_COUNT existing artifact(s), deleting..."
+            echo "$ARTIFACTS_JSON" | jq -r '.[].id' | xargs -P 4 -I {} sh -c 'gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE 2>/dev/null || true'
+            echo "Old artifacts deleted"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload mod directories as artifact
         uses: actions/upload-artifact@v4
         with:
@@ -28,3 +57,40 @@ jobs:
           retention-days: 30
           if-no-files-found: error
           compression-level: 2
+
+      - name: Delete old QA comments and post new one
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const runId = context.runId;
+            const repo = context.repo;
+            const artifactName = 'rls_career_overhaul_jungle_rock_island-pr-' + prNumber;
+
+            const comments = await github.rest.issues.listComments({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber
+            });
+
+            for (const comment of comments.data) {
+              if (comment.body && (comment.body.includes('Build Ready for QA') || comment.body.includes('📦'))) {
+                try {
+                  await github.rest.issues.deleteComment({
+                    owner: repo.owner,
+                    repo: repo.repo,
+                    comment_id: comment.id
+                  });
+                } catch (error) {}
+              }
+            }
+
+            const downloadUrl = 'https://github.com/' + repo.owner + '/' + repo.repo + '/actions/runs/' + runId;
+            const body = '## 📦 Build Ready for QA\n\nA new build has been created for this PR.\n\n**[⬇️ Download ZIP Here](' + downloadUrl + ')**\n\n### Installation:\n1. Click the link above\n2. Scroll to the bottom to the "Artifacts" section\n3. Download `' + artifactName + '.zip`\n4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)\n\n_Artifact will be available for 30 days._';
+
+            await github.rest.issues.createComment({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber,
+              body: body
+            });
