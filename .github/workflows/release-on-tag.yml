@@ -1,6 +1,6 @@
 # Create a GitHub Release with a BeamNG-ready zip.
 # Run manually: choose major, minor, or patch bump.
-# Zip has one top-level folder rls_career_overhaul_jungle_rock_island/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
+# Zip has gameplay/, levels/, etc. at ROOT; filename is versioned so extractor gives rls_career_overhaul_jungle_rock_island_vX.X.X/
 name: Release on tag
 
 on:
@@ -34,7 +34,6 @@ jobs:
         id: version
         run: |
           BUMP="${{ github.event.inputs.bump }}"
-          # Use highest existing version so patch after 4.8.3 gives 4.8.4
           PREV=$(git tag -l 'v*' | sed 's/^v//' | sort -V | tail -1)
           if [ -z "$PREV" ]; then
             PREV=$(git tag -l | grep -E '^[0-9]+\.[0-9]+(\.[0-9]+)?$' | sort -V | tail -1)
@@ -68,13 +67,26 @@ jobs:
           git tag "${{ steps.version.outputs.new_tag }}"
           git push origin "${{ steps.version.outputs.new_tag }}"
 
+      # Zip has gameplay/, levels/, etc. at ROOT. Zip filename is versioned so when user
+      # extracts "rls_career_overhaul_jungle_rock_island_vX.X.X.zip", the extractor creates
+      # that one folder and puts contents in it = rls_career_overhaul_jungle_rock_island_vX.X.X/gameplay, etc.
       - name: Create BeamNG mod zip
         run: |
-          MOD_DIR="rls_career_overhaul_jungle_rock_island"
-          mkdir -p "zip_temp/$MOD_DIR"
-          cp -r gameplay levels lua vehicles scripts ui "zip_temp/$MOD_DIR/"
-          cd zip_temp && zip -r "../rls_career_overhaul_jungle_rock_island-${{ steps.version.outputs.new_tag }}.zip" "$MOD_DIR" -x "*.git*" && cd ..
-          rm -rf zip_temp
+          export ZIP_NAME="rls_career_overhaul_jungle_rock_island_${{ steps.version.outputs.new_tag }}.zip"
+          python3 << 'ZIPSCRIPT'
+          import zipfile, os
+          zippath = os.environ['ZIP_NAME']
+          dirs = ['gameplay', 'levels', 'lua', 'vehicles', 'scripts', 'ui']
+          with zipfile.ZipFile(zippath, 'w', zipfile.ZIP_DEFLATED) as zf:
+              for d in dirs:
+                  if not os.path.isdir(d):
+                      continue
+                  for dirpath, _, filenames in os.walk(d):
+                      for f in filenames:
+                          full = os.path.join(dirpath, f)
+                          zf.write(full, full)
+          print('Created', zippath)
+          ZIPSCRIPT
 
       - name: Create Release and upload zip
         uses: softprops/action-gh-release@v2
@@ -83,7 +95,7 @@ jobs:
           name: ${{ steps.version.outputs.new_tag }}
           body: |
             Previous release: ${{ steps.version.outputs.previous_tag }}
-          files: rls_career_overhaul_jungle_rock_island-${{ steps.version.outputs.new_tag }}.zip
+          files: rls_career_overhaul_jungle_rock_island_${{ steps.version.outputs.new_tag }}.zip
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
