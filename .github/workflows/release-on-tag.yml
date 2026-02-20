@@ -1,6 +1,6 @@
 # Create a GitHub Release with a BeamNG-ready zip.
 # Run manually: choose major, minor, or patch bump.
-# Zip has one top-level folder rls_career_overhaul_american_road/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
+# Zip has one top-level folder rls_career_overhaul_jungle_rock_island/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
 name: Release on tag
 
 on:
@@ -28,6 +28,7 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
+          lfs: true
 
       - name: Get previous tag and compute new version
         id: version
@@ -58,18 +59,21 @@ jobs:
           echo "Bump: $BUMP | Previous: $PREV -> New: $NEW_TAG"
 
       - name: Create and push tag
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
           git tag "${{ steps.version.outputs.new_tag }}"
           git push origin "${{ steps.version.outputs.new_tag }}"
 
       - name: Create BeamNG mod zip
         run: |
-          MOD_DIR="rls_career_overhaul_american_road"
+          MOD_DIR="rls_career_overhaul_jungle_rock_island"
           mkdir -p "zip_temp/$MOD_DIR"
           cp -r gameplay levels lua vehicles scripts ui "zip_temp/$MOD_DIR/"
-          cd zip_temp && zip -r "../rls_career_overhaul_american_road-${{ steps.version.outputs.new_tag }}.zip" "$MOD_DIR" -x "*.git*" && cd ..
+          cd zip_temp && zip -r "../rls_career_overhaul_jungle_rock_island-${{ steps.version.outputs.new_tag }}.zip" "$MOD_DIR" -x "*.git*" && cd ..
           rm -rf zip_temp
 
       - name: Create Release and upload zip
@@ -79,7 +83,7 @@ jobs:
           name: ${{ steps.version.outputs.new_tag }}
           body: |
             Previous release: ${{ steps.version.outputs.previous_tag }}
-          files: rls_career_overhaul_american_road-${{ steps.version.outputs.new_tag }}.zip
+          files: rls_career_overhaul_jungle_rock_island-${{ steps.version.outputs.new_tag }}.zip
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
